@@ -1,0 +1,6 @@
+#!/bin/sh
+# Crea un account dell'interfaccia web o ne cambia la password (es. password dimenticata).
+#   sudo nido-ui-user <nome>
+[ "$(id -u)" -eq 0 ] || { echo "Va lanciato con sudo"; exit 1; }
+[ -n "$1" ] || { echo "Uso: sudo nido-ui-user <nome>"; exit 2; }
+PYTHONPATH=/usr/lib/nido/panel exec python3 -m nidopanel.cli ui-user "$1"

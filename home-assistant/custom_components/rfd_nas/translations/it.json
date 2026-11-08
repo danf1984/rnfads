@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RNFADS",
+        "description": "La chiave API è in RNFADS → Impostazioni → Home Assistant e API.",
+        "data": {
+          "host": "Indirizzo (es. rnfads.local o IP)",
+          "api_key": "Chiave API",
+          "ssl": "Usa HTTPS",
+          "verify_ssl": "Controlla il certificato (solo con Let's Encrypt o certificato di casa installato)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Nuova chiave API",
+        "data": {
+          "api_key": "Chiave API"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Il NAS non risponde",
+      "invalid_auth": "Chiave API errata"
+    },
+    "abort": {
+      "already_configured": "NAS già configurato",
+      "reauth_successful": "Chiave aggiornata"
+    }
+  }
+}

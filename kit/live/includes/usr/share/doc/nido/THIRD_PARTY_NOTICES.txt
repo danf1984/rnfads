@@ -1,0 +1,127 @@
+@NAME@ @VERSION@ — Informazioni, licenze e marchi
+=================================================
+
+@NAME@ è un progetto indipendente. Non è affiliato, sponsorizzato o approvato da
+Canonical, Docker, IceWhale Technology (CasaOS), dagli autori di
+Caddy e di xterm.js, né dagli autori delle app disponibili negli store.
+
+1. Sistema di base: Ubuntu
+--------------------------
+@NAME@ è basato su Ubuntu 26.04 LTS. I pacchetti provengono, senza modifiche,
+dall'archivio ufficiale di Ubuntu. Ogni pacchetto ha la sua licenza, che trovi in
+/usr/share/doc/<pacchetto>/copyright. L'elenco completo dei pacchetti con le
+versioni è in /usr/share/doc/nido/packages.txt.
+
+Ubuntu e Canonical sono marchi registrati di Canonical Ltd. I loghi Ubuntu sono
+stati rimossi dal sistema. Il nome compare solo per indicare su cosa si basa @NAME@.
+
+I programmi di avvio per il Secure Boot (shim firmato da Microsoft e GRUB firmato
+da Canonical) sono inclusi senza modifiche.
+
+Firmware e microcodice del processore (linux-firmware, intel-microcode,
+amd64-microcode) sono distribuiti con le licenze dei rispettivi produttori, che
+ne consentono la ridistribuzione in forma binaria non modificata (vedi i file
+copyright dei pacchetti).
+
+2. Codice sorgente (GNU GPL e altre licenze copyleft)
+-----------------------------------------------------
+Molti programmi inclusi sono distribuiti con licenza GNU GPL o LGPL. Puoi
+ottenere il codice sorgente completo e corrispondente di ogni pacchetto:
+
+  - da un sistema Ubuntu 26.04 con le sorgenti deb-src attive:
+      apt-get source <pacchetto>=<versione>
+  - dal sito Launchpad: https://launchpad.net/ubuntu/+source/<pacchetto>
+  - con lo script incluso, che scarica tutti i sorgenti delle versioni usate:
+      /usr/share/doc/nido/fetch-sources.sh <cartella-di-destinazione>
+
+Offerta scritta: per almeno tre anni dalla distribuzione di questa versione,
+chi distribuisce @NAME@ fornisce a chiunque ne faccia richiesta una copia completa
+del codice sorgente corrispondente dei pacchetti con licenza GPL/LGPL inclusi,
+a un costo non superiore a quello della distribuzione fisica. Il codice sorgente
+viene pubblicato anche insieme a ogni versione rilasciata di @NAME@.
+
+3. Interfaccia web
+------------------
+L'interfaccia web di @NAME@ è scritta da zero (Python, HTML, CSS e JavaScript) e non
+contiene codice di altri sistemi per NAS. L'unica libreria di terzi inclusa nell'interfaccia è
+xterm.js (terminale nel browser, vedi il punto 6); tutto il resto, compreso il canale
+WebSocket del terminale, è codice di @NAME@. Legge i cataloghi delle
+app nel formato compose pubblico usato dagli store della comunità (docker-compose con
+il blocco di metadati x-casaos) solo per compatibilità.
+
+4. App store di terzi
+---------------------
+@NAME@ non contiene app né cataloghi di app. I cataloghi vengono scaricati dai
+siti dei rispettivi autori, solo sul tuo NAS:
+  - Big Bear (BigBearTechWorld)
+  - LinuxServer e CoolStore (casaos-appstore.paodayag.dev)
+  - Runtipi App Store (github.com/runtipi/runtipi-appstore, licenza GPL-3.0): le schede delle app
+    vengono convertite sul NAS nello stesso formato compose
+  - Fonti aggiunte da te dalle impostazioni (zip di app nello stesso formato)
+I nomi e le icone delle app appartengono ai rispettivi proprietari. Ogni app
+installata ha la sua licenza, che va rispettata da chi la usa.
+CasaOS è un marchio di IceWhale Technology: @NAME@ legge soltanto il formato pubblico
+dei cataloghi di app, non scarica il loro store e non contiene il loro software.
+
+4a. Schermo del NAS (facoltativo)
+--------------------------------
+Se lo attivi da Impostazioni > Schermo del NAS, il NAS installa dagli archivi di Ubuntu cage
+(MIT) e WebKitGTK (LGPL-2.1) con GTK 4 (LGPL-2.1). Non sono inclusi nella ISO.
+
+4b. Accesso remoto: Tailscale e ZeroTier
+---------------------------------------
+Non sono inclusi in @NAME@. Se li installi da Impostazioni > Accesso remoto, il NAS scarica i
+pacchetti ufficiali dagli archivi dei produttori (pkgs.tailscale.com, download.zerotier.com):
+  - Tailscale (client Linux): licenza BSD-3-Clause; il servizio online ha le sue condizioni d'uso.
+  - ZeroTier One: l'agente è sotto licenza MPL-2.0; i componenti "nonfree" (controller di rete,
+    licenza source-available non commerciale) non vengono usati da @NAME@.
+Tailscale è un marchio di Tailscale Inc., ZeroTier è un marchio di ZeroTier, Inc. e WireGuard è un
+marchio registrato di Jason A. Donenfeld: @NAME@ non è affiliato a loro. Runtipi è un progetto di
+terzi: @NAME@ non è affiliato.
+
+5. Docker
+---------
+Docker and the Docker logo are trademarks or registered trademarks of Docker,
+Inc. in the United States and/or other countries. Docker, Inc. and other parties
+may also have trademark rights in other terms used herein.
+@NAME@ usa il motore Docker (pacchetti docker.io e docker-compose-v2 di Ubuntu,
+Apache License 2.0) e può cercare immagini su Docker Hub, che è indicato solo per
+compatibilità. Non usa il logo di Docker. Le immagini vengono scaricate dai
+registri dei rispettivi autori solo quando installi un'app.
+
+6. Altri componenti
+-------------------
+  - Inter (font dell'interfaccia, copia inclusa in /usr/lib/nido/panel/ui/fonts):
+    SIL Open Font License 1.1, testo in /usr/lib/nido/panel/ui/fonts/LICENSE-Inter.txt
+  - Orbitron (The Orbitron Project Authors) e JetBrains Mono (The JetBrains Mono Project Authors), font della
+    scritta del marchio, copie incluse in /usr/lib/nido/panel/ui/fonts: SIL Open Font License 1.1, testi in
+    /usr/lib/nido/panel/ui/fonts/OFL-Orbitron.txt e OFL-JetBrainsMono.txt
+  - IBM Plex, Open Sans, Roboto (font facoltativi): vedi i file copyright dei pacchetti
+  - restic: BSD 2-Clause · rclone: MIT · Samba: GPL-3.0 · snapper: GPL-2.0
+  - Avahi: LGPL-2.1 · nfs-common: GPL-2.0 · davfs2: GPL-3.0
+  - Python 3: PSF License · PyYAML (python3-yaml): MIT
+  - python3-cryptography: Apache-2.0 o BSD-3-Clause
+  - xterm.js 5.5.0 e @xterm/addon-fit 0.10.0 (terminale nel browser, copia inclusa in
+    /usr/lib/nido/panel/ui/vendor/xterm): MIT License,
+    Copyright (c) 2017-2019 The xterm.js authors, (c) 2014-2016 SourceLair Private
+    Company, (c) 2012-2013 Christopher Jeffrey. Testo completo in
+    /usr/lib/nido/panel/ui/vendor/xterm/LICENSE-xterm.txt e LICENSE-addon-fit.txt
+  - Caddy (server HTTPS davanti all'interfaccia, pacchetto caddy di Ubuntu senza
+    modifiche): Apache License 2.0, testo in /usr/share/doc/nido/licenses/Apache-2.0.txt;
+    le librerie Go incluse nel programma hanno le licenze elencate in
+    /usr/share/doc/caddy/copyright. "Caddy" è un marchio dei rispettivi proprietari:
+    @NAME@ lo usa solo come componente e non è affiliato al progetto Caddy.
+  - OpenSSH (server SSH): licenza BSD · smartmontools: GPL-2.0 · hdparm: licenza BSD
+  - ntfs-3g: GPL-2.0 · exfatprogs: GPL-2.0 · dosfstools: GPL-3.0 · xfsprogs: GPL-2.0 e
+    LGPL-2.1 · btrfs-progs: GPL-2.0 · e2fsprogs: GPL-2.0 · gdisk: GPL-2.0
+Le licenze esatte sono nei file /usr/share/doc/<pacchetto>/copyright.
+I certificati "di casa" sono creati sul tuo NAS al primo avvio: la ISO non contiene
+chiavi né certificati. Con Let's Encrypt i certificati sono rilasciati da Let's Encrypt
+(Internet Security Research Group) secondo i loro termini di servizio.
+
+7. Codice di @NAME@
+-------------------
+Installer, interfaccia web, script e grafica di @NAME@ sono
+software libero distribuito con licenza GNU General Public License versione 3
+(GPL-3.0): testo completo in /usr/share/doc/nido/licenses/GPL-3.0.txt e nel file
+LICENSE del progetto. Il codice sorgente è pubblicato insieme a ogni versione.

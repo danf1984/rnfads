@@ -1,0 +1,15 @@
+Traduzioni dell'interfaccia (inglese, spagnolo, tedesco)
+=========================================================
+L'interfaccia è scritta in italiano. ui/i18n.js la traduce mentre le pagine compaiono, usando
+ui/lang/en.json, es.json, de.json, che si creano da qui:
+
+  tr/001.tsv … 008.tsv  righe "numero<TAB>inglese<TAB>spagnolo<TAB>tedesco" (il numero è la riga di keys3.json)
+  tr/extra*.tsv         righe "italiano<TAB>inglese<TAB>spagnolo<TAB>tedesco"
+  "=" vuol dire: uguale all'italiano (sigle, nomi).
+  {0}, {1}… sono le parti variabili (numeri, nomi): vanno lasciate nella traduzione.
+
+Per aggiungere o correggere un testo: aggiungi una riga in tr/extra2.tsv, poi
+  python3 crea-dizionari.py
+Per trovare i testi nuovi del codice:
+  cd ../../live/includes/usr/lib/nido/panel && python3 ../../../../../../strumenti/traduzioni/extract2.py ui nidopanel
+  (crea keys-nuove.txt: confronta con keys3.json e aggiungi in tr/extra2.tsv quelli che mancano)

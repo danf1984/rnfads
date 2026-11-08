@@ -1,0 +1,37 @@
+Indirizzo del canale non impostato: l'aggiornamento online è spento.	Channel address not set: online updates are off.	Dirección del canal no configurada: la actualización en línea está desactivada.	Kanaladresse nicht festgelegt: Online-Aktualisierung ist aus.
+Non ancora controllato.	Not checked yet.	Aún no comprobado.	Noch nicht geprüft.
+Controllo non riuscito	Check failed	La comprobación ha fallado	Prüfung fehlgeschlagen
+Disponibile: {0}	Available: {0}	Disponible: {0}	Verfügbar: {0}
+Aggiornamenti online	Online updates	Actualizaciones en línea	Online-Aktualisierungen
+Canale	Channel	Canal	Kanal
+Stabile	Stable	Estable	Stabil
+Beta (prove)	Beta (testing)	Beta (pruebas)	Beta (Tests)
+Quando c'è una versione nuova	When there is a new version	Cuando hay una versión nueva	Wenn es eine neue Version gibt
+Avvisami	Notify me	Avisarme	Benachrichtigen
+Installa di notte	Install at night	Instalar de noche	Nachts installieren
+Non controllare	Don't check	No comprobar	Nicht prüfen
+Controllato {0}	Checked {0}	Comprobado {0}	Geprüft {0}
+Indirizzo…	Address…	Dirección…	Adresse…
+Controlla ora	Check now	Comprobar ahora	Jetzt prüfen
+Indirizzo degli aggiornamenti	Update address	Dirección de actualizaciones	Aktualisierungsadresse
+Sito con i manifesti firmati (stable.json, beta.json). Lascia vuoto per usare quello predefinito.	Site with the signed manifests (stable.json, beta.json). Leave empty to use the default one.	Sitio con los manifiestos firmados (stable.json, beta.json). Déjalo vacío para usar el predeterminado.	Website mit den signierten Manifesten (stable.json, beta.json). Leer lassen, um die Standardadresse zu verwenden.
+Sito con i manifesti firmati (stable.json, beta.json). Lascia vuoto per usare quello predefinito ({0}).	Site with the signed manifests (stable.json, beta.json). Leave empty to use the default one ({0}).	Sitio con los manifiestos firmados (stable.json, beta.json). Déjalo vacío para usar el predeterminado ({0}).	Website mit den signierten Manifesten (stable.json, beta.json). Leer lassen, um die Standardadresse zu verwenden ({0}).
+Canale salvato	Channel saved	Canal guardado	Kanal gespeichert
+Indirizzo salvato	Address saved	Dirección guardada	Adresse gespeichert
+Il pacchetto viene scaricato e controllato (firma e sha256). Prima viene fatto uno snapshot del sistema; durante l'installazione l'interfaccia si riavvia (la pagina si ricarica da sola). Le app e le condivisioni restano accese.	The package is downloaded and checked (signature and sha256). A system snapshot is taken first; during installation the interface restarts (the page reloads by itself). Apps and shares stay on.	El paquete se descarga y se comprueba (firma y sha256). Primero se hace una instantánea del sistema; durante la instalación la interfaz se reinicia (la página se recarga sola). Las apps y las carpetas compartidas siguen encendidas.	Das Paket wird heruntergeladen und geprüft (Signatur und sha256). Zuerst wird ein System-Snapshot erstellt; während der Installation startet die Oberfläche neu (die Seite lädt sich selbst neu). Apps und Freigaben bleiben an.
+Canale non valido	Invalid channel	Canal no válido	Ungültiger Kanal
+Scelta non valida	Invalid choice	Opción no válida	Ungültige Auswahl
+Indirizzo non valido: deve iniziare con http:// o https://	Invalid address: it must start with http:// or https://	Dirección no válida: debe empezar por http:// o https://	Ungültige Adresse: Sie muss mit http:// oder https:// beginnen
+Sito degli aggiornamenti non raggiungibile ({0})	Update site not reachable ({0})	Sitio de actualizaciones no accesible ({0})	Aktualisierungsseite nicht erreichbar ({0})
+Risposta troppo grande	Response too large	Respuesta demasiado grande	Antwort zu groß
+Indirizzo degli aggiornamenti online non impostato	Online update address not set	Dirección de actualizaciones en línea no configurada	Adresse für Online-Aktualisierungen nicht festgelegt
+Manifesto degli aggiornamenti non valido: {0}	Invalid update manifest: {0}	Manifiesto de actualizaciones no válido: {0}	Ungültiges Aktualisierungsmanifest: {0}
+Il manifesto non è per questo sistema	The manifest is not for this system	El manifiesto no es para este sistema	Das Manifest ist nicht für dieses System
+Manifesto degli aggiornamenti incompleto	Incomplete update manifest	Manifiesto de actualizaciones incompleto	Unvollständiges Aktualisierungsmanifest
+Manifesto degli aggiornamenti non leggibile	Update manifest not readable	Manifiesto de actualizaciones ilegible	Aktualisierungsmanifest nicht lesbar
+Il sistema è già aggiornato	The system is already up to date	El sistema ya está actualizado	Das System ist bereits aktuell
+Il file scaricato non corrisponde al manifesto (sha256 diverso)	The downloaded file does not match the manifest (different sha256)	El archivo descargado no coincide con el manifiesto (sha256 distinto)	Die heruntergeladene Datei passt nicht zum Manifest (anderer sha256)
+{0} {1} disponibile	{0} {1} available	{0} {1} disponible	{0} {1} verfügbar
+Installalo da Impostazioni > Aggiornamenti di sistema.	Install it from Settings > System updates.	Instálalo desde Ajustes > Actualizaciones del sistema.	Installiere es unter Einstellungen > Systemaktualisierungen.
+Installo {0} {1}	Installing {0} {1}	Instalando {0} {1}	Installiere {0} {1}
+Aggiornamento automatico di notte.	Automatic update at night.	Actualización automática de noche.	Automatische Aktualisierung in der Nacht.

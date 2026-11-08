@@ -1,0 +1,7 @@
+Chiavi PUBBLICHE per controllare le firme degli aggiornamenti (file .pem).
+Ogni file .pem qui dentro finisce nella ISO e nel pacchetto (/usr/share/nido/update-keys/):
+il NAS installa solo i pacchetti firmati con la chiave privata corrispondente.
+
+Crea la coppia di chiavi sul TUO PC con strumenti/crea-chiave.sh (Linux) o crea-chiave.ps1 (Windows)
+e copia qui SOLO il file  aggiornamenti-pubblica.pem.
+La chiave PRIVATA non va mai in questa cartella né nel kit: build e make-deb si fermano se la trovano.

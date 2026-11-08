@@ -1,0 +1,11 @@
+[Unit]
+Description=Aggiorna il catalogo delle app da tutte le fonti
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=PYTHONPATH=/usr/lib/nido/panel
+ExecStart=/usr/bin/python3 -m nidopanel.cli catalog-build
+StandardOutput=append:/var/log/nido/catalog.log
+StandardError=append:/var/log/nido/catalog.log

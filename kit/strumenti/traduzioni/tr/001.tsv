@@ -1,0 +1,200 @@
+0	Copied	Copiado	Kopiert
+1	The browser doesn't allow copying: select the text and copy it manually	El navegador no permite copiar: selecciona el texto y cópialo a mano	Der Browser erlaubt kein Kopieren: Text markieren und von Hand kopieren
+2	on	activo	aktiv
+3	off	apagado	aus
+4	Everyone, even without a password	Todos, incluso sin contraseña	Alle, auch ohne Passwort
+5	read and write	lectura y escritura	Lesen und Schreiben
+6	read only	solo lectura	nur Lesen
+7	all users ({0})	todos los usuarios ({0})	alle Benutzer ({0})
+8	Nobody: choose who can access	Nadie: elige quién puede entrar	Niemand: wähle, wer zugreifen darf
+9	recycle bin	papelera	Papierkorb
+10	guests	invitados	Gäste
+11	Shares	Carpetas compartidas	Freigaben
+12	{0} shared folders · {1}	{0} carpetas compartidas · {1}	{0} freigegebene Ordner · {1}
+13	No shared folders	Ninguna carpeta compartida	Keine freigegebenen Ordner
+14	Share a folder to see it from Windows, Mac, phone and TV.	Comparte una carpeta para verla desde Windows, Mac, teléfono y TV.	Gib einen Ordner frei, um ihn unter Windows, Mac, Handy und TV zu sehen.
+15	Shared folders	Carpetas compartidas	Freigegebene Ordner
+16	New share	Nueva carpeta compartida	Neue Freigabe
+17	How to connect	Cómo conectarse	So verbindest du dich
+18	: in File Explorer type	: en el Explorador de archivos escribe	: im Datei-Explorer eingeben
+19	: Finder › Go › Connect to Server ›	: Finder › Ir › Conectarse al servidor ›	: Finder › Gehe zu › Mit Server verbinden ›
+20	Phone and TV	Teléfono y TV	Handy und TV
+21	: apps with SMB support, or a DLNA app from the store (e.g. minidlna)	: apps compatibles con SMB, o una app DLNA de la tienda (p. ej. minidlna)	: Apps mit SMB-Unterstützung oder eine DLNA-App aus dem Store (z. B. minidlna)
+22	Personal folders	Carpetas personales	Persönliche Ordner
+23	One folder for each user	Una carpeta para cada usuario	Ein Ordner pro Benutzer
+24	Each user sees only their own, in	Cada uno ve solo la suya, en	Jeder sieht nur seinen eigenen, in
+25	Saved	Guardado	Gespeichert
+26	Edit	Editar	Bearbeiten
+27	Open in Files	Abrir en Archivos	In Dateien öffnen
+28	Copy address	Copiar dirección	Adresse kopieren
+29	Stop sharing	Dejar de compartir	Freigabe beenden
+30	The folder	La carpeta	Der Ordner
+31	will no longer be visible on the network. The files stay where they are.	ya no será visible en la red. Los archivos se quedan donde están.	ist im Netzwerk nicht mehr sichtbar. Die Dateien bleiben, wo sie sind.
+32	Share removed	Carpeta compartida quitada	Freigabe entfernt
+33	Edit "{0}"	Editar "{0}"	„{0}“ bearbeiten
+34	Visible from Windows, Mac and Linux (Samba)	Visible desde Windows, Mac y Linux (Samba)	Sichtbar unter Windows, Mac und Linux (Samba)
+35	No	No	Nein
+36	Read	Lectura	Lesen
+37	Write	Escritura	Schreiben
+38	There are no users yet: create them on the page	Todavía no hay usuarios: créalos en la página	Es gibt noch keine Benutzer: lege sie auf der Seite an
+39	Users	Usuarios	Benutzer
+40	to give access with a password.	para dar acceso con contraseña.	um Zugriff mit Passwort zu geben.
+41	The folder is made writable for the users group	La carpeta se hace escribible para el grupo de usuarios	Der Ordner wird für die Benutzergruppe beschreibbar gemacht
+42	Save	Guardar	Speichern
+43	Share	Compartir	Freigeben
+44	Network name	Nombre en la red	Name im Netzwerk
+45	Folder	Carpeta	Ordner
+46	Description (optional)	Descripción (opcional)	Beschreibung (optional)
+47	Who can access	Quién puede entrar	Wer darf zugreifen
+48	All NAS users	Todos los usuarios del NAS	Alle NAS-Benutzer
+49	Including those you create in the future	También los que crees en el futuro	Auch die, die du künftig anlegst
+50	Guests without password	Invitados sin contraseña	Gäste ohne Passwort
+51	Anyone on the home network can read	Cualquiera en la red de casa puede leer	Jeder im Heimnetz kann lesen
+52	Options	Opciones	Optionen
+53	Network recycle bin	Papelera de red	Netzwerk-Papierkorb
+54	Files deleted from the PC go to .cestino instead of disappearing	Los archivos borrados desde el PC van a .cestino en lugar de desaparecer	Vom PC gelöschte Dateien landen in .cestino, statt zu verschwinden
+55	Also share with NFS	Compartir también con NFS	Auch per NFS freigeben
+56	For other Linux computers and some media players	Para otros ordenadores Linux y algunos reproductores multimedia	Für andere Linux-Rechner und manche Mediaplayer
+57	Allowed addresses (NFS)	Direcciones permitidas (NFS)	Erlaubte Adressen (NFS)
+58	* = all, or e.g. 192.168.1.0/24	* = todas, o p. ej. 192.168.1.0/24	* = alle, oder z. B. 192.168.1.0/24
+59	Cancel	Cancelar	Abbrechen
+60	=	=	=
+61	Share updated	Carpeta compartida actualizada	Freigabe aktualisiert
+62	Folder shared	Carpeta compartida	Ordner freigegeben
+63	administrator	administrador	Administrator
+64	no network access	sin acceso a la red	ohne Netzwerkzugriff
+65	· personal folder	· carpeta personal	· persönlicher Ordner
+66	Password	Contraseña	Passwort
+67	{0} NAS users	{0} usuarios del NAS	{0} NAS-Benutzer
+68	No users	Ningún usuario	Keine Benutzer
+69	Create a user for each person at home: they'll have their own password and folder.	Crea un usuario para cada persona de casa: tendrá su contraseña y su carpeta.	Lege für jede Person im Haushalt einen Benutzer an: mit eigenem Passwort und eigenem Ordner.
+70	{0} of the interface	{0} de la interfaz	{0} der Oberfläche
+71	NAS users	Usuarios del NAS	NAS-Benutzer
+72	New user	Nuevo usuario	Neuer Benutzer
+73	What they're for	Para qué sirven	Wofür sie da sind
+74	With a user's name and password you can open the shared folders from Windows, Mac and phone.	Con el nombre y la contraseña de un usuario se entra en las carpetas compartidas desde Windows, Mac y teléfono.	Mit Name und Passwort eines Benutzers öffnest du die Freigaben unter Windows, Mac und Handy.
+75	=	Los	Die
+76	Administrators	administradores	Administratoren
+77	can also log in via SSH and use	también pueden entrar por SSH y usar	können sich auch per SSH anmelden und nutzen
+78	Interface accounts	Cuentas de la interfaz	Konten der Oberfläche
+79	They are separate from NAS users. Manage them from	Son distintas de los usuarios del NAS. Se gestionan desde	Sie sind von den NAS-Benutzern getrennt. Verwaltet werden sie unter
+80	Settings › Account	Ajustes › Cuenta	Einstellungen › Konto
+81	Edit name	Editar nombre	Namen bearbeiten
+82	Full name	Nombre completo	Vollständiger Name
+83	First and last name	Nombre y apellidos	Vor- und Nachname
+84	Remove administrator	Quitar administrador	Administratorrechte entziehen
+85	Make administrator	Hacer administrador	Zum Administrator machen
+86	Role updated	Rol actualizado	Rolle aktualisiert
+87	Open personal folder	Abrir la carpeta personal	Persönlichen Ordner öffnen
+88	Delete user	Eliminar usuario	Benutzer löschen
+89	To access the shared folders	Para entrar en las carpetas compartidas	Für den Zugriff auf die Freigaben
+90	Username	Nombre de usuario	Benutzername
+91	Lowercase letters, numbers, _ and -	Minúsculas, números, _ y -	Kleinbuchstaben, Zahlen, _ und -
+92	Full name (optional)	Nombre completo (opcional)	Vollständiger Name (optional)
+93	At least 6 characters	Al menos 6 caracteres	Mindestens 6 Zeichen
+94	Repeat the password	Repite la contraseña	Passwort wiederholen
+95	Administrator	Administrador	Administrator
+96	Can log in via SSH and use sudo	Puede entrar por SSH y usar sudo	Darf sich per SSH anmelden und sudo nutzen
+97	Create user	Crear usuario	Benutzer anlegen
+98	The two passwords don't match	Las dos contraseñas no coinciden	Die beiden Passwörter stimmen nicht überein
+99	User created	Usuario creado	Benutzer angelegt
+100	New password	Nueva contraseña	Neues Passwort
+101	User {0} · applies to shares and SSH	Usuario {0} · vale para las carpetas compartidas y SSH	Benutzer {0} · gilt für Freigaben und SSH
+102	Repeat	Repite	Wiederholen
+103	Change	Cambiar	Ändern
+104	Password changed	Contraseña cambiada	Passwort geändert
+105	Delete "{0}"	Eliminar "{0}"	„{0}“ löschen
+106	The user will no longer be able to access the shares and will be removed from their permissions.	El usuario ya no podrá entrar en las carpetas compartidas y se quitará de sus permisos.	Der Benutzer kann nicht mehr auf die Freigaben zugreifen und wird aus deren Berechtigungen entfernt.
+107	Also delete the personal folder	Borrar también la carpeta personal	Auch den persönlichen Ordner löschen
+108	Delete	Eliminar	Löschen
+109	User deleted	Usuario eliminado	Benutzer gelöscht
+110	Monday	lunes	Montag
+111	Tuesday	martes	Dienstag
+112	Wednesday	miércoles	Mittwoch
+113	Thursday	jueves	Donnerstag
+114	Friday	viernes	Freitag
+115	Saturday	sábado	Samstag
+116	Sunday	domingo	Sonntag
+117	Manual only	Solo manual	Nur manuell
+118	Every day at {0}	Cada día a las {0}	Täglich um {0}
+119	Every {0} at {1}	Cada {0} a las {1}	Jeden {0} um {1}
+120	Cloud:	Nube:	Cloud:
+121	running	en curso	läuft
+122	succeeded {0}	completado {0}	erfolgreich {0}
+123	failed {0}	fallido {0}	fehlgeschlagen {0}
+124	never run	nunca ejecutado	nie ausgeführt
+125	· last: {0} added, {1} new or changed files	· último: {0} añadidos, {1} archivos nuevos o cambiados	· zuletzt: {0} hinzugefügt, {1} neue oder geänderte Dateien
+126	Run now	Ejecutar ahora	Jetzt ausführen
+127	Backup	Copia de seguridad	Sicherung
+128	· one running	· una en curso	· eine läuft
+129	{0} backups	{0} copias de seguridad	{0} Sicherungen
+130	The backup program (restic) is not installed.	El programa de copias (restic) no está instalado.	Das Sicherungsprogramm (restic) ist nicht installiert.
+131	No backups	Ninguna copia de seguridad	Keine Sicherungen
+132	Save important folders to another disk, a USB stick or the cloud.	Guarda las carpetas importantes en otro disco, un pendrive o la nube.	Sichere wichtige Ordner auf eine andere Festplatte, einen USB-Stick oder in die Cloud.
+133	Connect a service (Google Drive, OneDrive, Dropbox, B2, S3…) from the	Conecta un servicio (Google Drive, OneDrive, Dropbox, B2, S3…) desde el	Verbinde einen Dienst (Google Drive, OneDrive, Dropbox, B2, S3…) über das
+134	Terminal	Terminal	Terminal
+135	=	=	=
+136	: then you'll find it among the destinations.	: luego lo encontrarás entre los destinos.	: danach findest du ihn bei den Zielen.
+137	rclone is not installed.	rclone no está instalado.	rclone ist nicht installiert.
+138	Your backups	Tus copias de seguridad	Deine Sicherungen
+139	New backup	Nueva copia de seguridad	Neue Sicherung
+140	How they work	Cómo funcionan	So funktionieren sie
+141	Incremental: copies only what changed	Incrementales: copian solo lo que ha cambiado	Inkrementell: kopiert nur, was sich geändert hat
+142	Encrypted with your own key	Cifradas con una clave tuya	Mit deinem eigenen Schlüssel verschlüsselt
+143	Previous versions of files, ready to restore	Versiones anteriores de los archivos, para restaurar	Frühere Dateiversionen zum Wiederherstellen
+144	Alert if a backup fails (Notifications)	Aviso si una copia falla (Notificaciones)	Hinweis, wenn eine Sicherung fehlschlägt (Benachrichtigungen)
+145	Cloud backup	Copia en la nube	Sicherung in der Cloud
+146	Backup started	Copia de seguridad iniciada	Sicherung gestartet
+147	Restore files	Restaurar archivos	Dateien wiederherstellen
+148	Log	Registro	Protokoll
+149	Show the key	Mostrar la clave	Schlüssel anzeigen
+150	Delete the backup	Eliminar la copia de seguridad	Sicherung löschen
+151	The backup	La copia de seguridad	Die Sicherung
+152	will no longer run. The data already saved in	ya no se ejecutará. Los datos ya guardados en	wird nicht mehr ausgeführt. Die bereits gesicherten Daten in
+153	stay there and the key is kept on the NAS.	se quedan y la clave se conserva en el NAS.	bleiben erhalten, der Schlüssel bleibt auf dem NAS.
+154	Backup deleted	Copia de seguridad eliminada	Sicherung gelöscht
+155	Incremental and encrypted (restic)	Incremental y cifrada (restic)	Inkrementell und verschlüsselt (restic)
+156	Connected services:	Servicios conectados:	Verbundene Dienste:
+157	No service connected: use rclone config in the Terminal	Ningún servicio conectado: usa rclone config en el Terminal	Kein Dienst verbunden: nutze rclone config im Terminal
+158	Encryption key (optional)	Clave de cifrado (opcional)	Verschlüsselungsschlüssel (optional)
+159	Without the key the saved data can't be read: you'll find it later in the backup menu. Keep a copy outside the NAS.	Sin la clave los datos guardados no se pueden leer: la encontrarás luego en el menú de la copia. Guarda una copia fuera del NAS.	Ohne den Schlüssel lassen sich die Daten nicht lesen: du findest ihn später im Menü der Sicherung. Bewahre eine Kopie außerhalb des NAS auf.
+160	Create backup	Crear copia de seguridad	Sicherung anlegen
+161	Name	Nombre	Name
+162	What to save	Qué guardar	Was gesichert wird
+163	Add folder	Añadir carpeta	Ordner hinzufügen
+164	Where to save it	Dónde guardarla	Wohin gesichert wird
+165	Disk or folder	Disco o carpeta	Festplatte oder Ordner
+166	Cloud (rclone)	Nube (rclone)	Cloud (rclone)
+167	Better a different disk from the data one (a USB disk or a second disk)	Mejor un disco distinto del de los datos (un disco USB o un segundo disco)	Besser eine andere Festplatte als die der Daten (USB-Festplatte oder zweite Festplatte)
+168	When	Cuándo	Wann
+169	Every day	Cada día	Jeden Tag
+170	Every week	Cada semana	Jede Woche
+171	Versions to keep	Versiones que conservar	Aufzubewahrende Versionen
+172	daily	diarias	täglich
+173	weekly	semanales	wöchentlich
+174	monthly	mensuales	monatlich
+175	Stop the apps during the backup	Detener las apps durante la copia	Apps während der Sicherung anhalten
+176	To copy the apps' databases without errors	Para copiar las bases de datos de las apps sin errores	Damit die Datenbanken der Apps fehlerfrei kopiert werden
+177	Notify me also when it succeeds	Avisarme también cuando salga bien	Auch bei Erfolg benachrichtigen
+178	Errors are always notified	Los errores siempre se notifican	Fehler werden immer gemeldet
+179	No folder chosen	Ninguna carpeta elegida	Kein Ordner gewählt
+180	Backup saved	Copia de seguridad guardada	Sicherung gespeichert
+181	Backup created	Copia de seguridad creada	Sicherung angelegt
+182	Backup log	Registro de la copia	Protokoll der Sicherung
+183	Close	Cerrar	Schließen
+184	Empty log	Registro vacío	Protokoll leer
+185	finished	terminado	beendet
+186	Backup key	Clave de la copia	Schlüssel der Sicherung
+187	Without this key the backup data can't be read, not even from another computer. Keep a copy outside the NAS (e.g. in your password manager).	Sin esta clave los datos de la copia no se pueden leer, ni siquiera desde otro ordenador. Guarda una copia fuera del NAS (p. ej. en el gestor de contraseñas).	Ohne diesen Schlüssel lassen sich die Daten der Sicherung nicht lesen, auch nicht auf einem anderen Rechner. Bewahre eine Kopie außerhalb des NAS auf (z. B. im Passwortmanager).
+188	Copy	Copiar	Kopieren
+189	{0} · choose the version	{0} · elige la versión	{0} · Version wählen
+190	Files are restored into a new folder: nothing gets overwritten	Los archivos se restauran en una carpeta nueva: no se sobrescribe nada	Dateien werden in einen neuen Ordner wiederhergestellt: nichts wird überschrieben
+191	Restore	Restaurar	Wiederherstellen
+192	The backup has not run yet: no versions.	La copia aún no se ha ejecutado: ninguna versión.	Die Sicherung wurde noch nicht ausgeführt: keine Versionen.
+193	Restore started in {0}	Restauración iniciada en {0}	Wiederherstellung gestartet in {0}
+194	=	=	=
+195	=	=	=
+196	=	=	=
+197	=	=	=
+198	Support	Apoya	Unterstützen
+199	Remember me on this device	Recordarme en este dispositivo	Auf diesem Gerät angemeldet bleiben

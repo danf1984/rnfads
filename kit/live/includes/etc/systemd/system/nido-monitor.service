@@ -1,0 +1,7 @@
+[Unit]
+Description=Controllo di dischi, spazio e aggiornamenti (avvisi)
+
+[Service]
+Type=oneshot
+Environment=PYTHONPATH=/usr/lib/nido/panel
+ExecStart=/usr/bin/python3 -m nidopanel.cli monitor

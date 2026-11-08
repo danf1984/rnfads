@@ -1,0 +1,454 @@
+#!/bin/bash
+# =============================================================================
+#  Installer su disco.
+#  Schema del disco di sistema:
+#    p1  512 MB   EFI (FAT32)        avvio UEFI
+#    p2    1 MB   BIOS boot          avvio dei PC vecchi (legacy)
+#    p3  resto    Btrfs, sottovolumi:
+#          @           /                 sistema (con snapshot)
+#          @data       /DATA             cartelle utenti e dati (fuori dagli snapshot)
+#          @docker     /var/lib/docker   immagini e container
+#          @appdata    /DATA/AppData     dati delle app
+#          @log        /var/log          log
+#          @snapshots  /.snapshots       snapshot del sistema
+#
+#  Modalità automatica (per test): NIDO_AUTO=1 NIDO_DISK=/dev/sdX NIDO_USER=...
+#  NIDO_PASSWORD=... [NIDO_NEW_HOSTNAME=...] nido-install
+# =============================================================================
+set -euo pipefail
+
+# shellcheck source=/dev/null
+. /etc/nido/nido.conf
+
+# --- Lingua dell'installer (testi in /usr/lib/nido/installer.tsv) ----------------
+declare -A TR
+load_lang() {   # load_lang <it|en|es|de>
+  TR=()
+  local col
+  case "$1" in en) col=2 ;; es) col=3 ;; de) col=4 ;; *) return 0 ;; esac
+  while IFS=$'\t' read -r -a f; do
+    [ "${#f[@]}" -ge 4 ] || continue
+    case "${f[0]}" in "#"*) continue ;; esac
+    TR["${f[0]}"]="${f[$((col - 1))]}"
+  done < /usr/lib/nido/installer.tsv
+}
+M() { local f="${TR[$1]:-$1}"; shift; printf -- "$f" "$@"; }   # M <testo italiano con %s> [valori...]
+set_title() {
+  TITLE=$(M 'Installazione di %s %s' "$NIDO_NAME" "$NIDO_VERSION")
+  WT=(--yes-button "$(M 'Sì')" --no-button "$(M 'No')" --ok-button "$(M 'OK')" --cancel-button "$(M 'Annulla')")
+}
+UI_LANG=${NIDO_LANG:-en}   # l'installer parte in inglese finché non si sceglie la lingua
+load_lang "$UI_LANG"
+set_title
+TARGET=/mnt/nido-target
+MEDIUM=${NIDO_MEDIUM:-/run/live/medium}
+SQUASH=${NIDO_SQUASHFS:-$MEDIUM/live/filesystem.squashfs}
+LOG=/var/log/nido-install.log
+MIN_GB=16
+RECOMMENDED_GB=64
+MOUNT_OPTS="noatime,compress=zstd:1"
+SLUG=$(printf '%s' "$NIDO_NAME" | tr 'A-Z ' 'a-z-' | tr -cd 'a-z0-9-')
+AUTO=${NIDO_AUTO:-0}
+STATUS_FILE=$(mktemp)
+
+# --- Interfaccia (whiptail, oppure testo in modalità automatica) ----------------
+
+msg() {
+  if [ "$AUTO" = 1 ]; then printf '%s\n' "$1"; return 0; fi
+  whiptail "${WT[@]}" --title "$TITLE" --msgbox "$1" "${2:-14}" 72
+}
+yesno() {
+  if [ "$AUTO" = 1 ]; then return 0; fi
+  whiptail "${WT[@]}" --title "$TITLE" ${3:+--defaultno} --yesno "$1" "${2:-14}" 72
+}
+ask() { # ask <testo> <predefinito>
+  whiptail "${WT[@]}" --title "$TITLE" --inputbox "$1" 10 72 "$2" 3>&1 1>&2 2>&3
+}
+ask_password() {
+  whiptail "${WT[@]}" --title "$TITLE" --passwordbox "$1" 10 72 3>&1 1>&2 2>&3
+}
+
+cleanup() {
+  rm -f "$STATUS_FILE"
+  if mountpoint -q "$TARGET" 2>/dev/null; then
+    sync
+    umount -R "$TARGET" 2>/dev/null || umount -lR "$TARGET" 2>/dev/null || true
+  fi
+}
+trap cleanup EXIT
+
+die() {
+  echo "ERRORE: $1" >> "$LOG"
+  msg "$(M 'Si è verificato un errore:\n\n%s\n\nDettagli nel file %s' "$1" "$LOG")" 16
+  exit 1
+}
+
+[ "$(id -u)" -eq 0 ] || { echo "Serve root: sudo nido-install" >&2; exit 1; }
+[ -f "$SQUASH" ] || die "$(M "Immagine del sistema non trovata (%s). L'installer va avviato dalla chiavetta." "$SQUASH")"
+: > "$LOG"
+
+UEFI=0
+[ -d /sys/firmware/efi ] && UEFI=1
+
+# Nome della partizione n di un disco (/dev/sda -> /dev/sda1, /dev/nvme0n1 -> /dev/nvme0n1p1)
+part() { if [[ "$1" =~ [0-9]$ ]]; then echo "${1}p$2"; else echo "$1$2"; fi; }
+
+# --- 0. Lingua, tastiera e fuso orario ---------------------------------------------------
+LANG_NAMES=(en English it Italiano es Español de Deutsch)
+KEYMAPS=(it Italiano us "English (US)" gb "English (UK)" es Español de Deutsch fr Français ch "Schweiz / Suisse")
+TZS=(Europe/Rome "" Europe/London "" Europe/Madrid "" Europe/Berlin "" Europe/Paris "" Europe/Zurich "" Europe/Vienna ""
+     America/New_York "" America/Los_Angeles "" UTC "")
+lang_name() { local i; for ((i = 0; i < ${#LANG_NAMES[@]}; i += 2)); do [ "${LANG_NAMES[i]}" = "$1" ] && echo "${LANG_NAMES[i + 1]}"; done; }
+case "$UI_LANG" in en) KEYMAP=${NIDO_KEYMAP_NEW:-us}; TZ_NEW=${NIDO_TZ:-Europe/London} ;; es) KEYMAP=${NIDO_KEYMAP_NEW:-es}; TZ_NEW=${NIDO_TZ:-Europe/Madrid} ;;
+  de) KEYMAP=${NIDO_KEYMAP_NEW:-de}; TZ_NEW=${NIDO_TZ:-Europe/Berlin} ;; *) KEYMAP=${NIDO_KEYMAP_NEW:-it}; TZ_NEW=${NIDO_TZ:-Europe/Rome} ;; esac
+if [ "$AUTO" != 1 ]; then
+  UI_LANG=$(whiptail --title "$NIDO_NAME $NIDO_VERSION" --ok-button "OK" --nocancel --default-item "$UI_LANG" --menu \
+    "Choose the language\nScegli la lingua\nElige el idioma\nSprache wählen" 16 60 4 "${LANG_NAMES[@]}" 3>&1 1>&2 2>&3) || UI_LANG=en
+  load_lang "$UI_LANG"; set_title
+  echo "$UI_LANG" > /run/nido-install-lang 2>/dev/null || true
+  case "$UI_LANG" in en) KEYMAP=us; TZ_NEW=Europe/London ;; es) KEYMAP=es; TZ_NEW=Europe/Madrid ;; de) KEYMAP=de; TZ_NEW=Europe/Berlin ;; *) KEYMAP=it; TZ_NEW=Europe/Rome ;; esac
+  k=$(whiptail "${WT[@]}" --title "$(M 'Tastiera')" --nocancel --default-item "$KEYMAP" --menu "$(M 'Scegli la tastiera collegata al NAS.')" 18 60 7 \
+    "${KEYMAPS[@]}" 3>&1 1>&2 2>&3) && [ -n "$k" ] && KEYMAP=$k
+  # La tastiera vale subito anche qui (password e nomi si scrivono con quella giusta)
+  case "$KEYMAP" in gb) loadkeys uk >/dev/null 2>&1 ;; ch) loadkeys sg >/dev/null 2>&1 ;; *) loadkeys "$KEYMAP" >/dev/null 2>&1 ;; esac || true
+  while true; do
+    t=$(whiptail "${WT[@]}" --title "$(M 'Fuso orario')" --nocancel --default-item "$TZ_NEW" --menu "$(M 'Scegli il fuso orario del NAS.')" 20 60 11 \
+      "${TZS[@]}" other "$(M 'Altro…')" 3>&1 1>&2 2>&3) || t=$TZ_NEW
+    if [ "$t" = other ]; then
+      t=$(ask "$(M 'Scrivi il fuso orario (es. Europe/Rome, America/Sao_Paulo):')" "$TZ_NEW") || continue
+    fi
+    if [ -f "/usr/share/zoneinfo/$t" ] || [ ! -d /usr/share/zoneinfo ]; then TZ_NEW=$t; break; fi
+    msg "$(M 'Fuso orario non valido.')" 8
+  done
+fi
+case "$UI_LANG" in en) [ "$KEYMAP" = gb ] && LOCALE_NEW=en_GB.UTF-8 || LOCALE_NEW=en_US.UTF-8 ;; es) LOCALE_NEW=es_ES.UTF-8 ;;
+  de) LOCALE_NEW=de_DE.UTF-8 ;; *) LOCALE_NEW=it_IT.UTF-8 ;; esac
+KEYMAP_NAME=$KEYMAP
+for ((i = 0; i < ${#KEYMAPS[@]}; i += 2)); do [ "${KEYMAPS[i]}" = "$KEYMAP" ] && KEYMAP_NAME=${KEYMAPS[i + 1]}; done
+
+# --- 1. Benvenuto ---------------------------------------------------------------------
+if [ "$AUTO" != 1 ]; then
+  msg "$(M "Benvenuto!\n\nQuesto programma installa %s sul disco di sistema del tuo NAS.\n\nIl disco scelto verrà cancellato completamente. I dischi per i tuoi dati li aggiungerai dopo, dall'interfaccia web.\n\nUsa le frecce e Invio per muoverti, Tab per passare ai pulsanti." "$NIDO_NAME")" 16
+fi
+
+# --- 2. Scelta del disco ---------------------------------------------------------------
+LIVE_DISK=""
+if src=$(findmnt -no SOURCE "$MEDIUM" 2>/dev/null); then
+  LIVE_DISK=$(lsblk -no PKNAME "$src" 2>/dev/null | head -1 || true)
+  # Chiavetta montata come disco intero (ISO ibrida): niente disco "padre"
+  [ -n "$LIVE_DISK" ] || LIVE_DISK=$(basename "$src")
+fi
+
+if [ "$AUTO" = 1 ]; then
+  DISK=${NIDO_DISK:?NIDO_DISK obbligatorio in modalità automatica}
+  [ -b "$DISK" ] || die "$DISK non è un disco"
+else
+  items=()
+  while read -r name size type ro tran model; do
+    [ "$type" = disk ] || continue
+    [ "$ro" = 0 ] || continue
+    [ "$(basename "$name")" = "$LIVE_DISK" ] && continue
+    case "$(basename "$name")" in zram*|loop*|sr*|fd*) continue ;; esac
+    gb=$((size / 1000000000))
+    items+=("$name" "$(printf '%5s GB  %-5s %s' "$gb" "${tran:--}" "${model:-}")")
+  done < <(lsblk -dpnb -o NAME,SIZE,TYPE,RO,TRAN,MODEL)
+
+  [ ${#items[@]} -gt 0 ] || die "$(M 'Non ho trovato dischi su cui installare.')"
+
+  DISK=$(whiptail "${WT[@]}" --title "$TITLE" --menu \
+    "$(M 'Scegli il disco di sistema.\n\nSu questo disco vanno il sistema, Docker e i dati delle app. Consigliato: SSD da almeno %s GB.\n\nATTENZIONE: verrà cancellato tutto.' "$RECOMMENDED_GB")" \
+    20 76 8 "${items[@]}" 3>&1 1>&2 2>&3) || exit 0
+fi
+
+DISK_BYTES=$(lsblk -dnbo SIZE "$DISK")
+DISK_GB=$((DISK_BYTES / 1000000000))
+DISK_MODEL=$(lsblk -dno MODEL "$DISK" 2>/dev/null | xargs || true)
+DISK_DESC="$DISK ($DISK_GB GB${DISK_MODEL:+ $DISK_MODEL})"
+
+if [ "$DISK_GB" -lt "$MIN_GB" ]; then
+  die "$(M 'Il disco %s è troppo piccolo (%s GB): servono almeno %s GB.' "$DISK" "$DISK_GB" "$MIN_GB")"
+fi
+if [ "$DISK_GB" -lt "$RECOMMENDED_GB" ]; then
+  yesno "$(M 'Il disco è da %s GB.\n\nFunziona, ma con molte app si riempie in fretta: sono consigliati almeno %s GB.\n\nContinuo lo stesso?' "$DISK_GB" "$RECOMMENDED_GB")" 13 || exit 0
+fi
+
+# --- 3. Nome host -----------------------------------------------------------------------------
+if [ "$AUTO" = 1 ]; then
+  HOST=${NIDO_NEW_HOSTNAME:-$NIDO_HOSTNAME}
+else
+  HOST=$NIDO_HOSTNAME
+  while true; do
+    HOST=$(ask "$(M 'Nome del NAS in rete.\n\nPotrai aprirlo dal browser con http://<nome>.local')" "$HOST") || exit 0
+    HOST=${HOST,,}
+    [[ "$HOST" =~ ^[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?$ ]] && break
+    msg "$(M "Nome non valido: usa solo lettere minuscole, numeri e trattini (non all'inizio o alla fine).")" 9
+  done
+fi
+
+# --- 4. Utente amministratore -----------------------------------------------------------
+valid_user() {
+  [[ "$1" =~ ^[a-z_][a-z0-9_-]{0,31}$ ]] || return 1
+  # Nomi già usati dal sistema (gli utenti sotto 1000 sono di sistema)
+  local uid
+  uid=$(getent passwd "$1" | cut -d: -f3 || true)
+  [ -z "$uid" ] || [ "$uid" -ge 1000 ]
+}
+
+if [ "$AUTO" = 1 ]; then
+  USERNAME=${NIDO_USER:?NIDO_USER obbligatorio}
+  PASSWORD=${NIDO_PASSWORD:?NIDO_PASSWORD obbligatorio}
+  valid_user "$USERNAME" || die "Nome utente non valido: $USERNAME"
+else
+  USERNAME="admin"
+  while true; do
+    USERNAME=$(ask "$(M "Nome dell'utente amministratore del sistema.\n\nServe per la console e SSH. Con una password di almeno 8 caratteri è anche l'account dell'interfaccia web (altrimenti lo crei al primo accesso dal browser).")" "$USERNAME") || exit 0
+    valid_user "$USERNAME" && break
+    msg "$(M 'Nome non valido o riservato.\n\nUsa lettere minuscole, numeri, _ e - (inizia con una lettera).')" 10
+  done
+  while true; do
+    PASSWORD=$(ask_password "$(M "Password per l'utente %s (almeno 6 caratteri):" "$USERNAME")") || exit 0
+    if [ ${#PASSWORD} -lt 6 ]; then msg "$(M 'La password deve avere almeno 6 caratteri.')" 8; continue; fi
+    PASSWORD2=$(ask_password "$(M 'Ripeti la password:')") || exit 0
+    [ "$PASSWORD" = "$PASSWORD2" ] && break
+    msg "$(M 'Le due password non coincidono, riprova.')" 8
+  done
+fi
+
+# --- 5. Conferma ----------------------------------------------------------------------------
+yesno "$(M "Riepilogo:\n\n  Disco:    %s\n  Nome NAS: %s\n  Utente:   %s\n  Lingua:   %s\n  Tastiera: %s\n  Fuso:     %s\n\nTUTTI I DATI SU %s VERRANNO CANCELLATI.\n\nProcedo con l'installazione?" \
+  "$DISK_DESC" "$HOST" "$USERNAME" "$(lang_name "$UI_LANG")" "$KEYMAP_NAME" "$TZ_NEW" "$DISK")" 19 defaultno || exit 0
+
+# --- 6. Installazione -------------------------------------------------------------------------
+
+P1=$(part "$DISK" 1)
+P3=$(part "$DISK" 3)
+
+do_install() {
+  exec 3>&1                 # fd 3: avanzamento verso la barra
+  exec >>"$LOG" 2>&1        # tutto il resto nel log
+  set -x
+  progress() { printf 'XXX\n%s\n%s\nXXX\n' "$1" "$2" >&3; }
+
+  progress 2 "$(M 'Preparo il disco...')"
+  swapoff -a 2>/dev/null || true
+  # Smonta eventuali partizioni del disco montate in automatico
+  for p in $(lsblk -lnpo NAME "$DISK" | tail -n +2); do umount "$p" 2>/dev/null || true; done
+  for p in $(lsblk -lnpo NAME "$DISK" | tail -n +2); do wipefs -af "$p" || true; done
+  wipefs -af "$DISK"
+  sgdisk --zap-all "$DISK"
+
+  progress 6 "$(M 'Creo le partizioni...')"
+  sgdisk \
+    -n1:1MiB:+512MiB -t1:ef00 -c1:EFI \
+    -n2:0:+1MiB      -t2:ef02 -c2:BIOSBOOT \
+    -n3:0:0          -t3:8300 -c3:"${SLUG}-system" \
+    "$DISK"
+  partprobe "$DISK" 2>/dev/null || partx -u "$DISK" 2>/dev/null || true
+  udevadm settle 2>/dev/null || true
+  for _ in $(seq 1 20); do [ -b "$P3" ] && break; sleep 0.5; done
+  [ -b "$P1" ] && [ -b "$P3" ] || { echo "partizioni non comparse"; return 1; }
+
+  progress 10 "$(M 'Formatto...')"
+  mkfs.vfat -F 32 -n EFI "$P1"
+  mkfs.btrfs -f -L "${SLUG}-system" "$P3"
+  udevadm settle 2>/dev/null || true
+
+  progress 14 "$(M 'Creo i sottovolumi...')"
+  mkdir -p "$TARGET"
+  mount "$P3" "$TARGET"
+  for sv in @ @data @docker @appdata @log @snapshots; do btrfs subvolume create "$TARGET/$sv"; done
+  umount "$TARGET"
+
+  mount -o "subvol=@,$MOUNT_OPTS" "$P3" "$TARGET"
+  mkdir -p "$TARGET/var/lib/docker" "$TARGET/DATA" "$TARGET/var/log" "$TARGET/.snapshots" "$TARGET/boot/efi"
+  mount -o "subvol=@data,$MOUNT_OPTS"      "$P3" "$TARGET/DATA"
+  mkdir -p "$TARGET/DATA/AppData"
+  mount -o "subvol=@docker,$MOUNT_OPTS"    "$P3" "$TARGET/var/lib/docker"
+  mount -o "subvol=@appdata,$MOUNT_OPTS"   "$P3" "$TARGET/DATA/AppData"
+  mount -o "subvol=@log,$MOUNT_OPTS"       "$P3" "$TARGET/var/log"
+  mount -o "subvol=@snapshots,$MOUNT_OPTS" "$P3" "$TARGET/.snapshots"
+  mount "$P1" "$TARGET/boot/efi"
+
+  progress 18 "$(M 'Copio il sistema...')"
+  { set +x; } 2>/dev/null
+  pct_ok=0
+  if grep -q -- '-percentage' <<<"$(unsquashfs -help 2>&1 || true)"; then pct_ok=1; fi
+  set -x
+  # unsquashfs esce con 2 per errori non gravi (es. attributi estesi non supportati)
+  set +o pipefail
+  if [ "$pct_ok" = 1 ]; then
+    unsquashfs -f -percentage -d "$TARGET" "$SQUASH" | while read -r pct; do
+      if [[ "$pct" =~ ^[0-9]+$ ]]; then progress $((18 + pct * 57 / 100)) "$(M 'Copio il sistema... %s%%' "$pct")"; fi
+    done
+    rc=${PIPESTATUS[0]}
+  else
+    rc=0
+    unsquashfs -f -d "$TARGET" "$SQUASH" >/dev/null || rc=$?
+  fi
+  set -o pipefail
+  [ "$rc" -le 2 ] || { echo "unsquashfs: errore $rc"; return 1; }
+  [ -x "$TARGET/bin/bash" ] || { echo "copia del sistema non riuscita"; return 1; }
+
+  # Kernel: se l'immagine non lo contiene in /boot, lo prendo dalla chiavetta
+  if ! compgen -G "$TARGET/boot/vmlinuz-*" >/dev/null; then
+    kver=$(ls "$TARGET/lib/modules" | sort -V | tail -1)
+    cp "$(ls "$MEDIUM"/live/vmlinuz* | head -1)" "$TARGET/boot/vmlinuz-$kver"
+  fi
+
+  progress 78 "$(M 'Configuro il sistema...')"
+  UUID_ROOT=$(blkid -s UUID -o value "$P3")
+  UUID_EFI=$(blkid -s UUID -o value "$P1")
+  cat > "$TARGET/etc/fstab" <<EOF
+# <dispositivo>                          <punto di mount>   <tipo> <opzioni>                               <dump> <pass>
+UUID=$UUID_ROOT  /                  btrfs  subvol=@,$MOUNT_OPTS           0 0
+UUID=$UUID_ROOT  /DATA              btrfs  subvol=@data,$MOUNT_OPTS       0 0
+UUID=$UUID_ROOT  /var/lib/docker    btrfs  subvol=@docker,$MOUNT_OPTS     0 0
+UUID=$UUID_ROOT  /DATA/AppData      btrfs  subvol=@appdata,$MOUNT_OPTS    0 0
+UUID=$UUID_ROOT  /var/log           btrfs  subvol=@log,$MOUNT_OPTS        0 0
+UUID=$UUID_ROOT  /.snapshots        btrfs  subvol=@snapshots,$MOUNT_OPTS  0 0
+UUID=$UUID_EFI   /boot/efi          vfat   umask=0077                     0 1
+EOF
+
+  echo "$HOST" > "$TARGET/etc/hostname"
+  cat > "$TARGET/etc/hosts" <<EOF
+127.0.0.1	localhost
+127.0.1.1	$HOST
+
+::1	localhost ip6-localhost ip6-loopback
+ff02::1	ip6-allnodes
+ff02::2	ip6-allrouters
+EOF
+
+  # Lingua, tastiera e fuso orario scelti all'inizio (anche per l'interfaccia web)
+  printf 'XKBMODEL="pc105"\nXKBLAYOUT="%s"\nXKBVARIANT=""\nXKBOPTIONS=""\nBACKSPACE="guess"\n' "$KEYMAP" > "$TARGET/etc/default/keyboard"
+  ln -sf "/usr/share/zoneinfo/$TZ_NEW" "$TARGET/etc/localtime"
+  echo "$TZ_NEW" > "$TARGET/etc/timezone"
+  printf 'LANG=%s\n' "$LOCALE_NEW" > "$TARGET/etc/default/locale"
+  printf '{"lang": "%s"}\n' "$UI_LANG" > "$TARGET/etc/nido/ui-language.json"
+  sed -i -e "s|^NIDO_LOCALE=.*|NIDO_LOCALE=\"$LOCALE_NEW\"|" -e "s|^NIDO_KEYMAP=.*|NIDO_KEYMAP=\"$KEYMAP\"|" \
+    -e "s|^NIDO_TIMEZONE=.*|NIDO_TIMEZONE=\"$TZ_NEW\"|" "$TARGET/etc/nido/nido.conf"
+
+  # Radice sempre indicata per UUID, indipendentemente da come si chiama il disco
+  mkdir -p "$TARGET/etc/default/grub.d"
+  cat > "$TARGET/etc/default/grub.d/90-nido-root.cfg" <<EOF
+GRUB_CMDLINE_LINUX="root=UUID=$UUID_ROOT rootflags=subvol=@"
+EOF
+
+  # Password passata tramite file temporaneo leggibile solo da root
+  # (traccia disattivata: la password non deve finire nel log)
+  { set +x; } 2>/dev/null
+  umask 077
+  printf '%s:%s\n' "$USERNAME" "$PASSWORD" > "$TARGET/root/.nido-pass"
+  umask 022
+  set -x
+
+  for d in dev dev/pts proc sys run tmp; do mkdir -p "$TARGET/$d"; done
+  chmod 1777 "$TARGET/tmp"
+  mount --rbind /dev  "$TARGET/dev";  mount --make-rslave "$TARGET/dev"
+  mount -t proc proc  "$TARGET/proc"
+  mount --rbind /sys  "$TARGET/sys";  mount --make-rslave "$TARGET/sys"
+  mount -t tmpfs tmpfs "$TARGET/run"
+
+  cat > "$TARGET/tmp/nido-chroot.sh" <<EOF
+#!/bin/bash
+set -euxo pipefail
+export DEBIAN_FRONTEND=noninteractive LC_ALL=C
+
+# Pacchetti che servono solo al sistema live
+live_pkgs=\$(dpkg-query -W -f '\${Package}\n' 'live-*' 2>/dev/null | grep -E '^live-(boot|boot-initramfs-tools|config|config-systemd|tools)\$' || true)
+if [ -n "\$live_pkgs" ]; then apt-get purge -y \$live_pkgs; fi
+
+# Utente amministratore
+useradd -m -s /bin/bash -c "Amministratore" -G sudo,users "$USERNAME"
+getent group docker >/dev/null && usermod -aG docker "$USERNAME"
+chpasswd < /root/.nido-pass
+# Stessa password per le condivisioni (Samba); traccia spenta per non scriverla nel log
+set +x
+pw=\$(cut -d: -f2- /root/.nido-pass)
+printf '%s\n%s\n' "\$pw" "\$pw" | smbpasswd -a -s "$USERNAME" >/dev/null
+# Stesso utente e password anche per l'interfaccia web (se la password ha almeno 8 caratteri;
+# altrimenti l'account si crea al primo accesso dal browser)
+printf '%s' "\$pw" | PYTHONPATH=/usr/lib/nido/panel python3 -c 'import sys; from nidopanel import auth; auth.create_user(sys.argv[1], sys.stdin.read(), admin=True)' "$USERNAME" >/dev/null 2>&1 \\
+  || echo "account dell'interfaccia: si crea al primo accesso"
+unset pw
+set -x
+mkdir -p "/DATA/Utenti/$USERNAME"
+chown "$USERNAME:users" "/DATA/Utenti/$USERNAME"
+chmod 700 "/DATA/Utenti/$USERNAME"
+rm -f /root/.nido-pass
+passwd -l root
+
+# Testo della console nella lingua scelta
+[ -x /usr/lib/nido/issue.sh ] && /usr/lib/nido/issue.sh || true
+
+# Identità unica di questa installazione
+: > /etc/machine-id
+rm -f /var/lib/dbus/machine-id
+rm -f /etc/ssh/ssh_host_*
+ssh-keygen -A
+# Schermo del NAS: l'interfaccia sul monitor collegato (parte solo se c'è una scheda video con driver)
+systemctl enable nido-kiosk-boot.service >/dev/null 2>&1 || true
+
+# initramfs per ogni kernel presente
+for m in /lib/modules/*; do
+  v=\$(basename "\$m")
+  [ -e "/boot/vmlinuz-\$v" ] || continue
+  if [ -e "/boot/initrd.img-\$v" ]; then update-initramfs -u -k "\$v"; else update-initramfs -c -k "\$v"; fi
+done
+
+# GRUB: avvio legacy (BIOS) e UEFI sullo stesso disco
+grub-install --target=i386-pc --recheck "$DISK"
+# UEFI con Secure Boot: shim firmato + GRUB firmato (percorso di riserva EFI/BOOT, valido su ogni PC)
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --uefi-secure-boot --removable --no-nvram
+if [ "$UEFI" = 1 ]; then
+  grub-install --target=x86_64-efi --efi-directory=/boot/efi --uefi-secure-boot --bootloader-id="$SLUG" --recheck || true
+fi
+[ -x /usr/lib/nido/vm-video.sh ] && /usr/lib/nido/vm-video.sh || true   # nomodeset solo con la scheda VMSVGA
+update-grub
+
+# Il GRUB firmato copiato da grub-install (in Ubuntu 26.04 la versione per CD, gcdx64)
+# cerca la configurazione in /boot/grub della partizione EFI, altre versioni in EFI/ubuntu
+# o accanto a sé: lo stesso rimando alla configurazione vera va messo in tutti e tre i posti,
+# altrimenti in UEFI (VirtualBox compreso) l'avvio si ferma al prompt "grub>".
+stub=\$(mktemp)
+printf '%s\n' "search.fs_uuid $UUID_ROOT root" "set prefix=(\\\$root)'/@/boot/grub'" 'configfile \$prefix/grub.cfg' > "\$stub"
+for d in /boot/efi/EFI/BOOT /boot/efi/EFI/ubuntu /boot/efi/boot/grub; do
+  mkdir -p "\$d"
+  cp "\$stub" "\$d/grub.cfg"
+done
+if [ -d "/boot/efi/EFI/$SLUG" ]; then cp "\$stub" "/boot/efi/EFI/$SLUG/grub.cfg"; fi
+rm -f "\$stub"
+EOF
+  chmod +x "$TARGET/tmp/nido-chroot.sh"
+
+  progress 84 "$(M 'Configuro il sistema...')"
+  chroot "$TARGET" /tmp/nido-chroot.sh
+  rm -f "$TARGET/tmp/nido-chroot.sh" "$TARGET/root/.nido-pass"
+
+  progress 97 "$(M 'Termino...')"
+  date -Is > "$TARGET/etc/nido/installed"
+  cp "$LOG" "$TARGET/var/log/nido-install.log" 2>/dev/null || true
+  sync
+  progress 100 "$(M 'Installazione completata')"
+  echo ok > "$STATUS_FILE"
+}
+
+if [ "$AUTO" = 1 ]; then
+  ( do_install ) 3>&1 | sed -n 's/^\([0-9]\+\)$/  \1%/p'
+else
+  ( do_install ) | whiptail "${WT[@]}" --title "$TITLE" --gauge "$(M 'Installazione in corso...')" 8 72 0
+fi
+
+[ "$(cat "$STATUS_FILE" 2>/dev/null)" = ok ] || die "$(M "L'installazione non è andata a buon fine.")"
+
+cleanup
+trap - EXIT
+
+if [ "$AUTO" = 1 ]; then
+  echo "Installazione completata su $DISK"
+  exit 0
+fi
+
+if [ ${#PASSWORD} -ge 8 ]; then ACC=$(M "Accedi con l'utente %s e la password appena scelta." "$USERNAME"); else ACC=$(M "Al primo accesso crei l'account dell'interfaccia."); fi
+msg "$(M "Installazione completata!\n\nTogli la chiavetta e premi Invio per riavviare.\n\nDopo il riavvio apri dal browser di un altro dispositivo:\n\n   http://%s.local\n\n(o l'indirizzo IP che compare sullo schermo del NAS).\n%s" "$HOST" "$ACC")" 18
+reboot

@@ -1,0 +1,82 @@
+Servizi cloud	Cloud services	Servicios en la nube	Cloud-Dienste
+Servizi cloud collegati	Connected cloud services	Servicios en la nube conectados	Verbundene Cloud-Dienste
+nei File	in Files	en Archivos	in Dateien
+Nei File	In Files	En Archivos	In Dateien
+Cartella {0} · ricollegata all'avvio	Folder {0} · reconnected at startup	Carpeta {0} · se reconecta al arrancar	Ordner {0} · wird beim Start verbunden
+· ricollegata all'avvio	· reconnected at startup	· se reconecta al arrancar	· wird beim Start verbunden
+Disponibile per i backup	Available for backups	Disponible para las copias de seguridad	Für Sicherungen verfügbar
+Prova e spazio	Test and space	Prueba y espacio	Test und Speicherplatz
+Mostra il servizio come cartella in File (anche per le app)	Show the service as a folder in Files (also for apps)	Mostrar el servicio como carpeta en Archivos (también para las apps)	Den Dienst als Ordner in Dateien anzeigen (auch für Apps)
+Nessun servizio collegato.	No service connected.	Ningún servicio conectado.	Kein Dienst verbunden.
+Collega un servizio	Connect a service	Conectar un servicio	Dienst verbinden
+Come si usano	How to use them	Cómo se usan	So werden sie genutzt
+Nei File: il servizio diventa una cartella in /media/cloud, visibile nella barra di File (sezione Rete), nelle condivisioni e nelle app.	In Files: the service becomes a folder in /media/cloud, visible in the Files sidebar (Network section), in shares and in apps.	En Archivos: el servicio se convierte en una carpeta en /media/cloud, visible en la barra de Archivos (sección Red), en las carpetas compartidas y en las apps.	In Dateien: Der Dienst wird zu einem Ordner in /media/cloud, sichtbar in der Seitenleiste von Dateien (Bereich Netzwerk), in Freigaben und in Apps.
+Backup: in Backup → Nuovo backup scegli "Cloud" e il servizio: i dati vanno nel cloud cifrati con restic.	Backup: in Backup → New backup choose "Cloud" and the service: the data goes to the cloud encrypted with restic.	Copias de seguridad: en Copias → Nueva copia elige "Nube" y el servicio: los datos van a la nube cifrados con restic.	Sicherung: Wähle unter Sicherungen → Neue Sicherung "Cloud" und den Dienst: Die Daten werden mit restic verschlüsselt in die Cloud übertragen.
+Le credenziali restano sul NAS, nel file di configurazione di rclone (solo amministratore). Google Drive, OneDrive, Dropbox e Box si collegano dal browser con il tuo account: il NAS non vede la tua password.	Credentials stay on the NAS, in rclone's configuration file (administrators only). Google Drive, OneDrive, Dropbox and Box are connected from the browser with your account: the NAS never sees your password.	Las credenciales se quedan en el NAS, en el archivo de configuración de rclone (solo administradores). Google Drive, OneDrive, Dropbox y Box se conectan desde el navegador con tu cuenta: el NAS no ve tu contraseña.	Die Zugangsdaten bleiben auf dem NAS, in der Konfigurationsdatei von rclone (nur Administratoren). Google Drive, OneDrive, Dropbox und Box werden im Browser mit deinem Konto verbunden: Das NAS sieht dein Passwort nie.
+Google Drive, OneDrive, Dropbox, Box, MEGA, Backblaze e gli altri sono marchi dei rispettivi proprietari: {0} non è affiliato a loro. Il collegamento usa rclone (licenza MIT).	Google Drive, OneDrive, Dropbox, Box, MEGA, Backblaze and the others are trademarks of their respective owners: {0} is not affiliated with them. The connection uses rclone (MIT licence).	Google Drive, OneDrive, Dropbox, Box, MEGA, Backblaze y los demás son marcas de sus respectivos propietarios: {0} no está afiliado a ellos. La conexión usa rclone (licencia MIT).	Google Drive, OneDrive, Dropbox, Box, MEGA, Backblaze und die anderen sind Marken ihrer jeweiligen Inhaber: {0} ist nicht mit ihnen verbunden. Die Verbindung nutzt rclone (MIT-Lizenz).
+Spazio: {0} usati di {1} (liberi {2})	Space: {0} used of {1} ({2} free)	Espacio: {0} usados de {1} ({2} libres)	Speicher: {0} von {1} belegt ({2} frei)
+Collegato	Connected	Conectado	Verbunden
+{0} cartelle nella radice	{0} folders in the root	{0} carpetas en la raíz	{0} Ordner im Stammverzeichnis
+Collegamento riuscito	Connection successful	Conexión correcta	Verbindung erfolgreich
+Cartella collegata: la trovi in File	Folder connected: you'll find it in Files	Carpeta conectada: la encontrarás en Archivos	Ordner verbunden: Du findest ihn in Dateien
+Rimuovi servizio	Remove service	Quitar servicio	Dienst entfernen
+"{0}" viene scollegato e dimenticato dal NAS (anche le credenziali). I file nel cloud non vengono toccati. I backup che lo usano smettono di funzionare.	"{0}" will be disconnected and forgotten by the NAS (credentials included). The files in the cloud are not touched. Backups that use it will stop working.	"{0}" se desconecta y el NAS lo olvida (credenciales incluidas). Los archivos de la nube no se tocan. Las copias de seguridad que lo usan dejarán de funcionar.	"{0}" wird getrennt und vom NAS vergessen (einschließlich der Zugangsdaten). Die Dateien in der Cloud bleiben unberührt. Sicherungen, die ihn nutzen, funktionieren nicht mehr.
+Servizio rimosso	Service removed	Servicio quitado	Dienst entfernt
+Collega un servizio cloud	Connect a cloud service	Conectar un servicio en la nube	Cloud-Dienst verbinden
+Scegli il servizio	Choose the service	Elige el servicio	Dienst wählen
+Collega {0}	Connect {0}	Conectar {0}	{0} verbinden
+Accesso con il tuo account, dal browser	Sign in with your account, from the browser	Acceso con tu cuenta, desde el navegador	Anmeldung mit deinem Konto, im Browser
+Dati di accesso	Login details	Datos de acceso	Zugangsdaten
+Nome sul NAS	Name on the NAS	Nombre en el NAS	Name auf dem NAS
+Lettere, numeri, - e _. Sarà la cartella /media/cloud/<nome>.	Letters, numbers, - and _. It will be the folder /media/cloud/<name>.	Letras, números, - y _. Será la carpeta /media/cloud/<nombre>.	Buchstaben, Ziffern, - und _. Es wird der Ordner /media/cloud/<name>.
+1. Premi "Apri la pagina di accesso" e accedi con il tuo account {0} nella scheda che si apre.	1. Press "Open the sign-in page" and sign in with your {0} account in the tab that opens.	1. Pulsa "Abrir la página de acceso" e inicia sesión con tu cuenta de {0} en la pestaña que se abre.	1. Drücke "Anmeldeseite öffnen" und melde dich im neuen Tab mit deinem {0}-Konto an.
+2. Alla fine il browser va su una pagina che non si apre (l'indirizzo inizia con http://127.0.0.1:53682 o http://localhost:53682): è normale.	2. At the end the browser goes to a page that doesn't open (the address starts with http://127.0.0.1:53682 or http://localhost:53682): that's normal.	2. Al final el navegador va a una página que no se abre (la dirección empieza por http://127.0.0.1:53682 o http://localhost:53682): es normal.	2. Am Ende öffnet der Browser eine Seite, die nicht lädt (die Adresse beginnt mit http://127.0.0.1:53682 oder http://localhost:53682): Das ist normal.
+3. Copia tutto l'indirizzo dalla barra del browser e incollalo qui sotto.	3. Copy the whole address from the browser's address bar and paste it below.	3. Copia toda la dirección de la barra del navegador y pégala aquí abajo.	3. Kopiere die ganze Adresse aus der Adressleiste des Browsers und füge sie unten ein.
+Apri la pagina di accesso	Open the sign-in page	Abrir la página de acceso	Anmeldeseite öffnen
+Indirizzo copiato dalla barra del browser	Address copied from the browser's address bar	Dirección copiada de la barra del navegador	Aus der Adressleiste kopierte Adresse
+facoltativo	optional	opcional	optional
+Email	Email	Correo electrónico	E-Mail
+Indirizzo (es. https://cloud.esempio.it/remote.php/dav/files/mario)	Address (e.g. https://cloud.example.com/remote.php/dav/files/mario)	Dirección (p. ej. https://cloud.ejemplo.es/remote.php/dav/files/maria)	Adresse (z. B. https://cloud.beispiel.de/remote.php/dav/files/maria)
+Tipo di server	Server type	Tipo de servidor	Servertyp
+Password (o password per le app)	Password (or app password)	Contraseña (o contraseña de aplicación)	Passwort (oder App-Passwort)
+Servizio	Service	Servicio	Dienst
+Altro compatibile S3	Other S3-compatible	Otro compatible con S3	Anderer S3-kompatibler
+Regione (es. eu-central-1, facoltativa)	Region (e.g. eu-central-1, optional)	Región (p. ej. eu-central-1, opcional)	Region (z. B. eu-central-1, optional)
+Endpoint (per servizi diversi da Amazon)	Endpoint (for services other than Amazon)	Endpoint (para servicios distintos de Amazon)	Endpoint (für andere Dienste als Amazon)
+Server	Server	Servidor	Server
+Porta	Port	Puerto	Port
+{0} collegato	{0} connected	{0} conectado	{0} verbunden
+{0} collegato, ma la prova non è riuscita: {1}	{0} connected, but the test failed: {1}	{0} conectado, pero la prueba ha fallado: {1}	{0} verbunden, aber der Test ist fehlgeschlagen: {1}
+Il browser ha bloccato la nuova scheda: consenti i popup per questa pagina	The browser blocked the new tab: allow pop-ups for this page	El navegador ha bloqueado la nueva pestaña: permite las ventanas emergentes para esta página	Der Browser hat den neuen Tab blockiert: Erlaube Pop-ups für diese Seite
+Servizi cloud…	Cloud services…	Servicios en la nube…	Cloud-Dienste…
+Collega un servizio (Google Drive, OneDrive, Dropbox, MEGA, B2, S3…) da	Connect a service (Google Drive, OneDrive, Dropbox, MEGA, B2, S3…) from	Conecta un servicio (Google Drive, OneDrive, Dropbox, MEGA, B2, S3…) desde	Verbinde einen Dienst (Google Drive, OneDrive, Dropbox, MEGA, B2, S3…) unter
+Impostazioni → Servizi cloud	Settings → Cloud services	Ajustes → Servicios en la nube	Einstellungen → Cloud-Dienste
+Nessun servizio collegato: collegalo da Impostazioni → Servizi cloud	No service connected: connect one from Settings → Cloud services	Ningún servicio conectado: conéctalo desde Ajustes → Servicios en la nube	Kein Dienst verbunden: Verbinde einen unter Einstellungen → Cloud-Dienste
+rclone non è installato	rclone is not installed	rclone no está instalado	rclone ist nicht installiert
+Il file di configurazione di rclone è protetto da password: gestiscilo dal terminale	rclone's configuration file is password-protected: manage it from the terminal	El archivo de configuración de rclone está protegido con contraseña: gestiónalo desde el terminal	Die Konfigurationsdatei von rclone ist passwortgeschützt: Verwalte sie im Terminal
+rclone: non riesco a preparare la password	rclone: I can't prepare the password	rclone: no puedo preparar la contraseña	rclone: Das Passwort kann nicht vorbereitet werden
+Nome non valido: lettere, numeri, - e _ (al massimo 31 caratteri)	Invalid name: letters, numbers, - and _ (at most 31 characters)	Nombre no válido: letras, números, - y _ (máximo 31 caracteres)	Ungültiger Name: Buchstaben, Ziffern, - und _ (höchstens 31 Zeichen)
+Esiste già un servizio chiamato {0}	A service called {0} already exists	Ya existe un servicio llamado {0}	Ein Dienst namens {0} existiert bereits
+Servizio non trovato	Service not found	Servicio no encontrado	Dienst nicht gefunden
+Servizio non valido	Invalid service	Servicio no válido	Ungültiger Dienst
+Manca: {0}	Missing: {0}	Falta: {0}	Fehlt: {0}
+Per Cloudflare R2 serve l'endpoint (https://<account>.r2.cloudflarestorage.com)	Cloudflare R2 needs the endpoint (https://<account>.r2.cloudflarestorage.com)	Para Cloudflare R2 hace falta el endpoint (https://<account>.r2.cloudflarestorage.com)	Für Cloudflare R2 ist der Endpoint nötig (https://<account>.r2.cloudflarestorage.com)
+Collegamento non riuscito: {0}	Connection failed: {0}	La conexión ha fallado: {0}	Verbindung fehlgeschlagen: {0}
+rclone non ha avviato l'accesso: {0}	rclone didn't start the sign-in: {0}	rclone no ha iniciado el acceso: {0}	rclone hat die Anmeldung nicht gestartet: {0}
+rclone non risponde: {0}	rclone is not responding: {0}	rclone no responde: {0}	rclone antwortet nicht: {0}
+Non trovo la pagina di accesso del servizio	I can't find the service's sign-in page	No encuentro la página de acceso del servicio	Die Anmeldeseite des Dienstes wurde nicht gefunden
+L'accesso è scaduto: premi di nuovo "Apri la pagina di accesso"	The sign-in has expired: press "Open the sign-in page" again	El acceso ha caducado: pulsa de nuevo "Abrir la página de acceso"	Die Anmeldung ist abgelaufen: Drücke erneut "Anmeldeseite öffnen"
+L'accesso è scaduto (15 minuti): ricomincia	The sign-in has expired (15 minutes): start again	El acceso ha caducado (15 minutos): empieza de nuevo	Die Anmeldung ist abgelaufen (15 Minuten): Beginne von vorn
+Incolla l'indirizzo completo che il browser mostra alla fine (inizia con http://127.0.0.1:53682 o http://localhost:53682)	Paste the full address the browser shows at the end (it starts with http://127.0.0.1:53682 or http://localhost:53682)	Pega la dirección completa que muestra el navegador al final (empieza por http://127.0.0.1:53682 o http://localhost:53682)	Füge die vollständige Adresse ein, die der Browser am Ende anzeigt (sie beginnt mit http://127.0.0.1:53682 oder http://localhost:53682)
+Il servizio ha rifiutato l'accesso: {0}	The service refused access: {0}	El servicio ha rechazado el acceso: {0}	Der Dienst hat den Zugriff verweigert: {0}
+Nell'indirizzo non c'è il codice di accesso: copia tutto l'indirizzo dalla barra del browser	The address doesn't contain the access code: copy the whole address from the browser's address bar	La dirección no contiene el código de acceso: copia toda la dirección de la barra del navegador	Die Adresse enthält keinen Zugangscode: Kopiere die ganze Adresse aus der Adressleiste
+rclone ha rifiutato il codice ({0}): ricomincia	rclone rejected the code ({0}): start again	rclone ha rechazado el código ({0}): empieza de nuevo	rclone hat den Code abgelehnt ({0}): Beginne von vorn
+Token non ricevuto: {0}	Token not received: {0}	Token no recibido: {0}	Token nicht erhalten: {0}
+OneDrive: non riesco a leggere il disco ({0})	OneDrive: I can't read the drive ({0})	OneDrive: no puedo leer la unidad ({0})	OneDrive: Das Laufwerk kann nicht gelesen werden ({0})
+La cartella non si collega: {0}	The folder won't connect: {0}	La carpeta no se conecta: {0}	Der Ordner lässt sich nicht verbinden: {0}
+nome utente, password o chiavi non corretti	wrong username, password or keys	nombre de usuario, contraseña o claves incorrectos	Benutzername, Passwort oder Schlüssel falsch
+server non trovato: controlla l'indirizzo	server not found: check the address	servidor no encontrado: revisa la dirección	Server nicht gefunden: Prüfe die Adresse
+server non raggiungibile: controlla indirizzo e porta	server not reachable: check address and port	servidor no accesible: revisa dirección y puerto	Server nicht erreichbar: Prüfe Adresse und Port
+il server non risponde (tempo scaduto)	the server is not responding (timed out)	el servidor no responde (tiempo agotado)	der Server antwortet nicht (Zeitüberschreitung)
+problema con il certificato HTTPS del server	problem with the server's HTTPS certificate	problema con el certificado HTTPS del servidor	Problem mit dem HTTPS-Zertifikat des Servers
+bucket non trovato	bucket not found	bucket no encontrado	Bucket nicht gefunden

@@ -1,0 +1,106 @@
+{0} min fa	{0} min ago	hace {0} min	vor {0} Min.
+{0} ore fa	{0} hours ago	hace {0} horas	vor {0} Stunden
+{0} giorni fa	{0} days ago	hace {0} días	vor {0} Tagen
+{0} g {1} h {2} min	{0} d {1} h {2} min	{0} d {1} h {2} min	{0} T. {1} Std. {2} Min.
+acceso da {0} {1}	on for {0} {1}	encendido desde hace {0} {1}	an seit {0} {1}
+acceso da poco	just turned on	encendido hace poco	gerade eingeschaltet
+Il NAS non ha risposto in tempo: riprova tra poco	The NAS didn't respond in time: try again shortly	El NAS no ha respondido a tiempo: inténtalo dentro de poco	Das NAS hat nicht rechtzeitig geantwortet: gleich erneut versuchen
+Il NAS non risponde: controlla la connessione	The NAS isn't responding: check the connection	El NAS no responde: comprueba la conexión	Das NAS antwortet nicht: prüfe die Verbindung
+Errore {0}	Error {0}	Error {0}	Fehler {0}
+Home	Home	Inicio	Start
+Tutto a posto	All good	Todo bien	Alles in Ordnung
+Account: {0}	Account: {0}	Cuenta: {0}	Konto: {0}
+Ricordami	Remember me	Recordarme	Angemeldet bleiben
+Almeno 8 caratteri	At least 8 characters	Al menos 8 caracteres	Mindestens 8 Zeichen
+Almeno 8 caratteri. Le altre sessioni aperte verranno chiuse.	At least 8 characters. Other open sessions will be closed.	Al menos 8 caracteres. Las demás sesiones abiertas se cerrarán.	Mindestens 8 Zeichen. Andere offene Sitzungen werden beendet.
+non trovata	not found	no encontrada	nicht gefunden
+Buongiorno	Good morning	Buenos días	Guten Morgen
+Buon pomeriggio	Good afternoon	Buenas tardes	Guten Tag
+Buonasera	Good evening	Buenas noches	Guten Abend
+Buongiorno, {0}	Good morning, {0}	Buenos días, {0}	Guten Morgen, {0}
+Buon pomeriggio, {0}	Good afternoon, {0}	Buenas tardes, {0}	Guten Tag, {0}
+Buonasera, {0}	Good evening, {0}	Buenas noches, {0}	Guten Abend, {0}
+tutto funziona	everything works	todo funciona	alles funktioniert
+Nessun disco trovato	No disk found	Ningún disco encontrado	Keine Festplatte gefunden
+Quasi pieno: restano {0}	Almost full: {0} left	Casi lleno: quedan {0}	Fast voll: noch {0} frei
+Traffico di rete	Network traffic	Tráfico de red	Netzwerkverkehr
+ultima ora	last hour	última hora	letzte Stunde
+Oggi	Today	Hoy	Heute
+File ›	Files ›	Archivos ›	Dateien ›
+{0} ferm	{0} stopped	{0} detenidas	{0} gestoppt
+Gestisci ›	Manage ›	Gestionar ›	Verwalten ›
+dischi {0}{1} °C	disks {0}{1} °C	discos {0}{1} °C	Festplatten {0}{1} °C
+dal {0}	since {0}	desde el {0}	seit {0}
+Ore di accensione	Power-on hours	Horas de encendido	Betriebsstunden
+Avvii	Startups	Arranques	Starts
+Ultimo spegnimento	Last shutdown	Último apagado	Letztes Ausschalten
+Regolare	Normal	Normal	Normal
+Improvviso	Sudden	Repentino	Plötzlich
+· mancanza di corrente o blocco	· power failure or freeze	· corte de corriente o bloqueo	· Stromausfall oder Absturz
+primo avvio	first startup	primer arranque	erster Start
+Riprova	Try again	Reintentar	Erneut versuchen
+Cerca su Docker Hub	Search on Docker Hub	Buscar en Docker Hub	Auf Docker Hub suchen
+Fonti dell'app store	App store sources	Fuentes de la tienda de apps	Quellen des App-Stores
+Pagine	Pages	Páginas	Seiten
+Le tue app	Your apps	Tus apps	Deine Apps
+Errore nella pagina:	Error in the page:	Error en la página:	Fehler auf der Seite:
+ora in standby	now in standby	ahora en espera	jetzt im Standby
+ora attivo	now active	ahora activo	jetzt aktiv
+· dal {0}	· since {0}	· desde el {0}	· seit {0}
+I percorsi non sono cambiati ( RElib/docker e /DATA/AppData): compose, condivisioni e backup restano uguali.	=	=	=
+fai così per tutti	do this for all	hacer lo mismo con todos	für alle so machen
+({0}) · {1}:{2}. Le condivisioni Samba aggiungono i loro permessi per utente.	({0}) · {1}:{2}. Samba shares add their own per-user permissions.	({0}) · {1}:{2}. Las carpetas compartidas Samba añaden sus permisos por usuario.	({0}) · {1}:{2}. Samba-Freigaben ergänzen eigene Berechtigungen pro Benutzer.
+In coda: parte quando finisce quella prima	Queued: starts when the previous one finishes	En cola: empieza cuando termine la anterior	In der Warteschlange: startet nach dem vorherigen
+Completata	Completed	Completada	Abgeschlossen
+· {0} saltati	· {0} skipped	· {0} omitidos	· {0} übersprungen
+Annullata	Cancelled	Cancelada	Abgebrochen
+senza scadenza	no expiry	sin caducidad	ohne Ablauf
+sei tu	that's you	eres tú	das bist du
+{0} app	{0} apps	{0} apps	{0} Apps
+aggiunta da te	added by you	añadida por ti	von dir hinzugefügt
+ultimo aggiornamento	last update	última actualización	letzte Aktualisierung
+solo dalla rete di casa	home network only	solo desde la red de casa	nur aus dem Heimnetz
+: la prima volta può richiedere un minuto	: the first time it may take a minute	: la primera vez puede tardar un minuto	: beim ersten Mal kann es eine Minute dauern
+è anche nello store, con porte, cartelle e icona già impostate.	is also in the store, with ports, folders and icon already set.	también está en la tienda, con puertos, carpetas e icono ya configurados.	gibt es auch im Store, mit bereits eingestellten Ports, Ordnern und Symbol.
+Cartella nell'app	Folder in the app	Carpeta en la app	Ordner in der App
+Accesso	Access	Acceso	Zugriff
+Variabile	Variable	Variable	Variable
+Aggiungi variabile	Add variable	Añadir variable	Variable hinzufügen
+Aggiungi porta	Add port	Añadir puerto	Port hinzufügen
+Porta del NAS	NAS port	Puerto del NAS	NAS-Port
+Porta dell'app	App port	Puerto de la app	App-Port
+accesso completo al sistema (privileged)	full access to the system (privileged)	acceso completo al sistema (privileged)	vollen Systemzugriff (privileged)
+l'accesso a dispositivi:	access to devices:	el acceso a dispositivos:	Zugriff auf Geräte:
+L'app è installata ma non risponde ancora: {0}. Alcune app impiegano qualche minuto al primo avvio.	The app is installed but isn't responding yet: {0}. Some apps take a few minutes on first startup.	La app está instalada pero aún no responde: {0}. Algunas apps tardan unos minutos en el primer arranque.	Die App ist installiert, antwortet aber noch nicht: {0}. Manche Apps brauchen beim ersten Start einige Minuten.
+è pronta.	is ready.	está lista.	ist bereit.
+{0} è pronta.	{0} is ready.	{0} está lista.	{0} ist bereit.
+· {0}% usato	· {0}% used	· {0}% usado	· {0} % belegt
+Ultimo spegnimento programmato {0}	Last scheduled shutdown {0}	Último apagado programado {0}	Letztes geplantes Ausschalten {0}
+· coppia con #{0}	· paired with #{0}	· pareja con #{0}	· Paar mit #{0}
+Lo snapshot #{0} verrà eliminato.	Snapshot #{0} will be deleted.	La instantánea #{0} se eliminará.	Snapshot #{0} wird gelöscht.
+· certificato valido fino al {0}	· certificate valid until {0}	· certificado válido hasta el {0}	· Zertifikat gültig bis {0}
+HTTPS spento	HTTPS off	HTTPS apagado	HTTPS aus
+Il NAS risponde solo in HTTP (non cifrato)	The NAS replies only over HTTP (unencrypted)	El NAS responde solo en HTTP (sin cifrar)	Das NAS antwortet nur per HTTP (unverschlüsselt)
+Riprova a salvare: se il problema resta controlla il registro di Caddy	Try saving again: if the problem persists check the Caddy log	Vuelve a guardar: si el problema sigue comprueba el registro de Caddy	Erneut speichern: besteht das Problem weiter, prüfe das Caddy-Protokoll
+Chi apre http://{0} viene portato su https://	Whoever opens http://{0} is taken to https://	Quien abre http://{0} es llevado a https://	Wer http://{0} öffnet, wird zu https:// weitergeleitet
+→ porta {0}	→ port {0}	→ puerto {0}	→ Port {0}
+… senza numeri di porta	… without port numbers	… sin números de puerto	… ohne Portnummern
+Versione a lungo supporto: aggiornamenti di sicurezza per 5 anni.	Long-term support version: security updates for 5 years.	Versión de soporte extendido: actualizaciones de seguridad durante 5 años.	Langzeit-Support-Version: Sicherheitsupdates für 5 Jahre.
+Versione intermedia: riceve aggiornamenti per 9 mesi, poi bisogna passare di nuovo alla successiva. Per un NAS che deve solo funzionare conviene restare sulla LTS.	Interim version: it gets updates for 9 months, then you must move to the next one again. For a NAS that just has to work it's better to stay on the LTS.	Versión intermedia: recibe actualizaciones durante 9 meses, luego hay que pasar de nuevo a la siguiente. Para un NAS que solo tiene que funcionar conviene quedarse en la LTS.	Zwischenversion: erhält 9 Monate Updates, dann muss wieder auf die nächste gewechselt werden. Für ein NAS, das einfach laufen soll, bleibt man besser bei der LTS.
+Note di rilascio	Release notes	Notas de la versión	Versionshinweise
+Torna alla versione di prima (snapshot #{0})	Go back to the previous version (snapshot #{0})	Volver a la versión anterior (instantánea #{0})	Zur vorherigen Version zurück (Snapshot #{0})
+Il registro è qui sotto.	The log is below.	El registro está aquí abajo.	Das Protokoll steht unten.
+Spazio libero sul disco di sistema: {0} (ne servono almeno {1})	Free space on the system disk: {0} (at least {1} needed)	Espacio libre en el disco del sistema: {0} (hacen falta al menos {1})	Freier Platz auf der Systemfestplatte: {0} (mindestens {1} nötig)
+Nessuna chiave. Con una chiave entri senza password, in modo più sicuro.	No keys. With a key you log in without a password, more securely.	Ninguna clave. Con una clave entras sin contraseña, de forma más segura.	Keine Schlüssel. Mit einem Schlüssel meldest du dich ohne Passwort an, sicherer.
+Nome (2)	Name (2)	Nombre (2)	Name (2)
+Mostra altre ({0})	Show more ({0})	Mostrar más ({0})	Mehr anzeigen ({0})
+Mostra dettagli	Show details	Mostrar detalles	Details anzeigen
+Puoi chiudere questa finestra: l'operazione continua sul NAS.	You can close this window: the operation continues on the NAS.	Puedes cerrar esta ventana: la operación continúa en el NAS.	Du kannst dieses Fenster schließen: der Vorgang läuft auf dem NAS weiter.
+Il file docker-compose dell'app. Le variabili	The app's docker-compose file. The variables	El archivo docker-compose de la app. Las variables	Die docker-compose-Datei der App. Die Variablen
+Usa la rete del NAS direttamente (network_mode: host): niente porte da mappare.	Uses the NAS network directly (network_mode: host): no ports to map.	Usa directamente la red del NAS (network_mode: host): sin puertos que mapear.	Nutzt direkt das Netzwerk des NAS (network_mode: host): keine Ports zuzuordnen.
+Installalo solo se ti fidi della fonte.	Install it only if you trust the source.	Instálalo solo si confías en la fuente.	Installiere ihn nur, wenn du der Quelle vertraust.
+Altro…	More…	Más…	Mehr…
+progetto indipendente	independent project	proyecto independiente	unabhängiges Projekt
+Upload	Upload	Subida	Upload
+Vuoi sovrascriverlo con il tuo testo?	Do you want to overwrite it with your text?	¿Quieres sobrescribirlo con tu texto?	Möchtest du sie mit deinem Text überschreiben?
+liberabili	can be freed	liberables	freigebbar

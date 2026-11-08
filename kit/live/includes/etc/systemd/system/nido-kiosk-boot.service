@@ -1,0 +1,11 @@
+[Unit]
+Description=Schermo del NAS: avvio all'accensione (se attivo e se c'è una scheda video con driver)
+After=nido-ui.service systemd-user-sessions.service
+
+[Service]
+Type=oneshot
+Environment=PYTHONPATH=/usr/lib/nido/panel
+ExecStart=/usr/bin/python3 -c "from nidopanel import screen; screen.boot()"
+
+[Install]
+WantedBy=multi-user.target

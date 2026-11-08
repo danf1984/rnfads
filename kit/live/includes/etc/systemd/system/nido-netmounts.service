@@ -1,0 +1,16 @@
+[Unit]
+Description=Ricollega i dischi dei dati e le cartelle di rete (SMB, NFS, WebDAV)
+Wants=network-online.target
+After=network-online.target remote-fs.target local-fs.target
+# Prima di Docker: così le app vedono le cartelle di rete
+Before=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Environment=PYTHONPATH=/usr/lib/nido/panel
+ExecStart=/usr/bin/python3 -m nidopanel.cli netmounts-mount
+TimeoutStartSec=240
+
+[Install]
+WantedBy=multi-user.target

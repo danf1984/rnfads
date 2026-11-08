@@ -1,0 +1,17 @@
+[Unit]
+Description=Controlli dopo il passaggio alla versione nuova di Ubuntu
+ConditionPathExists=/var/lib/nido/release-verify-pending.json
+After=network-online.target nido-ui.service caddy.service docker.service nido-netmounts.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=PYTHONPATH=/usr/lib/nido/panel
+# Diamo tempo ai servizi di partire prima di controllarli
+ExecStartPre=/bin/sleep 90
+ExecStart=/usr/bin/python3 -m nidopanel.cli release-verify
+StandardOutput=append:/var/log/nido/release-upgrade.log
+StandardError=append:/var/log/nido/release-upgrade.log
+
+[Install]
+WantedBy=multi-user.target

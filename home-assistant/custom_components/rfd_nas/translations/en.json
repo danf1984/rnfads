@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RNFADS",
+        "description": "The API key is in RNFADS → Settings → Home Assistant and API.",
+        "data": {
+          "host": "Host (e.g. rnfads.local or IP)",
+          "api_key": "API key",
+          "ssl": "Use HTTPS",
+          "verify_ssl": "Verify certificate"
+        }
+      },
+      "reauth_confirm": {
+        "title": "New API key",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect",
+      "invalid_auth": "Invalid API key"
+    },
+    "abort": {
+      "already_configured": "Already configured",
+      "reauth_successful": "Key updated"
+    }
+  }
+}

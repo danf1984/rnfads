@@ -1,0 +1,16 @@
+[Unit]
+Description=Contatore del tempo di accensione (segna lo spegnimento regolare)
+After=local-fs.target
+RequiresMountsFor=/var/lib/nido
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Environment=PYTHONPATH=/usr/lib/nido/panel
+ExecStart=/usr/bin/python3 -m nidopanel.cli uptime-tick
+# Allo spegnimento o al riavvio regolare: senza questo segno lo spegnimento risulta improvviso
+ExecStop=/usr/bin/python3 -m nidopanel.cli uptime-shutdown
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

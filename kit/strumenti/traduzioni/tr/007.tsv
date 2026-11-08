@@ -1,0 +1,180 @@
+1200	It's not an LTS version.	No es una versión LTS.	Es ist keine LTS-Version.
+1201	It gets updates for about 9 months: then the NAS will have to move to the next version, and so on every 6 months, until the next LTS arrives. You decide.	Recibe actualizaciones durante unos 9 meses: luego el NAS tendrá que pasar a la versión siguiente, y así cada 6 meses, hasta que llegue la próxima LTS. Decides tú.	Sie erhält etwa 9 Monate lang Updates: danach muss das NAS auf die nächste Version wechseln, und so weiter alle 6 Monate, bis die nächste LTS kommt. Du entscheidest.
+1202	Before: system snapshot, to go back if something goes wrong	Antes: instantánea del sistema, para volver atrás si algo va mal	Vorher: System-Snapshot, um bei Problemen zurückzugehen
+1203	Snapshots not available: you won't be able to go back from here	Instantáneas no disponibles: no se podrá volver atrás desde aquí	Snapshots nicht verfügbar: von hier aus ist kein Zurück möglich
+1204	Free space on the system disk: {0} (at least {1} needed)	Espacio libre en el disco del sistema: {0} (hacen falta al menos {1})	Freier Platz auf der Systemfestplatte: {0} (mindestens {1} nötig)
+1205	Apps may restart during the upgrade. Your files and the app data are not touched.	Las apps pueden reiniciarse durante el paso. Tus archivos y los datos de las apps no se tocan.	Apps können während des Upgrades neu starten. Deine Dateien und die App-Daten bleiben unberührt.
+1206	To confirm type the version	Para confirmar escribe la versión	Zur Bestätigung die Version eingeben
+1207	Rolling back to the previous version	Vuelta a la versión anterior	Rückkehr zur vorherigen Version
+1208	Last update	Última actualización	Letzte Aktualisierung
+1209	succeeded, {0} → {1}	correcta, {0} → {1}	erfolgreich, {0} → {1}
+1210	failed{0}	fallida{0}	fehlgeschlagen{0}
+1211	Installing…	Instalando…	Installiere…
+1212	you can close the page: the interface restarts by itself at the end	puedes cerrar la página: la interfaz se reinicia sola al final	du kannst die Seite schließen: die Oberfläche startet am Ende von selbst neu
+1213	signed	firmado	signiert
+1214	not signed	no firmado	nicht signiert
+1215	none	ninguna	keine
+1216	· key	· clave	· Schlüssel
+1217	What's new	Novedades	Neuigkeiten
+1218	Without a valid signature the package won't install. For testing you can enable developer mode below.	Sin una firma válida el paquete no se instala. Para pruebas puedes activar el modo desarrollador aquí abajo.	Ohne gültige Signatur wird das Paket nicht installiert. Zum Testen kannst du unten den Entwicklermodus aktivieren.
+1219	· installed	· instalada	· installiert
+1220	not installed as a package	no instalado como paquete	nicht als Paket installiert
+1221	Package	Paquete	Paket
+1222	Upload update…	Subir actualización…	Update hochladen…
+1223	Choose together the file	Elige a la vez el archivo	Wähle zusammen die Datei
+1224	and its signature	y su firma	und ihre Signatur
+1225	Signing keys: {0}	Claves de firma: {0}	Signaturschlüssel: {0}
+1226	No signing key installed.	Ninguna clave de firma instalada.	Kein Signaturschlüssel installiert.
+1227	Developer mode	Modo desarrollador	Entwicklermodus
+1228	Choose the .deb file (and its .sig signature)	Elige el archivo .deb (y su firma .sig)	Wähle die .deb-Datei (und ihre .sig-Signatur)
+1229	Uploading {0} · {1}%	Subiendo {0} · {1}%	Lade {0} hoch · {1}%
+1230	Install anyway?	¿Instalar de todos modos?	Trotzdem installieren?
+1231	Version {0} is not newer than the installed one. To install it type INSTALLA	La versión {0} no es más nueva que la instalada. Para instalarla escribe INSTALLA	Version {0} ist nicht neuer als die installierte. Zum Installieren INSTALLA eingeben
+1232	Install {0}?	¿Instalar {0}?	{0} installieren?
+1233	The package is NOT signed	El paquete NO está firmado	Das Paket ist NICHT signiert
+1234	The previous package ({0}) is reinstalled. The interface restarts.	Se reinstala el paquete anterior ({0}). La interfaz se reinicia.	Das vorherige Paket ({0}) wird neu installiert. Die Oberfläche startet neu.
+1235	With developer mode the NAS also installs packages	Con el modo desarrollador el NAS instala también paquetes	Im Entwicklermodus installiert das NAS auch Pakete
+1236	without a signature	sin firma	ohne Signatur
+1237	Enable	Activar	Aktivieren
+1238	Developer mode on	Modo desarrollador activado	Entwicklermodus an
+1239	Developer mode off	Modo desarrollador apagado	Entwicklermodus aus
+1240	… the interface is restarting with the new version …	… la interfaz se está reiniciando con la nueva versión …	… die Oberfläche startet mit der neuen Version neu …
+1241	I can't load	No consigo cargar	Kann nicht laden
+1242	In the browser, with no programs to install	En el navegador, sin programas que instalar	Im Browser, ohne zu installierende Programme
+1243	=	=	=
+1244	No terminal open	Ningún terminal abierto	Kein Terminal geöffnet
+1245	Open a terminal	Abrir un terminal	Terminal öffnen
+1246	Select some text in the terminal first	Selecciona primero texto en el terminal	Markiere zuerst Text im Terminal
+1247	The browser doesn't allow reading the clipboard: use Ctrl+Shift+V in the terminal	El navegador no permite leer el portapapeles: usa Ctrl+Mayús+V en el terminal	Der Browser erlaubt keinen Zugriff auf die Zwischenablage: nutze Strg+Umschalt+V im Terminal
+1248	As root ({0})	Como root ({0})	Als root ({0})
+1249	As {0}	Como {0}	Als {0}
+1250	Inside {0}	Dentro de {0}	In {0}
+1251	No app running	Ninguna app encendida	Keine App läuft
+1252	=	=	=
+1253	=	=	=
+1254	: too many terminals open	: demasiados terminales abiertos	: zu viele Terminals offen
+1255	user	usuario	Benutzer
+1256	Unnamed key	Clave sin nombre	Schlüssel ohne Namen
+1257	=	=	=
+1258	SSH access	Acceso SSH	SSH-Zugang
+1259	SSH server	Servidor SSH	SSH-Server
+1260	Password login	Acceso con contraseña	Anmeldung mit Passwort
+1261	Turn it off after adding a key	Desactívalo después de añadir una clave	Nach dem Hinzufügen eines Schlüssels ausschalten
+1262	Home network only	Solo desde la red de casa	Nur aus dem Heimnetz
+1263	Blocks connections from the internet	Bloquea las conexiones desde internet	Sperrt Verbindungen aus dem Internet
+1264	Only the NAS administrator users can log in, never root.	Solo entran los usuarios administradores del NAS, nunca root.	Nur Administrator-Benutzer des NAS können sich anmelden, nie root.
+1265	Authorised keys	Claves autorizadas	Autorisierte Schlüssel
+1266	+ Add	+ Añadir	+ Hinzufügen
+1267	SSH server on	Servidor SSH encendido	SSH-Server an
+1268	SSH server off	Servidor SSH apagado	SSH-Server aus
+1269	Port changed	Puerto cambiado	Port geändert
+1270	Remove the key?	¿Quitar la clave?	Schlüssel entfernen?
+1271	That device will no longer be able to log in with the key.	Desde ese dispositivo ya no se podrá entrar con la clave.	Dieses Gerät kann sich nicht mehr mit dem Schlüssel anmelden.
+1272	Key removed	Clave quitada	Schlüssel entfernt
+1273	First create an administrator user on the Users page	Crea primero un usuario administrador en la página Usuarios	Lege zuerst auf der Seite Benutzer einen Administrator an
+1274	Add an SSH key	Añadir una clave SSH	SSH-Schlüssel hinzufügen
+1275	Contents of the .pub file from your computer or phone	Contenido del archivo .pub de tu ordenador o teléfono	Inhalt der .pub-Datei deines Computers oder Handys
+1276	Device name	Nombre del dispositivo	Gerätename
+1277	Public key	Clave pública	Öffentlicher Schlüssel
+1278	On the PC:	En el PC:	Am PC:
+1279	=	=	=
+1280	, then copy the file	, luego copia el archivo	, dann die Datei kopieren
+1281	=	=	=
+1282	Key added	Clave añadida	Schlüssel hinzugefügt
+1283	To confirm type SPOSTA	Para confirmar escribe SPOSTA	Zur Bestätigung SPOSTA eingeben
+1284	The apps are already on another disk: first move them back to the system disk	Las apps ya están en otro disco: primero devuélvelas al disco del sistema	Die Apps liegen bereits auf einer anderen Festplatte: hole sie zuerst auf die Systemfestplatte zurück
+1285	Disk not found among those mounted in /media	Disco no encontrado entre los montados en /media	Festplatte nicht unter den in /media eingehängten gefunden
+1286	This disk isn't suitable: {0}	Este disco no sirve: {0}	Diese Festplatte ist nicht geeignet: {0}
+1287	A move is already in progress	Ya hay un traslado en curso	Es läuft bereits eine Verschiebung
+1288	To confirm type RIPORTA	Para confirmar escribe RIPORTA	Zur Bestätigung RIPORTA eingeben
+1289	The apps are already on the system disk	Las apps ya están en el disco del sistema	Die Apps liegen bereits auf der Systemfestplatte
+1290	copy of {0} failed (rsync {1}): {2}	copia de {0} fallida (rsync {1}): {2}	Kopie von {0} fehlgeschlagen (rsync {1}): {2}
+1291	check of the copy of {0}: {1} differences ({2})	comprobación de la copia de {0}: {1} diferencias ({2})	Prüfung der Kopie von {0}: {1} Unterschiede ({2})
+1292	{0} doesn't appear to be mounted from the new disk	{0} no parece montado desde el disco nuevo	{0} scheint nicht von der neuen Festplatte eingehängt zu sein
+1293	not restarting: {0}	no vuelven a arrancar: {0}	starten nicht: {0}
+1294	There's no old data to delete	No hay datos antiguos que borrar	Keine alten Daten zu löschen
+1295	Invalid time (HH:MM)	Hora no válida (HH:MM)	Ungültige Uhrzeit (HH:MM)
+1296	No free port found	Ningún puerto libre encontrado	Kein freier Port gefunden
+1297	Invalid app name	Nombre de la app no válido	Ungültiger App-Name
+1298	docker compose:	docker compose:	docker compose:
+1299	Invalid compose: {0}	Compose no válido: {0}	Ungültiges Compose: {0}
+1300	Invalid compose: the services section is missing	Compose no válido: falta la sección services	Ungültiges Compose: der Abschnitt services fehlt
+1301	Service {0} has no image	El servicio {0} no tiene imagen	Der Dienst {0} hat kein Image
+1302	Apps built from source (build:) are not supported	Las apps que se compilan desde el código (build:) no son compatibles	Apps, die aus dem Quellcode gebaut werden (build:), werden nicht unterstützt
+1303	Invalid port: {0}	Puerto no válido: {0}	Ungültiger Port: {0}
+1304	Folder {0} must be a full path (e.g. /DATA/...)	La carpeta {0} debe ser una ruta completa (p. ej. /DATA/...)	Der Ordner {0} muss ein vollständiger Pfad sein (z. B. /DATA/...)
+1305	Invalid variable name: {0}	Nombre de variable no válido: {0}	Ungültiger Variablenname: {0}
+1306	Port {0} is already used by another app or service: choose another one	El puerto {0} ya lo usa otra app o servicio: elige otro	Port {0} wird schon von einer anderen App oder einem Dienst genutzt: wähle einen anderen
+1307	Invalid CPU limit	Límite de CPU no válido	Ungültige CPU-Grenze
+1308	CPU limit between 0.1 and {0}	Límite de CPU entre 0,1 y {0}	CPU-Grenze zwischen 0,1 und {0}
+1309	Invalid RAM limit: e.g. 512m or 2g	Límite de RAM no válido: p. ej. 512m o 2g	Ungültige RAM-Grenze: z. B. 512m oder 2g
+1310	Invalid app name: lowercase letters, numbers and hyphens	Nombre de la app no válido: minúsculas, números y guiones	Ungültiger App-Name: Kleinbuchstaben, Zahlen und Bindestriche
+1311	An app called {0} already exists	Ya existe una app llamada {0}	Es gibt bereits eine App namens {0}
+1312	Only apps installed from here can be edited	Solo se pueden modificar las apps instaladas desde aquí	Nur hier installierte Apps können bearbeitet werden
+1313	App not found	App no encontrada	App nicht gefunden
+1314	The changes didn't work ({0}): the app went back to the previous configuration	Los cambios no funcionaban ({0}): la app ha vuelto a la configuración anterior	Die Änderungen funktionierten nicht ({0}): die App ist zur vorherigen Konfiguration zurückgekehrt
+1315	The changes didn't work ({0}) and the restore is incomplete: {1}	Los cambios no funcionaban ({0}) y la restauración no está completa: {1}	Die Änderungen funktionierten nicht ({0}), und die Wiederherstellung ist unvollständig: {1}
+1316	Invalid configuration, nothing was changed: {0}	Configuración no válida, no se ha cambiado nada: {0}	Ungültige Konfiguration, nichts wurde geändert: {0}
+1317	Invalid action	Acción no válida	Ungültige Aktion
+1318	There's an operation running on this app	Hay una operación en curso en esta app	Für diese App läuft ein Vorgang
+1319	Already up to date	Ya actualizada	Bereits aktuell
+1320	Update failed: {0}	Actualización fallida: {0}	Aktualisierung fehlgeschlagen: {0}
+1321	The new version didn't start ({0}): {1} went back to the previous version	La nueva versión no arrancaba ({0}): {1} ha vuelto a la versión anterior	Die neue Version startete nicht ({0}): {1} ist zur vorherigen Version zurückgekehrt
+1322	Update failed and restore incomplete: {0}	Actualización fallida y restauración incompleta: {0}	Aktualisierung fehlgeschlagen und Wiederherstellung unvollständig: {0}
+1323	Only apps installed from here can be updated	Solo se pueden actualizar las apps instaladas desde aquí	Nur hier installierte Apps können aktualisiert werden
+1324	No update available: press "Check" first	Ninguna actualización disponible: pulsa primero "Comprobar"	Kein Update verfügbar: drücke zuerst „Prüfen“
+1325	The password must be at least 8 characters	La contraseña debe tener al menos 8 caracteres	Das Passwort muss mindestens 8 Zeichen haben
+1326	Password too long	Contraseña demasiado larga	Passwort zu lang
+1327	Invalid username: lowercase letters, numbers, _ and - (max 32)	Nombre de usuario no válido: minúsculas, números, _ y - (máx. 32)	Ungültiger Benutzername: Kleinbuchstaben, Zahlen, _ und - (max. 32)
+1328	This user already exists	Este usuario ya existe	Dieser Benutzer existiert bereits
+1329	User not found	Usuario no encontrado	Benutzer nicht gefunden
+1330	Too many attempts: try again in {0} seconds	Demasiados intentos: inténtalo de nuevo en {0} segundos	Zu viele Versuche: in {0} Sekunden erneut versuchen
+1331	Wrong username or password	Usuario o contraseña incorrectos	Benutzername oder Passwort falsch
+1332	Wrong current password	Contraseña actual incorrecta	Aktuelles Passwort falsch
+1333	Account not found	Cuenta no encontrada	Konto nicht gefunden
+1334	At least one administrator is needed	Hace falta al menos un administrador	Mindestens ein Administrator ist nötig
+1335	You can't remove the administrator role from yourself	No puedes quitarte a ti mismo el rol de administrador	Du kannst dir selbst die Administratorrolle nicht entziehen
+1336	You can't delete the account you're logged in with	No puedes eliminar la cuenta con la que has entrado	Du kannst das Konto, mit dem du angemeldet bist, nicht löschen
+1337	Backup not found	Copia de seguridad no encontrada	Sicherung nicht gefunden
+1338	Invalid destination	Destino no válido	Ungültiges Ziel
+1339	restic is not installed	restic no está instalado	restic ist nicht installiert
+1340	Folder {0} doesn't exist	La carpeta {0} no existe	Der Ordner {0} existiert nicht
+1341	Choose at least one folder to save	Elige al menos una carpeta que guardar	Wähle mindestens einen zu sichernden Ordner
+1342	The destination can't be inside a folder being saved	El destino no puede estar dentro de una carpeta que se guarda	Das Ziel darf nicht in einem zu sichernden Ordner liegen
+1343	Invalid rclone destination (e.g. gdrive:backup-nas)	Destino rclone no válido (p. ej. gdrive:backup-nas)	Ungültiges rclone-Ziel (z. B. gdrive:backup-nas)
+1344	Choose where to save the backup	Elige dónde guardar la copia	Wähle, wohin gesichert wird
+1345	Invalid schedule	Programación no válida	Ungültiger Zeitplan
+1346	Invalid time (e.g. 03:00)	Hora no válida (p. ej. 03:00)	Ungültige Uhrzeit (z. B. 03:00)
+1347	Invalid day	Día no válido	Ungültiger Tag
+1348	The key must be at least 8 characters	La clave debe tener al menos 8 caracteres	Der Schlüssel muss mindestens 8 Zeichen haben
+1349	I can't read the backup:	No consigo leer la copia de seguridad:	Kann die Sicherung nicht lesen:
+1350	Invalid version	Versión no válida	Ungültige Version
+1351	Source not found	Fuente no encontrada	Quelle nicht gefunden
+1352	You need the address of a zip of apps (ending in .zip)	Hace falta la dirección de un zip de apps (que termine en .zip)	Du brauchst die Adresse einer Zip-Datei mit Apps (endet auf .zip)
+1353	This source is already there	Esta fuente ya existe	Diese Quelle gibt es schon
+1354	Only sources you added can be removed	Solo se pueden quitar las fuentes añadidas por ti	Nur selbst hinzugefügte Quellen können entfernt werden
+1355	file too large	archivo demasiado grande	Datei zu groß
+1356	no valid app found	ninguna app válida encontrada	keine gültige App gefunden
+1357	Invalid frequency	Frecuencia no válida	Ungültige Häufigkeit
+1358	App not found in the catalogue	App no encontrada en el catálogo	App nicht im Katalog gefunden
+1359	This source doesn't have the requested app	Esta fuente no tiene la app pedida	Diese Quelle hat die gewünschte App nicht
+1360	App file not found: refresh the catalogue	Archivo de la app no encontrado: actualiza el catálogo	App-Datei nicht gefunden: Katalog aktualisieren
+1361	Device not found	Dispositivo no encontrado	Gerät nicht gefunden
+1362	This is the system disk	Este es el disco del sistema	Das ist die Systemfestplatte
+1363	Choose a partition to mount	Elige una partición que montar	Wähle eine Partition zum Einhängen
+1364	Already mounted in {0}	Ya montado en {0}	Bereits eingehängt unter {0}
+1365	File system not supported: {0}	Sistema de archivos no compatible: {0}	Dateisystem nicht unterstützt: {0}
+1366	Windows left the disk hibernated ("fast startup"). Shut the PC down completely	Windows ha dejado el disco en hibernación ("inicio rápido"). Apaga del todo el PC	Windows hat die Festplatte im Ruhezustand gelassen („Schnellstart“). Fahre den PC vollständig herunter
+1367	Mount failed:	Montaje fallido:	Einhängen fehlgeschlagen:
+1368	It's not mounted	No está montado	Nicht eingehängt
+1369	I can't unmount it: maybe an app or a share is using it.	No consigo desmontarlo: quizá lo está usando una app o una carpeta compartida.	Kann nicht aushängen: vielleicht nutzt eine App oder Freigabe sie.
+1370	Invalid format	Formato no válido	Ungültiges Format
+1371	The program to create {0} is missing ({1})	Falta el programa para crear {0} ({1})	Das Programm zum Erstellen von {0} fehlt ({1})
+1372	The system disk can't be formatted from here	El disco del sistema no se puede formatear desde aquí	Die Systemfestplatte kann hier nicht formatiert werden
+1373	To confirm type exactly: {0}	Para confirmar escribe exactamente: {0}	Zur Bestätigung genau eingeben: {0}
+1374	I can't unmount {0}: close the apps that use it. {1}	No consigo desmontar {0}: cierra las apps que lo usan. {1}	Kann {0} nicht aushängen: schließe die Apps, die sie nutzen. {1}
+1375	The new partition didn't appear: try again	La nueva partición no ha aparecido: inténtalo de nuevo	Die neue Partition ist nicht erschienen: erneut versuchen
+1376	Disk formatted as {0}, but not mounted: {1}	Disco formateado en {0}, pero no montado: {1}	Festplatte als {0} formatiert, aber nicht eingehängt: {1}
+1377	Invalid test type	Tipo de prueba no válido	Ungültiger Testtyp
+1378	The disk doesn't accept the SMART test	El disco no acepta la prueba SMART	Die Festplatte akzeptiert den SMART-Test nicht
+1379	{0} test started: it takes about {1} minutes	Prueba {0} iniciada: dura unos {1} minutos	{0}-Test gestartet: dauert etwa {1} Minuten

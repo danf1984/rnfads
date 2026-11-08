@@ -1,0 +1,18 @@
+[Unit]
+Description=Interfaccia web del NAS
+After=network.target docker.service nido-netmounts.service caddy.service
+Wants=docker.service caddy.service
+
+[Service]
+Environment=PYTHONPATH=/usr/lib/nido/panel
+Environment=PYTHONUNBUFFERED=1
+# Caddy (porte 80 e 443) passa le richieste qui. Se Caddy non parte, l'interfaccia apre da sola
+# anche la porta 80 (riserva) per poter sistemare l'HTTPS.
+Environment=NIDO_LISTEN=127.0.0.1:8090
+Environment=NIDO_FALLBACK_LISTEN=0.0.0.0:80
+ExecStart=/usr/bin/python3 -m nidopanel.server
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

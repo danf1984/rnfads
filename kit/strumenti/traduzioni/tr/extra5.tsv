@@ -1,0 +1,53 @@
+Passaggio di versione completato	Version upgrade completed	Cambio de versión completado	Versionswechsel abgeschlossen
+Ubuntu {0}: riavvia il NAS per finire.	Ubuntu {0}: restart the NAS to finish.	Ubuntu {0}: reinicia el NAS para terminar.	Ubuntu {0}: starte das NAS neu, um abzuschließen.
+Passaggio di versione non riuscito	Version upgrade failed	El cambio de versión ha fallado	Versionswechsel fehlgeschlagen
+Controlla il registro in Impostazioni > Aggiornamenti di sistema.	Check the log in Settings > System updates.	Revisa el registro en Ajustes > Actualizaciones del sistema.	Prüfe das Protokoll unter Einstellungen > Systemaktualisierungen.
+Controlli dopo il passaggio di versione: tutto a posto	Checks after the version upgrade: all good	Comprobaciones tras el cambio de versión: todo correcto	Prüfungen nach dem Versionswechsel: alles in Ordnung
+Controlli dopo il passaggio di versione: ci sono problemi	Checks after the version upgrade: there are problems	Comprobaciones tras el cambio de versión: hay problemas	Prüfungen nach dem Versionswechsel: es gibt Probleme
+Ubuntu {0} — puoi tornare alla versione di prima dalla pagina	Ubuntu {0} — you can go back to the previous version from the page	Ubuntu {0} — puedes volver a la versión anterior desde la página	Ubuntu {0} — du kannst auf der Seite zur vorherigen Version zurückkehren
+Spostamento delle app non riuscito	Moving the apps failed	No se pudieron mover las apps	Verschieben der Apps fehlgeschlagen
+App spostate su un altro disco	Apps moved to another disk	Apps movidas a otro disco	Apps auf ein anderes Laufwerk verschoben
+Docker e AppData ora stanno su {0}.	Docker and AppData are now on {0}.	Docker y AppData están ahora en {0}.	Docker und AppData liegen jetzt auf {0}.
+App riportate sul disco di sistema	Apps moved back to the system disk	Apps devueltas al disco del sistema	Apps zurück auf das Systemlaufwerk verschoben
+{0} aggiornato	{0} updated	{0} actualizado	{0} aktualisiert
+Versione {0}	Version {0}	Versión {0}	Version {0}
+Aggiornamento di {0} non riuscito	Update of {0} failed	La actualización de {0} ha fallado	Aktualisierung von {0} fehlgeschlagen
+Tornato alla versione di prima.	Went back to the previous version.	Se ha vuelto a la versión anterior.	Zur vorherigen Version zurückgekehrt.
+Controlla Impostazioni > Aggiornamenti di sistema.	Check Settings > System updates.	Revisa Ajustes > Actualizaciones del sistema.	Prüfe Einstellungen > Systemaktualisierungen.
+Disco {0}: stato guasto	Disk {0}: status failed	Disco {0}: estado averiado	Laufwerk {0}: Zustand defekt
+Disco {0}: stato attenzione	Disk {0}: status warning	Disco {0}: estado de atención	Laufwerk {0}: Zustand Warnung
+Il controllo SMART segnala un problema. Fai subito un backup dei dati.	The SMART check reports a problem. Back up your data right away.	La comprobación SMART indica un problema. Haz una copia de seguridad de los datos cuanto antes.	Die SMART-Prüfung meldet ein Problem. Sichere sofort deine Daten.
+Disco {0} caldo: {1} °C	Disk {0} is hot: {1} °C	Disco {0} caliente: {1} °C	Laufwerk {0} ist heiß: {1} °C
+Soglia impostata: {0} °C. Controlla la ventilazione.	Threshold set: {0} °C. Check the ventilation.	Umbral configurado: {0} °C. Revisa la ventilación.	Eingestellter Grenzwert: {0} °C. Prüfe die Belüftung.
+Spazio quasi finito in {0}	Almost out of space on {0}	Casi sin espacio en {0}	Fast kein Speicherplatz mehr auf {0}
+Occupato il {0}%.	{0}% used.	Ocupado el {0}%.	{0} % belegt.
+Aggiornamenti disponibili	Updates available	Actualizaciones disponibles	Aktualisierungen verfügbar
+{0} pacchetti da aggiornare	{0} packages to update	{0} paquetes por actualizar	{0} Pakete zu aktualisieren
+{0} pacchetti da aggiornare, di cui {1} di sicurezza	{0} packages to update, {1} of them security updates	{0} paquetes por actualizar, {1} de ellos de seguridad	{0} Pakete zu aktualisieren, davon {1} Sicherheitsupdates
+Backup "{0}" completato	Backup "{0}" completed	Copia de seguridad "{0}" completada	Sicherung „{0}“ abgeschlossen
+Dati aggiunti: {0}	Data added: {0}	Datos añadidos: {0}	Hinzugefügte Daten: {0}
+Backup "{0}" non riuscito	Backup "{0}" failed	La copia de seguridad "{0}" ha fallado	Sicherung „{0}“ fehlgeschlagen
+Aggiornamento completato	Update completed	Actualización completada	Aktualisierung abgeschlossen
+Serve un riavvio per completare.	A restart is needed to finish.	Hace falta reiniciar para terminar.	Zum Abschließen ist ein Neustart nötig.
+Il sistema è aggiornato.	The system is up to date.	El sistema está actualizado.	Das System ist aktuell.
+Aggiornamento non riuscito	Update failed	La actualización ha fallado	Aktualisierung fehlgeschlagen
+Disco {0}: problema rilevato	Disk {0}: problem detected	Disco {0}: problema detectado	Laufwerk {0}: Problem erkannt
+Controlla la pagina Dischi.	Check the Disks page.	Revisa la página Discos.	Prüfe die Seite Laufwerke.
+Prova di notifica	Test notification	Notificación de prueba	Testbenachrichtigung
+Se leggi questo messaggio, le notifiche di {0} funzionano.	If you are reading this message, notifications from {0} work.	Si lees este mensaje, las notificaciones de {0} funcionan.	Wenn du diese Nachricht liest, funktionieren die Benachrichtigungen von {0}.
+{0}: spegnimento programmato in attesa	{0}: scheduled shutdown waiting	{0}: apagado programado en espera	{0}: geplantes Herunterfahren wartet
+Aspetto che finisca: {0}. Al massimo {1} minuti, poi lo spegnimento viene saltato.	Waiting for it to finish: {0}. At most {1} minutes, then the shutdown is skipped.	Espero a que termine: {0}. Como máximo {1} minutos; después se omite el apagado.	Warte, bis es fertig ist: {0}. Höchstens {1} Minuten, danach wird das Herunterfahren übersprungen.
+{0}: spegnimento programmato saltato	{0}: scheduled shutdown skipped	{0}: apagado programado omitido	{0}: geplantes Herunterfahren übersprungen
+Dopo {0} minuti è ancora in corso: {1}. Il NAS resta acceso.	After {0} minutes it is still running: {1}. The NAS stays on.	Tras {0} minutos sigue en curso: {1}. El NAS sigue encendido.	Nach {0} Minuten läuft noch: {1}. Das NAS bleibt eingeschaltet.
+{0}: spegnimento programmato	{0}: scheduled shutdown	{0}: apagado programado	{0}: geplantes Herunterfahren
+Il NAS si spegne adesso. {0}	The NAS is shutting down now. {0}	El NAS se apaga ahora. {0}	Das NAS wird jetzt heruntergefahren. {0}
+Il NAS si spegne adesso (dopo {0} minuti di attesa). {1}	The NAS is shutting down now (after waiting {0} minutes). {1}	El NAS se apaga ahora (tras {0} minutos de espera). {1}	Das NAS wird jetzt heruntergefahren (nach {0} Minuten Wartezeit). {1}
+Si riaccende con il pulsante di accensione.	It turns back on with the power button.	Se vuelve a encender con el botón de encendido.	Es wird mit dem Einschaltknopf wieder eingeschaltet.
+Si riaccende da solo {0}.	It turns back on by itself {0}.	Se vuelve a encender solo {0}.	Es schaltet sich {0} von selbst wieder ein.
+ATTENZIONE: l'accensione programmata non è stata impostata ({0}). Per riaccenderlo usa il pulsante.	WARNING: the scheduled power-on was not set ({0}). Use the button to turn it back on.	ATENCIÓN: no se ha configurado el encendido programado ({0}). Para volver a encenderlo usa el botón.	ACHTUNG: Das geplante Einschalten wurde nicht eingestellt ({0}). Schalte es mit dem Knopf wieder ein.
+{0} aggiornata	{0} updated	{0} actualizada	{0} aktualisiert
+Versione {0} → {1}	Version {0} → {1}	Versión {0} → {1}	Version {0} → {1}
+{0}: aggiornamento non riuscito	{0}: update failed	{0}: la actualización ha fallado	{0}: Aktualisierung fehlgeschlagen
+{0}: aggiornamento non riuscito, tornata alla versione di prima	{0}: update failed, back to the previous version	{0}: la actualización ha fallado, se ha vuelto a la versión anterior	{0}: Aktualisierung fehlgeschlagen, zurück zur vorherigen Version
+La versione nuova non partiva: {0}	The new version did not start: {0}	La versión nueva no arrancaba: {0}	Die neue Version startete nicht: {0}
+La versione nuova non partiva: {0}. Anche il ritorno non è riuscito: {1}	The new version did not start: {0}. Going back also failed: {1}	La versión nueva no arrancaba: {0}. Tampoco se pudo volver atrás: {1}	Die neue Version startete nicht: {0}. Auch das Zurücksetzen ist fehlgeschlagen: {1}

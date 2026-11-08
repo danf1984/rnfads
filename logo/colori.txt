@@ -1,0 +1,10 @@
+Colori del marchio
+#06B6D4 ciano
+#6366F1 indaco
+#EC4899 rosa
+#F97316 arancio
+#FACC15 giallo
+Sfumatura: linear-gradient(120deg, #06b6d4 0%, #6366f1 38%, #ec4899 72%, #f97316 100%)
+Font dell'interfaccia: Inter (SIL OFL 1.1).
+Scritta del marchio "RNFADS" (dal 31/10/2026): R, F, D scure in Orbitron 800; N, A, S con la sfumatura in
+JetBrains Mono 800 (lettere alternate). Entrambi i font SIL OFL 1.1, inclusi in ui/fonts con la licenza.

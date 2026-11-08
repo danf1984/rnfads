@@ -1,0 +1,167 @@
+#!/bin/bash
+# Eseguito dentro il sistema in costruzione, dopo l'installazione dei pacchetti.
+set -euo pipefail
+
+# shellcheck source=/dev/null
+. /etc/nido/nido.conf
+echo "[nido] configurazione di $NIDO_NAME $NIDO_VERSION"
+
+# --- Lingua, fuso orario, tastiera -------------------------------------------
+# Le lingue scelte nell'installer: italiano, inglese (US/UK), spagnolo, tedesco
+locale-gen "$NIDO_LOCALE" C.UTF-8 it_IT.UTF-8 en_US.UTF-8 en_GB.UTF-8 es_ES.UTF-8 de_DE.UTF-8
+update-locale LANG="$NIDO_LOCALE"
+ln -sf "/usr/share/zoneinfo/$NIDO_TIMEZONE" /etc/localtime
+echo "$NIDO_TIMEZONE" > /etc/timezone
+cat > /etc/default/keyboard <<EOF
+XKBMODEL="pc105"
+XKBLAYOUT="$NIDO_KEYMAP"
+XKBVARIANT=""
+XKBOPTIONS=""
+BACKSPACE="guess"
+EOF
+
+# --- Nome del sistema (os-release) --------------------------------------------
+# ID resta quello della base (ubuntu): molti strumenti lo usano per riconoscere il sistema.
+if [ ! -e /usr/lib/os-release.base ]; then
+  dpkg-divert --package nido --rename --divert /usr/lib/os-release.base --add /usr/lib/os-release
+fi
+BASE=$(. /usr/lib/os-release.base && echo "${NAME:-Linux} ${VERSION_ID:-}")
+{
+  grep -vE '^(NAME|PRETTY_NAME|HOME_URL|SUPPORT_URL|BUG_REPORT_URL|PRIVACY_POLICY_URL|LOGO)=' /usr/lib/os-release.base
+  echo "NAME=\"$NIDO_NAME\""
+  echo "PRETTY_NAME=\"$NIDO_NAME $NIDO_VERSION ($BASE)\""
+} > /usr/lib/os-release
+ln -sf ../usr/lib/os-release /etc/os-release
+
+# --- Schermata della console: dove aprire l'interfaccia ---------------------------
+printf '%s %s\n' "$NIDO_NAME" "$NIDO_VERSION" > /etc/issue.net
+/usr/lib/nido/issue.sh
+
+# --- Interfaccia web del NAS ---------------------------------------------------------------
+# Dati delle app e catalogo: nella ISO non c'è nessun catalogo, si scarica al primo avvio.
+mkdir -p /var/lib/nido/apps /var/lib/nido/catalog /var/log/nido
+chmod 700 /var/lib/nido/apps
+# La licenza del nostro codice (GPL-3.0), visibile nella pagina "Informazioni e licenze"
+cp /usr/share/common-licenses/GPL-3 /usr/lib/nido/panel/ui/LICENSE.txt
+# Il font Inter è incluso anche nell'interfaccia: la sua licenza (OFL 1.1) va con lui
+if [ -f /usr/share/doc/fonts-inter/copyright ]; then
+  cp /usr/share/doc/fonts-inter/copyright /usr/lib/nido/panel/ui/fonts/LICENSE-Inter.txt
+fi
+
+# Nel sistema live (dalla chiavetta) l'interfaccia, le app e Docker non partono:
+# servono solo dopo l'installazione su disco.
+for unit in docker nido-firstboot nido-ui nido-netmounts nido-monitor nido-catalog nido-apps-update \
+            nido-standby nido-mdns nido-poweroff caddy rclone ssh getty@tty1 smartmontools; do
+  mkdir -p "/etc/systemd/system/$unit.service.d"
+  cat > "/etc/systemd/system/$unit.service.d/nido-live.conf" <<'EOF'
+[Unit]
+ConditionPathExists=!/run/live/medium
+EOF
+done
+
+# Snapshot di apt: li fa solo /usr/lib/nido/snapshot-apt.sh (80nido-snapshot), che non ne crea di doppi quando
+# l'aggiornamento parte dall'interfaccia. L'hook di Ubuntu (80snapper) viene messo da parte con dpkg-divert.
+if [ -e /etc/apt/apt.conf.d/80snapper ] || dpkg -S /etc/apt/apt.conf.d/80snapper >/dev/null 2>&1; then
+  mkdir -p /usr/share/nido
+  dpkg-divert --local --rename --divert /usr/share/nido/80snapper.ubuntu --add /etc/apt/apt.conf.d/80snapper >/dev/null
+fi
+
+# --- Servizi --------------------------------------------------------------------------------
+enable() { systemctl enable "$@" >/dev/null 2>&1 || echo "[nido] nota: non ho potuto abilitare $*"; }
+enable NetworkManager.service
+enable ssh.service
+enable avahi-daemon.service
+enable docker.service
+enable smartmontools.service
+enable wsdd-server.service || enable wsdd.service
+enable nido-firstboot.service
+enable nido-ui.service
+enable caddy.service
+enable nido-standby.service
+enable nido-mdns.service
+enable nido-netmounts.service
+enable nido-uptime.service
+enable nido-release-verify.service
+enable nido-live-installer.service
+enable systemd-resolved.service
+enable systemd-timesyncd.service
+enable nido-monitor.timer
+enable nido-catalog.timer
+enable nido-apps-update.timer
+enable nido-selfupdate-check.timer
+
+# NFS parte solo quando lo attivi dall'interfaccia (Condivisioni); il DLNA è un'app Docker
+systemctl disable nfs-server.service >/dev/null 2>&1 || true
+
+# Controllo SMART con avvisi tramite le Notifiche dell'interfaccia
+cp /usr/share/nido/smartd.conf /etc/smartd.conf
+
+# Schermo del NAS: utente senza privilegi per il kiosk; attivo di base sui sistemi installati
+# (nido-kiosk-boot lo abilita l'installer, non la chiavetta: nella sessione live su tty1 c'è l'installer)
+id nido-kiosk >/dev/null 2>&1 || useradd --system --create-home --home-dir /var/lib/nido-kiosk --shell /usr/sbin/nologin nido-kiosk
+for g in video render input; do getent group "$g" >/dev/null && usermod -aG "$g" nido-kiosk; done
+[ -f /etc/nido/screen.json ] || echo '{"enabled": true}' > /etc/nido/screen.json
+
+# Cartelle dati
+mkdir -p /DATA/Utenti /DATA/AppData
+chown root:users /DATA/Utenti
+chmod 0755 /DATA/Utenti
+
+# Rete: NetworkManager gestisce tutte le schede cablate in DHCP.
+# Ubuntu di serie lascia le schede a netplan: questo file vuoto annulla quella regola.
+mkdir -p /etc/NetworkManager/conf.d
+: > /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
+cat > /etc/NetworkManager/conf.d/10-nido.conf <<'EOF'
+[main]
+plugins=keyfile
+
+[keyfile]
+unmanaged-devices=interface-name:docker*;interface-name:veth*;interface-name:br-*
+EOF
+
+# HTTPS: finché il primo avvio non crea il certificato di casa, Caddy passa tutto all'interfaccia in HTTP
+mkdir -p /etc/caddy /etc/nido/tls
+chmod 750 /etc/nido/tls
+chgrp caddy /etc/nido/tls 2>/dev/null || true
+cat > /etc/caddy/Caddyfile <<'EOF'
+# Configurazione iniziale: al primo avvio l'interfaccia la sostituisce (Impostazioni > Accesso sicuro)
+{
+	auto_https off
+}
+
+:80 {
+	reverse_proxy 127.0.0.1:8090
+}
+EOF
+
+# --- Marchi e licenze ------------------------------------------------------------------------
+# Le linee guida di Ubuntu per i derivati: il nome resta "basato su Ubuntu", DISTRIB_ID non
+# cambia, i loghi di Ubuntu vanno tolti.
+BASE_DESC=$(. /etc/lsb-release && echo "${DISTRIB_DESCRIPTION:-Ubuntu}")
+sed -i "s|^DISTRIB_DESCRIPTION=.*|DISTRIB_DESCRIPTION=\"$NIDO_NAME $NIDO_VERSION (basato su $BASE_DESC)\"|" /etc/lsb-release
+cat > /etc/dpkg/dpkg.cfg.d/90nido-no-ubuntu-logos <<'EOF'
+# I loghi di Ubuntu non fanno parte di questo sistema (anche dopo gli aggiornamenti di base-files)
+path-exclude=/usr/share/pixmaps/ubuntu-logo*
+path-exclude=/usr/share/plymouth/ubuntu-logo*
+path-exclude=/usr/share/plymouth/themes/spinner/watermark.png
+EOF
+rm -f /usr/share/pixmaps/ubuntu-logo* /usr/share/plymouth/ubuntu-logo* /usr/share/plymouth/themes/spinner/watermark.png
+# Messaggi di benvenuto di Ubuntu (link all'aiuto di Ubuntu, notizie scaricate da internet)
+for m in 10-help-text 50-motd-news; do
+  if [ -f "/etc/update-motd.d/$m" ]; then chmod -x "/etc/update-motd.d/$m"; fi
+done
+if [ -f /etc/default/motd-news ]; then sed -i 's/^ENABLED=.*/ENABLED=0/' /etc/default/motd-news; fi
+
+# Note legali, licenze e script per i sorgenti
+DOC=/usr/share/doc/nido
+mkdir -p "$DOC/licenses"
+sed -i -e "s|@NAME@|$NIDO_NAME|g" -e "s|@VERSION@|$NIDO_VERSION|g" "$DOC/THIRD_PARTY_NOTICES.txt"
+cp /usr/share/common-licenses/Apache-2.0 "$DOC/licenses/Apache-2.0.txt"
+cp /usr/share/common-licenses/GPL-3 "$DOC/licenses/GPL-3.0.txt"
+chmod +x "$DOC/fetch-sources.sh"
+# Visibili anche nell'interfaccia (pagina "Informazioni e licenze")
+cp "$DOC/THIRD_PARTY_NOTICES.txt" /usr/lib/nido/panel/ui/licenze.txt
+
+# --- Pulizia ---------------------------------------------------------------------------------
+apt-get clean
+echo "[nido] configurazione completata"

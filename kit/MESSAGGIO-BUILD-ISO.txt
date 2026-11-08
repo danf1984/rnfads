@@ -1,0 +1,32 @@
+Ti allego rnfads-kit-<data>.zip: è il mio sistema NAS RNFADS basato su Ubuntu 26.04.
+Leggi RIPRENDERE.md, SPEC.md, STATO-FASE1B.md e DA-FARE.md prima di iniziare (versione in config.env, NIDO_VERSION).
+
+COSTRUISCI LA ISO (versione di config.env):
+1. Usa build.sh dentro un chroot Ubuntu 26.04 (debootstrap resolute), come in SPEC.md §10.
+   - Lancia build.sh UNA volta sola per cartella (due build insieme si cancellano a vicenda).
+   - Nel chroot servono /dev, /dev/pts, /proc, /sys e /run montati.
+   - Se il mirror risponde 503 o "Couldn't download", rilancia.
+2. Correggi gli errori di build se ce ne sono e annotali in STATO-FASE1B.md.
+3. Controlli senza VM:
+   - avvio BIOS e UEFI presenti (xorriso -report_el_torito);
+   - pacchetto nido-nas installato nel sistema (dpkg -l nido-nas) e salvato in /var/lib/nido/updates/installed/;
+   - servizi nuovi abilitati;
+   - codice Python compilato con il Python della ISO;
+   - le pagine nel chroot senza errori JavaScript.
+4. NON provare la ISO in VM: la provo io e ti riporto gli errori.
+
+CONSEGNA:
+- la ISO in volumi 7-Zip da 350 MB (.7z.001, .7z.002…, li crea build.sh) con SHA256SUMS.txt e istruzioni per estrarla
+  (Windows: tasto destro sul .001 → 7-Zip → Estrai qui; Linux: 7z x <file>.7z.001);
+- il pacchetto rnfads_<versione>_all.deb uscito dalla build (non firmato se non c'è la chiave privata: lo firmo io);
+- il kit aggiornato in zip, con SPEC.md e DA-FARE.md aggiornati.
+
+Chiave per le firme: se in kit/chiavi/ c'è aggiornamenti-pubblica.pem va nella ISO (lo fa make-deb.sh da solo). Se non c'è,
+dimmelo: la ISO accetterà i pacchetti solo in modalità sviluppatore. La chiave privata non te la mando mai.
+
+Regole:
+- Lavora a tappe e, a ogni tappa che funziona, salva il lavoro in uno zip aggiornato e mandamelo.
+- Quando ti scrivo "fermati", chiudi al primo punto stabile e consegnami subito lo zip con quello che funziona e una nota
+  su cosa manca.
+- Lavora in autonomia e usa poche schermate di controllo per risparmiare utilizzo.
+- Traduzioni: non ora.

@@ -1,0 +1,13 @@
+# Prodotti della build (si pubblicano nelle Releases, non nel repository)
+kit/out/
+kit/work/
+*.iso
+*.7z.*
+*.deb
+*.sig
+# Mai nel repository: chiavi private e configurazioni locali
+*privata*.pem
+*private*.pem
+rnfads-chiavi/
+__pycache__/
+*.pyc

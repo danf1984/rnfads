@@ -1,0 +1,172 @@
+es. Film	e.g. Movies	p. ej. Películas	z. B. Filme
+es. maria	e.g. maria	p. ej. maria	z. B. maria
+es. Maria Rossi	e.g. Maria Rossi	p. ej. María García	z. B. Maria Müller
+Lascia vuoto per crearne una a caso	Leave empty to create a random one	Déjalo vacío para crear una al azar	Leer lassen für einen zufälligen
+es. Foto di famiglia	e.g. Family photos	p. ej. Fotos de familia	z. B. Familienfotos
+Dettagli SMART	SMART details	Detalles SMART	SMART-Details
+Azioni	Actions	Acciones	Aktionen
+Togli la fascia	Remove the window	Quitar la franja	Zeitfenster entfernen
+: non vanno mai in standby. Se due fasce si sovrappongono vince "Sempre accesi". Un orario come 23:00–07:00 passa la mezzanotte; la stessa ora di inizio e fine vuol dire tutto il giorno. L'orario dei backup resta valido.	: they never go into standby. If two windows overlap, "Always on" wins. A time like 23:00–07:00 crosses midnight; the same start and end time means all day. The backup time stays valid.	: nunca entran en espera. Si dos franjas se solapan gana "Siempre encendidos". Un horario como 23:00–07:00 pasa la medianoche; la misma hora de inicio y fin significa todo el día. El horario de las copias sigue valiendo.	: sie gehen nie in Standby. Überschneiden sich zwei Zeitfenster, gewinnt „Immer an“. Eine Zeit wie 23:00–07:00 geht über Mitternacht; gleiche Start- und Endzeit bedeutet den ganzen Tag. Die Sicherungszeit bleibt gültig.
+Trascina qui una cartella per aggiungerla ai preferiti	Drag a folder here to add it to favourites	Arrastra aquí una carpeta para añadirla a favoritos	Ordner hierher ziehen, um ihn zu den Favoriten hinzuzufügen
+Cartella superiore (Backspace)	Parent folder (Backspace)	Carpeta superior (Retroceso)	Übergeordneter Ordner (Rücktaste)
+Cerca in questa cartella…	Search in this folder…	Buscar en esta carpeta…	In diesem Ordner suchen…
+Cerca	Search	Buscar	Suchen
+Ordina	Sort	Ordenar	Sortieren
+Griglia	Grid	Cuadrícula	Raster
+Elenco	List	Lista	Liste
+Altre azioni	More actions	Más acciones	Weitere Aktionen
+Deseleziona (Esc)	Deselect (Esc)	Deseleccionar (Esc)	Auswahl aufheben (Esc)
+Svuota gli appunti	Clear the clipboard	Vaciar el portapapeles	Zwischenablage leeren
+ZIP si apre ovunque; 7z comprime di più; TAR.GZ conserva i permessi (Linux).	ZIP opens everywhere; 7z compresses more; TAR.GZ keeps permissions (Linux).	ZIP se abre en todas partes; 7z comprime más; TAR.GZ conserva los permisos (Linux).	ZIP öffnet sich überall; 7z komprimiert stärker; TAR.GZ behält die Berechtigungen (Linux).
+Togli le finite	Clear finished	Quitar las terminadas	Abgeschlossene entfernen
+Premi Crea link	Press Create link	Pulsa Crear enlace	Drücke Link erstellen
+Copia link	Copy link	Copiar enlace	Link kopieren
+Disattiva	Disable	Desactivar	Deaktivieren
+: Home, app e store in consultazione, il proprio account; niente file, dischi, impostazioni del sistema e installazioni.	: Home, apps and store (view only), their own account; no files, disks, system settings or installations.	: Inicio, apps y tienda solo para consultar, su propia cuenta; nada de archivos, discos, ajustes del sistema ni instalaciones.	: Startseite, Apps und Store nur ansehen, eigenes Konto; keine Dateien, Festplatten, Systemeinstellungen oder Installationen.
+es. mario	e.g. mario	p. ej. mario	z. B. mario
+Facoltativo. Senza account Docker Hub permette pochi download ogni 6 ore per indirizzo di casa; con il tuo account (anche gratuito) il limite sale. Usa un	Optional. Without an account Docker Hub allows few downloads every 6 hours per home address; with your account (even a free one) the limit goes up. Use an	Opcional. Sin cuenta Docker Hub permite pocas descargas cada 6 horas por dirección de casa; con tu cuenta (incluso gratuita) el límite sube. Usa un	Optional. Ohne Konto erlaubt Docker Hub nur wenige Downloads alle 6 Stunden pro Heimadresse; mit deinem Konto (auch kostenlos) steigt das Limit. Nutze ein
+Scarica di nuovo i cataloghi di tutte le fonti attive	Download the catalogues of all active sources again	Descarga de nuevo los catálogos de todas las fuentes activas	Kataloge aller aktiven Quellen neu laden
+I cataloghi vengono scaricati dai siti dei loro autori. App, nomi e icone appartengono ai rispettivi proprietari. {0} non è affiliato a nessuno di loro; Docker Hub è indicato solo per compatibilità.	The catalogues are downloaded from their authors' websites. Apps, names and icons belong to their respective owners. {0} is not affiliated with any of them; Docker Hub is mentioned only for compatibility.	Los catálogos se descargan de las webs de sus autores. Apps, nombres e iconos pertenecen a sus respectivos propietarios. {0} no está afiliado a ninguno de ellos; Docker Hub se menciona solo por compatibilidad.	Die Kataloge werden von den Websites ihrer Autoren geladen. Apps, Namen und Symbole gehören ihren jeweiligen Eigentümern. {0} ist mit keinem von ihnen verbunden; Docker Hub wird nur aus Kompatibilitätsgründen genannt.
+Nome della nuova cartella	Name of the new folder	Nombre de la nueva carpeta	Name des neuen Ordners
+Il mio store	My store	Mi tienda	Mein Store
+Spegnimento programmato	Scheduled shutdown	Apagado programado	Geplantes Ausschalten
+Accensione programmata	Scheduled power-on	Encendido programado	Geplantes Einschalten
+nas.miodominio.it	nas.mydomain.com	nas.midominio.es	nas.meinedomain.de
+Durata: da 30 minuti a qualche ora. Il registro si segue in diretta; puoi chiudere la pagina.	Duration: from 30 minutes to a few hours. You can follow the log live; you can close the page.	Duración: de 30 minutos a unas horas. El registro se sigue en directo; puedes cerrar la página.	Dauer: 30 Minuten bis einige Stunden. Das Protokoll läuft live mit; du kannst die Seite schließen.
+Alla fine serve un riavvio; poi il NAS controlla da solo nome, HTTPS, Docker, servizi e interfaccia.	At the end a restart is needed; then the NAS checks name, HTTPS, Docker, services and interface by itself.	Al final hace falta reiniciar; luego el NAS comprueba solo nombre, HTTPS, Docker, servicios e interfaz.	Am Ende ist ein Neustart nötig; danach prüft das NAS selbst Name, HTTPS, Docker, Dienste und Oberfläche.
+Prima viene fatto uno snapshot del sistema. Durante l'installazione l'interfaccia si riavvia (la pagina si ricarica da sola); le app e le condivisioni restano accese.	A system snapshot is taken first. During the installation the interface restarts (the page reloads by itself); apps and shares stay on.	Primero se hace una instantánea del sistema. Durante la instalación la interfaz se reinicia (la página se recarga sola); las apps y las carpetas compartidas siguen encendidas.	Zuerst wird ein System-Snapshot erstellt. Während der Installation startet die Oberfläche neu (die Seite lädt von selbst neu); Apps und Freigaben bleiben an.
+Nuovo terminale	New terminal	Nuevo terminal	Neues Terminal
+Copia la selezione	Copy the selection	Copiar la selección	Auswahl kopieren
+Testo più piccolo	Smaller text	Texto más pequeño	Kleinere Schrift
+Testo più grande	Larger text	Texto más grande	Größere Schrift
+es. PC studio	e.g. Study PC	p. ej. PC del estudio	z. B. Arbeitszimmer-PC
+non è montato a ogni avvio: attivalo in Dischi	is not mounted at every startup: enable it in Disks	no se monta en cada arranque: actívalo en Discos	wird nicht bei jedem Start eingehängt: aktiviere es unter Festplatten
+montato in sola lettura	mounted read-only	montado en solo lectura	nur lesend eingehängt
+Controllo di {0}: copia identica	Check of {0}: identical copy	Comprobación de {0}: copia idéntica	Prüfung von {0}: identische Kopie
+Fermo le app	Stopping the apps	Detengo las apps	Halte die Apps an
+ERRORE: Docker non risponde: lo spostamento non parte	ERROR: Docker isn't responding: the move doesn't start	ERROR: Docker no responde: el traslado no empieza	FEHLER: Docker antwortet nicht: die Verschiebung startet nicht
+Docker non risponde	Docker isn't responding	Docker no responde	Docker antwortet nicht
+ERRORE: {0} non è montato o non ha un file system adatto	ERROR: {0} isn't mounted or doesn't have a suitable file system	ERROR: {0} no está montado o no tiene un sistema de archivos adecuado	FEHLER: {0} ist nicht eingehängt oder hat kein passendes Dateisystem
+disco non adatto	unsuitable disk	disco no adecuado	ungeeignete Festplatte
+da copiare {0} GB	{0} GB to copy	{0} GB por copiar	{0} GB zu kopieren
+volumi di Docker	Docker volumes	volúmenes de Docker	Docker-Volumes
+Controllo le copie (secondo passaggio)	Checking the copies (second pass)	Compruebo las copias (segunda pasada)	Prüfe die Kopien (zweiter Durchgang)
+Monto le cartelle del disco nuovo al posto di quelle vecchie (i percorsi non cambiano)	Mounting the new disk's folders in place of the old ones (paths don't change)	Monto las carpetas del disco nuevo en lugar de las antiguas (las rutas no cambian)	Hänge die Ordner der neuen Festplatte anstelle der alten ein (Pfade bleiben gleich)
+Torno alla situazione di prima	Going back to how it was before	Vuelvo a la situación anterior	Kehre zum vorherigen Zustand zurück
+Spostamento delle app non riuscito	Moving the apps failed	Traslado de las apps fallido	Verschieben der Apps fehlgeschlagen
+App spostate su un altro disco	Apps moved to another disk	Apps movidas a otro disco	Apps auf andere Festplatte verschoben
+Rimonto le cartelle del disco esterno (situazione di prima)	Remounting the external disk's folders (previous situation)	Vuelvo a montar las carpetas del disco externo (situación anterior)	Hänge die Ordner der externen Festplatte wieder ein (vorheriger Zustand)
+App riportate sul disco di sistema	Apps moved back to the system disk	Apps devueltas al disco del sistema	Apps zurück auf der Systemfestplatte
+Cancello i dati vecchi di {0}	Deleting the old data of {0}	Borro los datos antiguos de {0}	Lösche die alten Daten von {0}
+Libero lo spazio sul disco di sistema	Freeing up space on the system disk	Libero espacio en el disco del sistema	Gebe Platz auf der Systemfestplatte frei
+Preparo la configurazione	Preparing the configuration	Preparo la configuración	Bereite die Konfiguration vor
+Controllo la configurazione	Checking the configuration	Compruebo la configuración	Prüfe die Konfiguration
+Scarico le immagini (può richiedere qualche minuto)	Downloading the images (it may take a few minutes)	Descargo las imágenes (puede tardar unos minutos)	Lade die Images herunter (kann einige Minuten dauern)
+Installazione non riuscita: tolgo quello che era stato creato	Installation failed: removing what had been created	Instalación fallida: quito lo que se había creado	Installation fehlgeschlagen: entferne, was angelegt wurde
+Copio la configurazione attuale	Copying the current configuration	Copio la configuración actual	Kopiere die aktuelle Konfiguration
+Copia salvata in {0}	Copy saved in {0}	Copia guardada en {0}	Kopie gespeichert in {0}
+Le modifiche non funzionano: {0}	The changes don't work: {0}	Los cambios no funcionan: {0}	Die Änderungen funktionieren nicht: {0}
+Torno alla configurazione di prima	Going back to the previous configuration	Vuelvo a la configuración anterior	Kehre zur vorherigen Konfiguration zurück
+Scarico le immagini nuove	Downloading the new images	Descargo las imágenes nuevas	Lade die neuen Images herunter
+Ricreo i contenitori con le modifiche	Recreating the containers with the changes	Vuelvo a crear los contenedores con los cambios	Erstelle die Container mit den Änderungen neu
+Cancello i dati in {0}	Deleting the data in {0}	Borro los datos en {0}	Lösche die Daten in {0}
+Tolgo la configurazione	Removing the configuration	Quito la configuración	Entferne die Konfiguration
+risulta non in salute	reports unhealthy	aparece con problemas	meldet sich nicht gesund
+si riavvia di continuo	keeps restarting	se reinicia continuamente	startet ständig neu
+si è fermato (codice {0})	stopped (code {0})	se ha detenido (código {0})	hat angehalten (Code {0})
+l'interfaccia web sulla porta {0} non risponde	the web interface on port {0} isn't responding	la interfaz web en el puerto {0} no responde	die Weboberfläche auf Port {0} antwortet nicht
+l'app non si è avviata in tempo	the app didn't start in time	la app no ha arrancado a tiempo	die App ist nicht rechtzeitig gestartet
+Controllo le versioni di {0}	Checking the versions of {0}	Compruebo las versiones de {0}	Prüfe die Versionen von {0}
+Nessun aggiornamento da installare	No updates to install	Ninguna actualización que instalar	Keine Updates zu installieren
+Copio la configurazione dell'app	Copying the app configuration	Copio la configuración de la app	Kopiere die App-Konfiguration
+Scarico la versione nuova	Downloading the new version	Descargo la nueva versión	Lade die neue Version herunter
+Riavvio l'app con la versione nuova	Restarting the app with the new version	Reinicio la app con la nueva versión	Starte die App mit der neuen Version neu
+La versione nuova non funziona: {0}	The new version doesn't work: {0}	La nueva versión no funciona: {0}	Die neue Version funktioniert nicht: {0}
+Torno alla versione precedente	Going back to the previous version	Vuelvo a la versión anterior	Kehre zur vorherigen Version zurück
+La versione nuova non partiva: {0}	The new version didn't start: {0}	La nueva versión no arrancaba: {0}	Die neue Version startete nicht: {0}
+{0} è tornata alla versione {1}	{0} went back to version {1}	{0} ha vuelto a la versión {1}	{0} ist zu Version {1} zurückgekehrt
+Aggiorno {0} ({1} di {2})	Updating {0} ({1} of {2})	Actualizo {0} ({1} de {2})	Aktualisiere {0} ({1} von {2})
+Nome del backup	Backup name	Nombre de la copia	Name der Sicherung
+Ripeti la password:	Repeat the password:	Repite la contraseña:	Passwort wiederholen:
+Le password non coincidono	The passwords don't match	Las contraseñas no coinciden	Die Passwörter stimmen nicht überein
+non montato:	not mounted:	sin montar:	nicht eingehängt:
+: disco non collegato	: disk not connected	: disco no conectado	: Festplatte nicht angeschlossen
+Il disco era stato chiuso male da Windows: sistemato con ntfsfix prima di montarlo.	Windows had closed the disk badly: fixed with ntfsfix before mounting it.	Windows había cerrado mal el disco: arreglado con ntfsfix antes de montarlo.	Windows hatte die Festplatte nicht sauber geschlossen: vor dem Einhängen mit ntfsfix repariert.
+Windows prima di staccare il disco, oppure montalo in sola lettura.	Windows before unplugging the disk, or mount it read-only.	Windows antes de desconectar el disco, o móntalo en solo lectura.	Windows, bevor du die Festplatte abziehst, oder hänge sie nur lesend ein.
+Condivisione non creata:	Share not created:	Carpeta compartida no creada:	Freigabe nicht angelegt:
+il sistema non riesce a leggere questo formato ({0})	the system can't read this format ({0})	el sistema no puede leer este formato ({0})	das System kann dieses Format nicht lesen ({0})
+Smonto il disco	Unmounting the disk	Desmonto el disco	Hänge die Festplatte aus
+Creo una nuova tabella delle partizioni (GPT)	Creating a new partition table (GPT)	Creo una nueva tabla de particiones (GPT)	Erstelle eine neue Partitionstabelle (GPT)
+Creo il file system {0}	Creating the {0} file system	Creo el sistema de archivos {0}	Erstelle das Dateisystem {0}
+Monto il disco	Mounting the disk	Monto el disco	Hänge die Festplatte ein
+Calcolo la dimensione…	Calculating the size…	Calculo el tamaño…	Berechne die Größe…
+Comprimo con 7-Zip…	Compressing with 7-Zip…	Comprimo con 7-Zip…	Komprimiere mit 7-Zip…
+Comprimo in {0}	Compressing to {0}	Comprimo en {0}	Komprimiere nach {0}
+Estraggo con 7-Zip…	Extracting with 7-Zip…	Extraigo con 7-Zip…	Entpacke mit 7-Zip…
+Caddy non è ripartito	Caddy didn't restart	Caddy no ha vuelto a arrancar	Caddy ist nicht neu gestartet
+Il controllo SMART segnala un problema. Fai subito un backup dei dati.	The SMART check reports a problem. Back up your data right away.	El control SMART indica un problema. Haz enseguida una copia de seguridad de los datos.	Die SMART-Prüfung meldet ein Problem. Sichere deine Daten sofort.
+Soglia impostata: {0} °C. Controlla la ventilazione.	Threshold set: {0} °C. Check the ventilation.	Umbral fijado: {0} °C. Comprueba la ventilación.	Eingestellte Schwelle: {0} °C. Prüfe die Belüftung.
+Spazio quasi finito in {0}	Space almost full in {0}	Espacio casi agotado en {0}	Fast kein Platz mehr in {0}
+Occupato il {0}%.	{0}% used.	Ocupado el {0}%.	{0} % belegt.
+{0} pacchetti da aggiornare	{0} packages to update	{0} paquetes por actualizar	{0} Pakete zu aktualisieren
+, di cui {0} di sicurezza	, of which {0} security	, de las cuales {0} de seguridad	, davon {0} Sicherheit
+questo sistema non ha il supporto per {0} (modulo del kernel mancante)	this system doesn't support {0} (kernel module missing)	este sistema no admite {0} (falta el módulo del kernel)	dieses System unterstützt {0} nicht (Kernelmodul fehlt)
+cartella condivisa non trovata	shared folder not found	carpeta compartida no encontrada	freigegebener Ordner nicht gefunden
+il computer non risponde (spento o fuori rete?)	the computer isn't responding (off or not on the network?)	el ordenador no responde (¿apagado o fuera de la red?)	der Computer antwortet nicht (aus oder nicht im Netzwerk?)
+Disco con problemi (SMART)	Disk with problems (SMART)	Disco con problemas (SMART)	Festplatte mit Problemen (SMART)
+Spazio in esaurimento	Running out of space	Espacio agotándose	Speicherplatz wird knapp
+Disco troppo caldo	Disk too hot	Disco demasiado caliente	Festplatte zu heiß
+Backup non riuscito	Backup failed	Copia de seguridad fallida	Sicherung fehlgeschlagen
+Prova di notifica	Test notification	Notificación de prueba	Testbenachrichtigung
+Se leggi questo messaggio, le notifiche di {0} funzionano.	If you read this message, the notifications of {0} work.	Si lees este mensaje, las notificaciones de {0} funcionan.	Wenn du diese Nachricht liest, funktionieren die Benachrichtigungen von {0}.
+questo PC non ha una sveglia (RTC) utilizzabile	this PC has no usable alarm (RTC)	este PC no tiene un despertador (RTC) utilizable	dieser PC hat keinen nutzbaren Wecker (RTC)
+manca il comando rtcwake	the rtcwake command is missing	falta el comando rtcwake	der Befehl rtcwake fehlt
+la sveglia non è stata accettata	the alarm was not accepted	el despertador no ha sido aceptado	der Wecker wurde nicht angenommen
+backup in corso	backup running	copia de seguridad en curso	Sicherung läuft
+aggiornamento di sistema in corso	system update running	actualización del sistema en curso	Systemupdate läuft
+aggiornamento delle app in corso	app update running	actualización de las apps en curso	App-Update läuft
+: spegnimento programmato in attesa	: scheduled shutdown waiting	: apagado programado en espera	: geplantes Ausschalten wartet
+Si riaccende con il pulsante di accensione.	It turns back on with the power button.	Se vuelve a encender con el botón de encendido.	Es wird mit dem Netzschalter wieder eingeschaltet.
+o collega il tuo account Docker in Impostazioni	or connect your Docker account in Settings	o conecta tu cuenta de Docker en Ajustes	oder verbinde dein Docker-Konto in den Einstellungen
+Account salvato, ma Docker non ha accettato l'accesso:	Account saved, but Docker didn't accept the login:	Cuenta guardada, pero Docker no ha aceptado el acceso:	Konto gespeichert, aber Docker hat die Anmeldung nicht akzeptiert:
+Elenco delle versioni non raggiungibile: {0}	Version list not reachable: {0}	Lista de versiones no accesible: {0}	Versionsliste nicht erreichbar: {0}
+Passaggio di versione completato	Version upgrade completed	Paso de versión completado	Versionsupgrade abgeschlossen
+Ubuntu {0}: riavvia il NAS per finire.	Ubuntu {0}: restart the NAS to finish.	Ubuntu {0}: reinicia el NAS para terminar.	Ubuntu {0}: starte das NAS neu, um abzuschließen.
+Passaggio di versione non riuscito	Version upgrade failed	Paso de versión fallido	Versionsupgrade fehlgeschlagen
+Controlli dopo il passaggio di versione:	Checks after the version upgrade:	Comprobaciones tras el paso de versión:	Prüfungen nach dem Versionsupgrade:
+manca la firma (.sig)	the signature (.sig) is missing	falta la firma (.sig)	die Signatur (.sig) fehlt
+sul NAS non c'è nessuna chiave pubblica per controllare le firme	there's no public key on the NAS to check signatures	en el NAS no hay ninguna clave pública para comprobar las firmas	auf dem NAS gibt es keinen öffentlichen Schlüssel zum Prüfen der Signaturen
+la firma non corrisponde a nessuna chiave del NAS	the signature doesn't match any key on the NAS	la firma no corresponde a ninguna clave del NAS	die Signatur passt zu keinem Schlüssel des NAS
+installazione non riuscita	installation failed	instalación fallida	Installation fehlgeschlagen
+l'interfaccia non ripartiva	the interface didn't restart	la interfaz no volvía a arrancar	die Oberfläche startete nicht neu
+Aggiornamento di {0} non riuscito	Update of {0} failed	Actualización de {0} fallida	Aktualisierung von {0} fehlgeschlagen
+Tornato alla versione di prima.	Back to the previous version.	Vuelto a la versión anterior.	Zur vorherigen Version zurückgekehrt.
+Configurazione Samba non valida	Invalid Samba configuration	Configuración de Samba no válida	Ungültige Samba-Konfiguration
+Nome della condivisione	Share name	Nombre de la carpeta compartida	Name der Freigabe
+comando di standby non accettato	standby command not accepted	comando de espera no aceptado	Standby-Befehl nicht akzeptiert
+indirizzo non trovato (404): la fonte potrebbe essere stata spostata	address not found (404): the source may have been moved	dirección no encontrada (404): puede que la fuente se haya movido	Adresse nicht gefunden (404): die Quelle wurde vielleicht verschoben
+il sito ha risposto con l'errore {0}	the site replied with error {0}	el sitio ha respondido con el error {0}	die Website antwortete mit Fehler {0}
+nome del sito non risolto: controlla la connessione a internet e il DNS	site name not resolved: check the internet connection and DNS	nombre del sitio no resuelto: comprueba la conexión a internet y el DNS	Name der Website nicht aufgelöst: prüfe Internetverbindung und DNS
+certificato del sito non valido (controlla data e ora del NAS)	invalid site certificate (check the NAS date and time)	certificado del sitio no válido (comprueba fecha y hora del NAS)	ungültiges Zertifikat der Website (prüfe Datum und Uhrzeit des NAS)
+il sito non risponde (tempo scaduto)	the site isn't responding (timed out)	el sitio no responde (tiempo agotado)	die Website antwortet nicht (Zeitüberschreitung)
+accesso negato dal sito (403)	access denied by the site (403)	acceso denegado por el sitio (403)	Zugriff von der Website verweigert (403)
+troppe richieste (429): riprova più tardi	too many requests (429): try again later	demasiadas peticiones (429): inténtalo más tarde	zu viele Anfragen (429): später erneut versuchen
+connessione rifiutata	connection refused	conexión rechazada	Verbindung abgelehnt
+connessione interrotta durante lo scaricamento	connection interrupted during the download	conexión interrumpida durante la descarga	Verbindung beim Herunterladen unterbrochen
+Pacchetti da aggiornare: {0}	Packages to update: {0}	Paquetes por actualizar: {0}	Zu aktualisierende Pakete: {0}
+Serve un riavvio per completare (nuovo kernel o librerie di sistema).	A restart is needed to complete (new kernel or system libraries).	Hace falta reiniciar para completar (nuevo kernel o bibliotecas del sistema).	Ein Neustart ist zum Abschließen nötig (neuer Kernel oder Systembibliotheken).
+Serve un riavvio per completare.	A restart is needed to complete.	Hace falta reiniciar para completar.	Ein Neustart ist zum Abschließen nötig.
+Il sistema è aggiornato.	The system is up to date.	El sistema está actualizado.	Das System ist aktuell.
+Aggiorno l'elenco dei pacchetti	Updating the package list	Actualizo la lista de paquetes	Aktualisiere die Paketliste
+I link per le donazioni non sono ancora impostati. Chi costruisce la ISO li aggiunge in	The donation links are not set up yet. Whoever builds the ISO adds them in	Los enlaces para donaciones aún no están configurados. Quien construye la ISO los añade en	Die Spendenlinks sind noch nicht eingerichtet. Wer die ISO baut, trägt sie ein in
+Nessun sensore trovato	No sensor found	Ningún sensor encontrado	Kein Sensor gefunden
+Spazio	Storage	Espacio	Speicher
+Contate dal NAS ogni minuto	Counted by the NAS every minute	Contadas por el NAS cada minuto	Vom NAS jede Minute gezählt
+Crea prima un utente amministratore nella pagina Utenti.	First create an administrator user on the Users page.	Crea primero un usuario administrador en la página Usuarios.	Lege zuerst auf der Seite Benutzer einen Administrator an.
+Cerca app, file, impostazioni…	Search apps, files, settings…	Busca apps, archivos, ajustes…	Apps, Dateien, Einstellungen suchen…
+Cartella personale	Personal folder	Carpeta personal	Persönlicher Ordner
+{0} fonti attive · {1} app · catalogo del {2}	{0} active sources · {1} apps · catalogue of {2}	{0} fuentes activas · {1} apps · catálogo del {2}	{0} aktive Quellen · {1} Apps · Katalog vom {2}
+{0} dischi · {1}	{0} disks · {1}	{0} discos · {1}	{0} Festplatten · {1}
+Dà accesso solo in lettura allo stato del NAS.	It gives read-only access to the NAS status.	Da acceso solo de lectura al estado del NAS.	Gewährt nur Lesezugriff auf den NAS-Status.
+Prima di installare vedi versione, firma e novità; dopo, se l'interfaccia non riparte, si torna da soli alla versione di prima.	Before installing you see version, signature and what's new; afterwards, if the interface doesn't restart, it goes back to the previous version by itself.	Antes de instalar ves versión, firma y novedades; después, si la interfaz no vuelve a arrancar, se vuelve sola a la versión anterior.	Vor der Installation siehst du Version, Signatur und Neuigkeiten; startet die Oberfläche danach nicht, wird automatisch die vorherige Version wiederhergestellt.
+Caddy non è attivo	Caddy is not running	Caddy no está activo	Caddy ist nicht aktiv

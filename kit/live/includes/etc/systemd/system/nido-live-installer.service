@@ -1,0 +1,17 @@
+[Unit]
+Description=Installer (solo avviando dalla chiavetta)
+ConditionPathExists=/run/live/medium
+After=systemd-user-sessions.service plymouth-quit-wait.service systemd-udev-settle.service
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/nido/live-tty1.sh
+StandardInput=tty
+StandardOutput=tty
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Spegnimento programmato del NAS (aspetta backup e aggiornamenti)
+# Il timer nido-poweroff.timer lo scrive l'interfaccia (Impostazioni -> Generale)
+
+[Service]
+Type=oneshot
+Environment=PYTHONPATH=/usr/lib/nido/panel
+ExecStart=/usr/bin/python3 -m nidopanel.cli power-scheduled
+TimeoutStartSec=13h
+StandardOutput=append:/var/log/nido/power.log
+StandardError=append:/var/log/nido/power.log

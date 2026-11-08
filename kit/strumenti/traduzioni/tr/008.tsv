@@ -1,0 +1,173 @@
+1380	Disk not found	Disco no encontrado	Festplatte nicht gefunden
+1381	Invalid path	Ruta no válida	Ungültiger Pfad
+1382	Folder not allowed	Carpeta no permitida	Ordner nicht erlaubt
+1383	File or folder not found	Archivo o carpeta no encontrados	Datei oder Ordner nicht gefunden
+1384	Invalid name	Nombre no válido	Ungültiger Name
+1385	Reserved name	Nombre reservado	Reservierter Name
+1386	It's not a folder	No es una carpeta	Kein Ordner
+1387	You don't have permission to read this folder	No tienes permiso para leer esta carpeta	Du hast keine Berechtigung, diesen Ordner zu lesen
+1388	It's a folder	Es una carpeta	Das ist ein Ordner
+1389	The file is not text	El archivo no es de texto	Die Datei ist keine Textdatei
+1390	An item with this name already exists	Ya existe un elemento con este nombre	Es gibt bereits ein Element mit diesem Namen
+1391	The destination is not a folder	El destino no es una carpeta	Das Ziel ist kein Ordner
+1392	No item selected	Ningún elemento seleccionado	Kein Element ausgewählt
+1393	You can't copy or move a folder into itself	No puedes copiar ni mover una carpeta dentro de sí misma	Ein Ordner kann nicht in sich selbst kopiert oder verschoben werden
+1394	A disk or a main folder can't be moved	No se puede mover un disco ni una carpeta principal	Eine Festplatte oder ein Hauptordner kann nicht verschoben werden
+1395	A disk or a main folder can't be deleted	No se puede eliminar un disco ni una carpeta principal	Eine Festplatte oder ein Hauptordner kann nicht gelöscht werden
+1396	Recycle bin item not found	Elemento de la papelera no encontrado	Element im Papierkorb nicht gefunden
+1397	The source folder no longer exists	La carpeta de origen ya no existe	Der Quellordner existiert nicht mehr
+1398	Type at least 2 characters	Escribe al menos 2 caracteres	Gib mindestens 2 Zeichen ein
+1399	The destination folder doesn't exist	La carpeta de destino no existe	Der Zielordner existiert nicht
+1400	File name missing	Falta el nombre del archivo	Dateiname fehlt
+1401	Invalid size	Tamaño no válido	Ungültige Größe
+1402	Not enough space on the disk	Espacio insuficiente en el disco	Nicht genug Platz auf der Festplatte
+1403	Connection lost during the upload	Conexión interrumpida durante la subida	Verbindung beim Hochladen unterbrochen
+1404	File too large for the editor (max 4 MB)	Archivo demasiado grande para el editor (máximo 4 MB)	Datei zu groß für den Editor (max. 4 MB)
+1405	Invalid or too long text	Texto no válido o demasiado largo	Ungültiger oder zu langer Text
+1406	The file was changed elsewhere after you opened it	El archivo se ha modificado en otro sitio después de abrirlo	Die Datei wurde anderswo geändert, nachdem du sie geöffnet hast
+1407	Only folders can go in favourites	Solo las carpetas pueden ir en favoritos	Nur Ordner können in die Favoriten
+1408	Unknown user: {0}	Usuario desconocido: {0}	Unbekannter Benutzer: {0}
+1409	Unknown group: {0}	Grupo desconocido: {0}	Unbekannte Gruppe: {0}
+1410	Invalid permissions	Permisos no válidos	Ungültige Berechtigungen
+1411	The 7-Zip program is missing (package 7zip)	Falta el programa 7-Zip (paquete 7zip)	Das Programm 7-Zip fehlt (Paket 7zip)
+1412	The archive is password-protected: not supported	El archivo está protegido con contraseña: no compatible	Das Archiv ist passwortgeschützt: nicht unterstützt
+1413	Format not supported	Formato no compatible	Format nicht unterstützt
+1414	The items must be in the same folder	Los elementos deben estar en la misma carpeta	Die Elemente müssen im selben Ordner liegen
+1415	Not a supported archive (zip, 7z, rar, tar, tar.gz, tar.xz)	No es un archivo compatible (zip, 7z, rar, tar, tar.gz, tar.xz)	Kein unterstütztes Archiv (zip, 7z, rar, tar, tar.gz, tar.xz)
+1416	Link not found	Enlace no encontrado	Link nicht gefunden
+1417	The certificate file is not valid (PEM format needed: -----BEGIN CERTIFICATE-----)	El archivo del certificado no es válido (hace falta formato PEM: -----BEGIN CERTIFICATE-----)	Die Zertifikatsdatei ist ungültig (PEM-Format nötig: -----BEGIN CERTIFICATE-----)
+1418	The key is not valid or is password-protected (a PEM key without password is needed)	La clave no es válida o está protegida con contraseña (hace falta una clave PEM sin contraseña)	Der Schlüssel ist ungültig oder passwortgeschützt (ein PEM-Schlüssel ohne Passwort ist nötig)
+1419	No certificate in the file	Ningún certificado en el archivo	Kein Zertifikat in der Datei
+1420	The key doesn't match the certificate	La clave no corresponde al certificado	Der Schlüssel passt nicht zum Zertifikat
+1421	The certificate has expired	El certificado ha caducado	Das Zertifikat ist abgelaufen
+1422	Caddy is not installed	Caddy no está instalado	Caddy ist nicht installiert
+1423	Invalid Caddy configuration:	Configuración de Caddy no válida:	Ungültige Caddy-Konfiguration:
+1424	Upload the certificate and the key first	Sube primero el certificado y la clave	Lade zuerst Zertifikat und Schlüssel hoch
+1425	Invalid certificate type	Tipo de certificado no válido	Ungültiger Zertifikatstyp
+1426	Type a valid public domain (e.g. nas.mydomain.com)	Escribe un dominio público válido (p. ej. nas.midominio.es)	Gib eine gültige öffentliche Domain ein (z. B. nas.meinedomain.de)
+1427	Invalid email	Email no válido	Ungültige E-Mail
+1428	There's already an operation running on {0}	Ya hay una operación en curso en {0}	Für {0} läuft bereits ein Vorgang
+1429	Operation not found	Operación no encontrada	Vorgang nicht gefunden
+1430	Invalid computer name or address	Nombre o dirección del ordenador no válidos	Ungültiger Name oder Adresse des Computers
+1431	Username or password not accepted by the remote computer	Usuario o contraseña no aceptados por el ordenador remoto	Benutzer oder Passwort vom entfernten Rechner nicht akzeptiert
+1432	The computer isn't responding: is it on and connected to the network?	El ordenador no responde: ¿está encendido y conectado a la red?	Der Computer antwortet nicht: ist er eingeschaltet und mit dem Netzwerk verbunden?
+1433	Computer not found: check the name or use the IP address	Ordenador no encontrado: comprueba el nombre o usa la dirección IP	Computer nicht gefunden: prüfe den Namen oder nutze die IP-Adresse
+1434	Unable to read the shared folders: {0}	No se pueden leer las carpetas compartidas: {0}	Freigegebene Ordner können nicht gelesen werden: {0}
+1435	The NFS server isn't responding	El servidor NFS no responde	Der NFS-Server antwortet nicht
+1436	Protocol not supported	Protocolo no compatible	Protokoll nicht unterstützt
+1437	Connection failed: {0}	Conexión fallida: {0}	Verbindung fehlgeschlagen: {0}
+1438	The shared folder name is missing	Falta el nombre de la carpeta compartida	Der Name des freigegebenen Ordners fehlt
+1439	This network folder is already connected	Esta carpeta de red ya está conectada	Dieser Netzwerkordner ist bereits verbunden
+1440	Network folder not found	Carpeta de red no encontrada	Netzwerkordner nicht gefunden
+1441	Unable to disconnect: the folder is in use	No se puede desconectar: la carpeta está en uso	Trennen nicht möglich: der Ordner wird verwendet
+1442	Telegram: bot token and chat ID are required	Telegram: hacen falta el token del bot y el chat ID	Telegram: Bot-Token und Chat-ID sind nötig
+1443	ntfy: the topic is missing	ntfy: falta el tema (topic)	ntfy: das Thema (Topic) fehlt
+1444	Email: SMTP server and recipient are required	Email: hacen falta servidor SMTP y destinatario	E-Mail: SMTP-Server und Empfänger sind nötig
+1445	Webhook: the address is missing	Webhook: falta la dirección	Webhook: die Adresse fehlt
+1446	No channel enabled: enable at least one and save	Ningún canal activo: activa al menos uno y guarda	Kein Kanal aktiv: aktiviere mindestens einen und speichere
+1447	Invalid time (e.g. 23:30)	Hora no válida (p. ej. 23:30)	Ungültige Uhrzeit (z. B. 23:30)
+1448	Invalid days	Días no válidos	Ungültige Tage
+1449	Choose at least one day for	Elige al menos un día para	Wähle mindestens einen Tag für
+1450	Invalid maximum wait	Espera máxima no válida	Ungültige maximale Wartezeit
+1451	The maximum wait ranges from 5 minutes to 12 hours	La espera máxima va de 5 minutos a 12 horas	Die maximale Wartezeit liegt zwischen 5 Minuten und 12 Stunden
+1452	The PC's alarm works. To be sure, do a real test: some PCs	El despertador del PC funciona. Para estar seguros haz una prueba real: algunos PC	Der Wecker des PCs funktioniert. Mach zur Sicherheit einen echten Test: manche PCs
+1453	The PC's alarm doesn't work:	El despertador del PC no funciona:	Der Wecker des PCs funktioniert nicht:
+1454	Invalid image name: {0}	Nombre de imagen no válido: {0}	Ungültiger Image-Name: {0}
+1455	Response from the registry too large	Respuesta demasiado grande del registro	Antwort der Registry zu groß
+1456	Registry not reachable ({0}): {1}	Registro no accesible ({0}): {1}	Registry nicht erreichbar ({0}): {1}
+1457	Access to the registry denied ({0})	Acceso al registro denegado ({0})	Zugriff auf die Registry verweigert ({0})
+1458	The registry asks for an unsupported login	El registro pide un acceso no compatible	Die Registry verlangt eine nicht unterstützte Anmeldung
+1459	Docker Hub has reached the request limit: try again in a few minutes	Docker Hub ha alcanzado el límite de peticiones: inténtalo dentro de unos minutos	Docker Hub hat das Anfragelimit erreicht: in ein paar Minuten erneut versuchen
+1460	Image or version not found in the registry	Imagen o versión no encontrada en el registro	Image oder Version nicht in der Registry gefunden
+1461	Registry error ({0})	Error del registro ({0})	Registry-Fehler ({0})
+1462	The image doesn't exist for this type of processor ({0})	La imagen no existe para este tipo de procesador ({0})	Das Image gibt es für diesen Prozessortyp nicht ({0})
+1463	Invalid image manifest	Manifest de la imagen no válido	Ungültiges Image-Manifest
+1464	Search too long	Búsqueda demasiado larga	Suche zu lang
+1465	Docker Hub has reached the search limit: try again in a few minutes	Docker Hub ha alcanzado el límite de búsquedas: inténtalo dentro de unos minutos	Docker Hub hat das Suchlimit erreicht: in ein paar Minuten erneut versuchen
+1466	Docker Hub search failed ({0})	Búsqueda en Docker Hub fallida ({0})	Docker-Hub-Suche fehlgeschlagen ({0})
+1467	Docker Hub rejected the username or token: check and try again	Docker Hub ha rechazado usuario o token: compruébalo e inténtalo de nuevo	Docker Hub hat Benutzername oder Token abgelehnt: prüfen und erneut versuchen
+1468	Docker Hub isn't responding as expected (error {0})	Docker Hub no responde como se esperaba (error {0})	Docker Hub antwortet nicht wie erwartet (Fehler {0})
+1469	Invalid Docker Hub username	Nombre de usuario de Docker Hub no válido	Ungültiger Docker-Hub-Benutzername
+1470	Enter the password or, better, a Docker Hub access token	Introduce la contraseña o, mejor, un token de acceso de Docker Hub	Gib das Passwort oder besser ein Docker-Hub-Zugriffstoken ein
+1471	Version not offered: press "Check" first	Versión no propuesta: pulsa primero "Comprobar"	Version nicht angeboten: drücke zuerst „Prüfen“
+1472	To confirm type the version: {0}	Para confirmar escribe la versión: {0}	Zur Bestätigung die Version eingeben: {0}
+1473	An update is already running	Ya hay una actualización en curso	Es läuft bereits eine Aktualisierung
+1474	There's no upgrade snapshot to go back to	No hay una instantánea del paso a la que volver	Es gibt keinen Upgrade-Snapshot zum Zurückkehren
+1475	Unable to read a saved password: the NAS key has changed	No se puede leer una contraseña guardada: la clave del NAS ha cambiado	Ein gespeichertes Passwort kann nicht gelesen werden: der NAS-Schlüssel hat sich geändert
+1476	Choose the update .deb file (and its .sig signature)	Elige el archivo .deb de la actualización (y su firma .sig)	Wähle die .deb-Datei des Updates (und ihre .sig-Signatur)
+1477	File too large	Archivo demasiado grande	Datei zu groß
+1478	Upload interrupted: try again	Subida interrumpida: inténtalo de nuevo	Hochladen unterbrochen: erneut versuchen
+1479	The file is not a valid .deb package	El archivo no es un paquete .deb válido	Die Datei ist kein gültiges .deb-Paket
+1480	Upload the update .deb file first	Sube primero el archivo .deb de la actualización	Lade zuerst die .deb-Datei des Updates hoch
+1481	This is not an update of {0} (package {1})	Esta no es una actualización de {0} (paquete {1})	Das ist kein Update von {0} (Paket {1})
+1482	Package without a valid signature: it installs only in developer mode	Paquete sin firma válida: solo se instala en modo desarrollador	Paket ohne gültige Signatur: wird nur im Entwicklermodus installiert
+1483	This version isn't newer than the installed one: to install it anyway type INSTALLA	Esta versión no es más nueva que la instalada: para instalarla de todos modos escribe INSTALLA	Diese Version ist nicht neuer als die installierte: zum trotzdem Installieren INSTALLA eingeben
+1484	There's no previous version saved on the NAS	No hay una versión anterior guardada en el NAS	Auf dem NAS ist keine vorherige Version gespeichert
+1485	An update is running	Hay una actualización en curso	Eine Aktualisierung läuft
+1486	Language not supported	Idioma no compatible	Sprache nicht unterstützt
+1487	Request too large	Petición demasiado grande	Anfrage zu groß
+1488	Invalid JSON	JSON no válido	Ungültiges JSON
+1489	Method not allowed	Método no permitido	Methode nicht erlaubt
+1490	Not found	No encontrado	Nicht gefunden
+1491	Internal error: {0}	Error interno: {0}	Interner Fehler: {0}
+1492	Request not allowed (X-Nido missing)	Petición no permitida (falta X-Nido)	Anfrage nicht erlaubt (X-Nido fehlt)
+1493	The administrator account already exists	La cuenta de administrador ya existe	Das Administratorkonto existiert bereits
+1494	Session expired	Acceso caducado	Sitzung abgelaufen
+1495	Session expired: log in again	Acceso caducado: vuelve a entrar	Sitzung abgelaufen: bitte erneut anmelden
+1496	Chunk too large	Bloque demasiado grande	Block zu groß
+1497	Invalid parameters	Parámetros no válidos	Ungültige Parameter
+1498	Origin not allowed	Origen no permitido	Herkunft nicht erlaubt
+1499	A WebSocket connection is required	Hace falta una conexión WebSocket	Eine WebSocket-Verbindung ist nötig
+1500	API key missing or wrong	Clave API ausente o incorrecta	API-Schlüssel fehlt oder ist falsch
+1501	Nothing to download	Nada que descargar	Nichts herunterzuladen
+1502	The upload resumes from where it stopped	La subida se reanuda desde donde se había detenido	Das Hochladen wird dort fortgesetzt, wo es angehalten hat
+1503	Thumbnail not available	Miniatura no disponible	Vorschaubild nicht verfügbar
+1504	Invalid Samba configuration:	Configuración de Samba no válida:	Ungültige Samba-Konfiguration:
+1505	This name is reserved	Este nombre está reservado	Dieser Name ist reserviert
+1506	A share with this name already exists	Ya existe una carpeta compartida con este nombre	Es gibt bereits eine Freigabe mit diesem Namen
+1507	Share not found	Carpeta compartida no encontrada	Freigabe nicht gefunden
+1508	Invalid SSH configuration:	Configuración SSH no válida:	Ungültige SSH-Konfiguration:
+1509	Invalid port	Puerto no válido	Ungültiger Port
+1510	Use port 22 or a port between 1024 and 65535	Usa el puerto 22 o un puerto entre 1024 y 65535	Nutze Port 22 oder einen Port zwischen 1024 und 65535
+1511	This port is already used by another NAS service	Este puerto ya lo usa otro servicio del NAS	Dieser Port wird schon von einem anderen NAS-Dienst genutzt
+1512	Add at least one key first: without password and without keys you couldn't log in anymore	Añade primero al menos una clave: sin contraseña y sin claves ya no podrías entrar	Füge zuerst mindestens einen Schlüssel hinzu: ohne Passwort und ohne Schlüssel kämst du nicht mehr hinein
+1513	SSH keys can only be added to administrators (other users have no terminal)	Las claves SSH solo se añaden a los administradores (los demás usuarios no tienen terminal)	SSH-Schlüssel gibt es nur für Administratoren (andere Benutzer haben kein Terminal)
+1514	Invalid key: paste the contents of the .pub file (e.g. ssh-ed25519 AAAA… name)	Clave no válida: pega el contenido del archivo .pub (p. ej. ssh-ed25519 AAAA… nombre)	Ungültiger Schlüssel: füge den Inhalt der .pub-Datei ein (z. B. ssh-ed25519 AAAA… Name)
+1515	Invalid key	Clave no válida	Ungültiger Schlüssel
+1516	This key is already there	Esta clave ya existe	Diesen Schlüssel gibt es schon
+1517	Key not found	Clave no encontrada	Schlüssel nicht gefunden
+1518	Invalid time (e.g. 02:00)	Hora no válida (p. ej. 02:00)	Ungültige Uhrzeit (z. B. 02:00)
+1519	The system disk always stays on	El disco del sistema siempre está encendido	Die Systemfestplatte bleibt immer an
+1520	Invalid time	Tiempo no válido	Ungültige Zeit
+1521	Choose a time between 2 minutes and 24 hours (or Never)	Elige un tiempo entre 2 minutos y 24 horas (o Nunca)	Wähle eine Zeit zwischen 2 Minuten und 24 Stunden (oder Nie)
+1522	Invalid APM value	Valor APM no válido	Ungültiger APM-Wert
+1523	Invalid window type	Tipo de franja no válido	Ungültiger Zeitfenstertyp
+1524	Choose at least one day for each window	Elige al menos un día para cada franja	Wähle mindestens einen Tag pro Zeitfenster
+1525	Invalid minutes	Minutos no válidos	Ungültige Minuten
+1526	In standby windows choose between 1 and 120 minutes of inactivity	En las franjas de espera elige entre 1 y 120 minutos sin actividad	Wähle in Standby-Zeitfenstern zwischen 1 und 120 Minuten ohne Aktivität
+1527	Add at least one time window	Añade al menos una franja horaria	Füge mindestens ein Zeitfenster hinzu
+1528	The disk doesn't accept the standby command	El disco no acepta el comando de espera	Die Festplatte akzeptiert den Standby-Befehl nicht
+1529	The folder doesn't exist	La carpeta no existe	Der Ordner existiert nicht
+1530	Invalid folder name	Nombre de carpeta no válido	Ungültiger Ordnername
+1531	No NAS administrator user with your name: open the terminal as root	Ningún usuario administrador del NAS con tu nombre: abre el terminal como root	Kein NAS-Administrator mit deinem Namen: öffne das Terminal als root
+1532	Invalid container name	Nombre de contenedor no válido	Ungültiger Containername
+1533	The container is not running	El contenedor no está encendido	Der Container läuft nicht
+1534	Invalid terminal	Terminal no válido	Ungültiges Terminal
+1535	Invalid time (e.g. 04:00)	Hora no válida (p. ej. 04:00)	Ungültige Uhrzeit (z. B. 04:00)
+1536	Wait for the update check to finish	Espera a que termine la comprobación de actualizaciones	Warte, bis die Update-Prüfung fertig ist
+1537	Snapshots only work with the system disk in Btrfs	Las instantáneas solo funcionan con el disco del sistema en Btrfs	Snapshots funktionieren nur mit Systemfestplatte in Btrfs
+1538	The password must be at least 6 characters	La contraseña debe tener al menos 6 caracteres	Das Passwort muss mindestens 6 Zeichen haben
+1539	The password can't contain ":" or line breaks	La contraseña no puede contener ":" ni saltos de línea	Das Passwort darf kein „:“ und keine Zeilenumbrüche enthalten
+1540	Invalid username: lowercase letters, numbers, _ and - (starting with a letter)	Nombre de usuario no válido: minúsculas, números, _ y - (empieza por una letra)	Ungültiger Benutzername: Kleinbuchstaben, Zahlen, _ und - (beginnt mit einem Buchstaben)
+1541	A user (or a system account) with this name already exists	Ya existe un usuario (o una cuenta del sistema) con este nombre	Es gibt bereits einen Benutzer (oder ein Systemkonto) mit diesem Namen
+1542	System account	Cuenta del sistema	Systemkonto
+1543	At least one administrator must remain	Debe quedar al menos un administrador	Mindestens ein Administrator muss bleiben
+1544	You can't delete the only administrator	No puedes eliminar el único administrador	Du kannst den einzigen Administrator nicht löschen
+1545	Command not available: {0}	Comando no disponible: {0}	Befehl nicht verfügbar: {0}
+1546	The command {0} took too long	El comando {0} ha tardado demasiado	Der Befehl {0} hat zu lange gedauert
+1547	Invalid {0}: use letters, numbers, spaces, . _ - (max 40 characters)	{0} no válido: usa letras, números, espacios, . _ - (máx. 40 caracteres)	{0} ungültig: Buchstaben, Zahlen, Leerzeichen, . _ - verwenden (max. 40 Zeichen)
+1548	Path missing	Falta la ruta	Pfad fehlt
+1549	The path must be inside {0}	La ruta debe estar dentro de {0}	Der Pfad muss in {0} liegen
+1550	This operation is already running	Esta operación ya está en curso	Dieser Vorgang läuft bereits
+1551	Invalid name: lowercase letters, numbers and hyphens (e.g. rnfads)	Nombre no válido: minúsculas, números y guiones (p. ej. rnfads)	Ungültiger Name: Kleinbuchstaben, Zahlen und Bindestriche (z. B. rnfads)
+1552	Invalid time zone	Zona horaria no válida	Ungültige Zeitzone

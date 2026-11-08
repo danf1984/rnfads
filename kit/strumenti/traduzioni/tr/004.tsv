@@ -1,0 +1,200 @@
+600	: resuming the upload from {0}	: reanudando la subida desde {0}	: setze den Upload ab {0} fort
+601	Connection lost for too long: upload the file again to resume	Conexión perdida demasiado tiempo: vuelve a subir el archivo para reanudar	Verbindung zu lange unterbrochen: lade die Datei erneut hoch, um fortzusetzen
+602	or 1 file	o 1 archivo	oder 1 Datei
+603	the {0} files	los {0} archivos	die {0} Dateien
+604	· {0} failed	· {0} fallidos	· {0} fehlgeschlagen
+605	Uploaded	Subido	Hochgeladen
+606	Connection lost: resuming as soon as it's back…	Conexión perdida: reanudo en cuanto vuelva…	Verbindung verloren: setze fort, sobald sie zurück ist…
+607	Uploading {0} files · {1}%	Subiendo {0} archivos · {1}%	Lade {0} Dateien hoch · {1}%
+608	The recycle bin is empty	La papelera está vacía	Der Papierkorb ist leer
+609	"{0}" restored	"{0}" restaurado	„{0}“ wiederhergestellt
+610	"{0}" will be deleted and can't be recovered.	"{0}" se borrará y no se podrá recuperar.	„{0}“ wird gelöscht und kann nicht wiederhergestellt werden.
+611	Share "{0}"	Compartir "{0}"	„{0}“ teilen
+612	Anyone with the link can download the file without an account	Quien tenga el enlace puede descargar el archivo sin cuenta	Wer den Link hat, kann die Datei ohne Konto herunterladen
+613	Expires after	Caduca después de	Läuft ab nach
+614	The link works for whoever can reach the NAS: on the home network, or from outside if you set up remote access.	El enlace funciona para quien llega al NAS: en la red de casa, o desde fuera si has configurado el acceso remoto.	Der Link funktioniert für alle, die das NAS erreichen: im Heimnetz oder von außen, wenn du den Fernzugriff eingerichtet hast.
+615	Create link	Crear enlace	Link erstellen
+616	Link copied	Enlace copiado	Link kopiert
+617	{0} active links	{0} enlaces activos	{0} aktive Links
+618	{0} · {1} downloads	{0} · {1} descargas	{0} · {1} Downloads
+619	No shared links	Ningún enlace compartido	Keine geteilten Links
+620	Link disabled	Enlace desactivado	Link deaktiviert
+621	Reconnect	Volver a conectar	Neu verbinden
+622	Folder connected	Carpeta conectada	Ordner verbunden
+623	Disconnect	Desconectar	Trennen
+624	Folder disconnected	Carpeta desconectada	Ordner getrennt
+625	Remove	Quitar	Entfernen
+626	Remove network folder	Quitar carpeta de red	Netzwerkordner entfernen
+627	"{0}" will be disconnected and forgotten (password included). Files on the remote computer are not touched.	"{0}" se desconectará y se olvidará (contraseña incluida). Los archivos del ordenador remoto no se tocan.	„{0}“ wird getrennt und vergessen (inklusive Passwort). Die Dateien auf dem entfernten Rechner bleiben unberührt.
+628	Folder removed	Carpeta quitada	Ordner entfernt
+629	Windows, Mac, other NAS (SMB), NFS and WebDAV	Windows, Mac, otros NAS (SMB), NFS y WebDAV	Windows, Mac, andere NAS (SMB), NFS und WebDAV
+630	Connect	Conectar	Verbinden
+631	Looking for computers and NAS on the network…	Buscando ordenadores y NAS en la red…	Suche Computer und NAS im Netzwerk…
+632	No computer found automatically (some Windows PCs don't announce themselves): type the address below.	Ningún ordenador encontrado automáticamente (algunos PC con Windows no se anuncian): escribe la dirección aquí abajo.	Kein Computer automatisch gefunden (manche Windows-PCs melden sich nicht): gib die Adresse unten ein.
+633	No folders visible: try with username and password.	Ninguna carpeta visible: prueba con usuario y contraseña.	Keine Ordner sichtbar: versuche es mit Benutzer und Passwort.
+634	Shared folders on {0}	Carpetas compartidas en {0}	Freigegebene Ordner auf {0}
+635	=	=	=
+636	Full WebDAV address	Dirección WebDAV completa	Vollständige WebDAV-Adresse
+637	User	Usuario	Benutzer
+638	Guest access	Acceso de invitado	Gastzugang
+639	Found on the network	Encontrados en la red	Im Netzwerk gefunden
+640	Search again	Buscar de nuevo	Erneut suchen
+641	Address	Dirección	Adresse
+642	Protocol	Protocolo	Protokoll
+643	Reconnect at startup	Volver a conectar al arrancar	Beim Start neu verbinden
+644	The password is saved encrypted on the NAS and never appears in the logs.	La contraseña se guarda cifrada en el NAS y nunca aparece en los registros.	Das Passwort wird verschlüsselt auf dem NAS gespeichert und erscheint nie in Protokollen.
+645	It will be in	Estará en	Liegt dann in
+646	To see the folders you need the remote computer's username and password	Para ver las carpetas hacen falta el usuario y la contraseña del ordenador remoto	Um die Ordner zu sehen, brauchst du Benutzer und Passwort des entfernten Rechners
+647	Connected: {0} items found	Conexión correcta: {0} elementos encontrados	Verbunden: {0} Elemente gefunden
+648	Network folder connected	Carpeta de red conectada	Netzwerkordner verbunden
+649	Account	Cuenta	Konto
+650	App store	Tienda de apps	App-Store
+651	General	General	Allgemein
+652	Secure access (HTTPS)	Acceso seguro (HTTPS)	Sicherer Zugang (HTTPS)
+653	Notifications	Notificaciones	Benachrichtigungen
+654	System updates	Actualizaciones del sistema	Systemupdates
+655	Home Assistant and API	Home Assistant y API	Home Assistant und API
+656	About and licences	Información y licencias	Info und Lizenzen
+657	Support the project	Apoya el proyecto	Projekt unterstützen
+658	Coming in phase 1B	Llega con la fase 1B	Kommt mit Phase 1B
+659	Settings	Ajustes	Einstellungen
+660	Encrypted connection (HTTPS)	Conexión cifrada (HTTPS)	Verschlüsselte Verbindung (HTTPS)
+661	Unencrypted connection: enable HTTPS in	Conexión no cifrada: activa HTTPS en	Unverschlüsselte Verbindung: aktiviere HTTPS unter
+662	Secure access	Acceso seguro	Sicherer Zugang
+663	Your account	Tu cuenta	Dein Konto
+664	Change password	Cambiar contraseña	Passwort ändern
+665	Log out	Salir	Abmelden
+666	Interface accounts are separate from the share users (Samba). A forgotten password can be reset via SSH with	Las cuentas de la interfaz son distintas de los usuarios de las carpetas compartidas (Samba). Una contraseña olvidada se restablece por SSH con	Die Konten der Oberfläche sind von den Freigabe-Benutzern (Samba) getrennt. Ein vergessenes Passwort setzt du per SSH zurück mit
+667	=	=	=
+668	Login security	Seguridad del acceso	Anmeldesicherheit
+669	Passwords stored with scrypt, never in plain text	Contraseñas guardadas con scrypt, nunca en claro	Passwörter mit scrypt gespeichert, nie im Klartext
+670	After 5 wrong attempts login is blocked for a while	Tras 5 intentos fallidos el acceso se bloquea un rato	Nach 5 Fehlversuchen wird die Anmeldung eine Weile gesperrt
+671	Session in a protected cookie (HttpOnly, SameSite)	Sesión en una cookie protegida (HttpOnly, SameSite)	Sitzung in einem geschützten Cookie (HttpOnly, SameSite)
+672	Two-step verification: coming soon	Verificación en dos pasos: próximamente	Zwei-Schritt-Verifizierung: kommt bald
+673	{0} · last login: {1}	{0} · último acceso: {1}	{0} · letzte Anmeldung: {1}
+674	=	=	=
+675	New account	Nueva cuenta	Neues Konto
+676	: everything.	: todo.	: alles.
+677	New interface account	Nueva cuenta de la interfaz	Neues Konto der Oberfläche
+678	Password (at least 8 characters)	Contraseña (al menos 8 caracteres)	Passwort (mindestens 8 Zeichen)
+679	Role	Rol	Rolle
+680	Account created	Cuenta creada	Konto erstellt
+681	Role changed	Rol cambiado	Rolle geändert
+682	New password for {0}	Nueva contraseña para {0}	Neues Passwort für {0}
+683	Password changed: that account's open sessions have been closed	Contraseña cambiada: se han cerrado las sesiones abiertas de esa cuenta	Passwort geändert: die offenen Sitzungen dieses Kontos wurden beendet
+684	Delete account	Eliminar cuenta	Konto löschen
+685	The account	La cuenta	Das Konto
+686	of the interface will be deleted (share users don't change).	de la interfaz se eliminará (los usuarios de las carpetas compartidas no cambian).	der Oberfläche wird gelöscht (die Freigabe-Benutzer bleiben gleich).
+687	Account deleted	Cuenta eliminada	Konto gelöscht
+688	Error: {0}	Error: {0}	Fehler: {0}
+689	not downloaded yet	aún no descargada	noch nicht heruntergeladen
+690	catalogue of	catálogo del	Katalog vom
+691	=	=	=
+692	Refresh this source now	Actualizar ahora esta fuente	Diese Quelle jetzt aktualisieren
+693	Remove	Quitar	Entfernen
+694	Updating…	Actualizando…	Aktualisiere…
+695	Refresh all	Actualizar todo	Alles aktualisieren
+696	week	semana	Woche
+697	Log of the last update	Registro de la última actualización	Protokoll der letzten Aktualisierung
+698	App sources	Fuentes de las apps	App-Quellen
+699	Add source	Añadir fuente	Quelle hinzufügen
+700	An app found in several sources is shown only once. If a source doesn't respond, its last good catalogue remains valid.	Una app presente en varias fuentes aparece una sola vez. Si una fuente no responde, sigue valiendo su último catálogo bueno.	Eine App aus mehreren Quellen wird nur einmal angezeigt. Antwortet eine Quelle nicht, bleibt ihr letzter guter Katalog gültig.
+701	Automatic source refresh	Actualización automática de las fuentes	Automatische Aktualisierung der Quellen
+702	At startup	Al encender	Beim Einschalten
+703	A few minutes after startup, when the network is ready	Unos minutos después del arranque, cuando la red está lista	Einige Minuten nach dem Start, wenn das Netzwerk bereit ist
+704	Then every	Luego cada	Dann alle
+705	Automatic refresh at intervals	Actualización automática a intervalos	Automatische Aktualisierung in Abständen
+706	Notes	Notas	Hinweise
+707	The catalogues are downloaded from their authors' websites. You can add other sources: zips of apps in compose format, like Big Bear's.	Los catálogos se descargan de las webs de sus autores. Puedes añadir otras fuentes: zips de apps en formato compose, como los de Big Bear.	Die Kataloge werden von den Websites ihrer Autoren geladen. Du kannst weitere Quellen hinzufügen: Zip-Dateien mit Apps im Compose-Format, wie die von Big Bear.
+708	{0} is not affiliated with the authors of the sources or of the apps.	{0} no está afiliado a los autores de las fuentes ni a los de las apps.	{0} ist weder mit den Autoren der Quellen noch mit denen der Apps verbunden.
+709	Source updated: downloading the catalogue	Fuente actualizada: descargando el catálogo	Quelle aktualisiert: lade den Katalog
+710	Remove source	Quitar fuente	Quelle entfernen
+711	The apps from this source disappear from the catalogue (installed ones stay).	Las apps de esta fuente desaparecen del catálogo (las instaladas se quedan).	Die Apps dieser Quelle verschwinden aus dem Katalog (installierte bleiben).
+712	Source removed	Fuente quitada	Quelle entfernt
+713	Refreshing the source	Actualizando la fuente	Aktualisiere die Quelle
+714	Frequency saved	Frecuencia guardada	Häufigkeit gespeichert
+715	Catalogue refresh started	Actualización del catálogo iniciada	Katalogaktualisierung gestartet
+716	every {0} hours	cada {0} horas	alle {0} Stunden
+717	Downloads left:	Descargas restantes:	Verbleibende Downloads:
+718	Downloads left: not checked yet	Descargas restantes: aún no comprobado	Verbleibende Downloads: noch nicht geprüft
+719	· checked on	· comprobado el	· geprüft am
+720	Check	Comprobar	Prüfen
+721	access token	token de acceso	Zugriffstoken
+722	created on hub.docker.com → Account settings → Personal access tokens (permission "Public Repo Read-only").	creado en hub.docker.com → Account settings → Personal access tokens (permiso "Public Repo Read-only").	erstellt auf hub.docker.com → Account settings → Personal access tokens (Berechtigung „Public Repo Read-only“).
+723	Access token	Token de acceso	Zugriffstoken
+724	Log in and save	Entrar y guardar	Anmelden und speichern
+725	Check the downloads left	Comprobar las descargas restantes	Verbleibende Downloads prüfen
+726	Docker Hub account	Cuenta de Docker Hub	Docker-Hub-Konto
+727	The token is saved encrypted on the NAS and doesn't appear in the logs.	El token se guarda cifrado en el NAS y no aparece en los registros.	Das Token wird verschlüsselt auf dem NAS gespeichert und erscheint nicht in Protokollen.
+728	Docker Hub checked	Docker Hub comprobado	Docker Hub geprüft
+729	Docker Hub account removed	Cuenta de Docker Hub quitada	Docker-Hub-Konto entfernt
+730	Enter username and token	Escribe usuario y token	Benutzername und Token eingeben
+731	Docker Hub account saved	Cuenta de Docker Hub guardada	Docker-Hub-Konto gespeichert
+732	=	=	=
+733	Base system · licences of the individual packages (GPL, LGPL, MIT, BSD…)	Sistema base · licencias de cada paquete (GPL, LGPL, MIT, BSD…)	Basissystem · Lizenzen der einzelnen Pakete (GPL, LGPL, MIT, BSD…)
+734	Various	Varios	Verschiedene
+735	Docker Engine and Docker Compose	Docker Engine y Docker Compose	Docker Engine und Docker Compose
+736	App engine	Motor de las apps	App-Engine
+737	Samba · NFS · Avahi · davfs2	Samba · NFS · Avahi · davfs2	Samba · NFS · Avahi · davfs2
+738	Shares and network folders	Carpetas compartidas y carpetas de red	Freigaben und Netzwerkordner
+739	=	=	=
+740	=	=	=
+741	Interface service	Servicio de la interfaz	Dienst der Oberfläche
+742	=	=	=
+743	HTTPS and certificates	HTTPS y certificados	HTTPS und Zertifikate
+744	Terminal in the browser (included in the interface)	Terminal en el navegador (incluido en la interfaz)	Terminal im Browser (in der Oberfläche enthalten)
+745	=	=	=
+746	SSH access, disk health and standby	Acceso SSH, salud y espera de los discos	SSH-Zugang, Festplattenzustand und Standby
+747	=	=	=
+748	=	=	=
+749	Backup and cloud	Copias de seguridad y nube	Sicherung und Cloud
+750	=	=	=
+751	Interface font	Fuente de la interfaz	Schrift der Oberfläche
+752	Orbitron and JetBrains Mono	Orbitron y JetBrains Mono	Orbitron und JetBrains Mono
+753	Font of the brand wordmark	Fuente del logotipo	Schrift des Schriftzugs
+754	shim · GRUB (signed)	shim · GRUB (firmados)	shim · GRUB (signiert)
+755	Boot with Secure Boot, unmodified	Arranque con Secure Boot, sin modificar	Start mit Secure Boot, unverändert
+756	=	=	=
+757	Firmware and microcode	Firmware y microcódigo	Firmware und Microcode
+758	Hardware drivers	Controladores del hardware	Hardwaretreiber
+759	Manufacturers' licences	Licencias de los fabricantes	Lizenzen der Hersteller
+760	based on Ubuntu	basado en Ubuntu	basierend auf Ubuntu
+761	Project website	Web del proyecto	Projektwebsite
+762	Legal notices	Avisos legales	Rechtliche Hinweise
+763	Licence (GPL-3.0)	Licencia (GPL-3.0)	Lizenz (GPL-3.0)
+764	Version {0} · {1} · independent project	Versión {0} · {1} · proyecto independiente	Version {0} · {1} · unabhängiges Projekt
+765	Included software	Software incluido	Enthaltene Software
+766	Full list of packages with versions and licences in the legal notices below and in	Lista completa de paquetes con versiones y licencias en los avisos legales de abajo y en	Vollständige Paketliste mit Versionen und Lizenzen in den rechtlichen Hinweisen unten und in
+767	The code of {0}	El código de {0}	Der Code von {0}
+768	The interface and tools of {0} are free software, distributed under the licence	La interfaz y las herramientas de {0} son software libre, distribuido con licencia	Oberfläche und Werkzeuge von {0} sind freie Software unter der Lizenz
+769	GNU GPL version 3	GNU GPL versión 3	GNU GPL Version 3
+770	: you can use, study, modify and redistribute it under the same conditions.	: puedes usarlo, estudiarlo, modificarlo y redistribuirlo en las mismas condiciones.	: du darfst sie nutzen, untersuchen, ändern und unter denselben Bedingungen weitergeben.
+771	The included GPL and LGPL programs come with their source code, published with every release.	Los programas con licencia GPL y LGPL incluidos van acompañados de su código fuente, publicado con cada versión.	Die enthaltenen GPL- und LGPL-Programme werden mit ihrem Quellcode geliefert, der mit jeder Version veröffentlicht wird.
+772	Trademarks	Marcas	Marken
+773	Ubuntu and Canonical are trademarks of Canonical Ltd. {0} is based on Ubuntu but is not a Canonical product.	Ubuntu y Canonical son marcas de Canonical Ltd. {0} está basado en Ubuntu pero no es un producto de Canonical.	Ubuntu und Canonical sind Marken von Canonical Ltd. {0} basiert auf Ubuntu, ist aber kein Produkt von Canonical.
+774	Docker and the Docker logo are trademarks or registered trademarks of Docker, Inc. in the United States and/or other countries. Docker Hub is mentioned only for compatibility.	Docker and the Docker logo are trademarks or registered trademarks of Docker, Inc. in the United States and/or other countries. Docker Hub se menciona solo por compatibilidad.	Docker and the Docker logo are trademarks or registered trademarks of Docker, Inc. in the United States and/or other countries. Docker Hub wird nur aus Kompatibilitätsgründen genannt.
+775	CasaOS is a trademark of IceWhale Technology: {0} only reads the public format of app catalogues and is not affiliated with them.	CasaOS es una marca de IceWhale Technology: {0} solo lee el formato público de los catálogos de apps y no está afiliado a ellos.	CasaOS ist eine Marke von IceWhale Technology: {0} liest nur das öffentliche Format der App-Kataloge und ist nicht mit ihnen verbunden.
+776	Caddy and xterm.js are used as components under their licences (Apache-2.0 and MIT): {0} is not affiliated with their projects.	Caddy y xterm.js se usan como componentes con sus licencias (Apache-2.0 y MIT): {0} no está afiliado a sus proyectos.	Caddy und xterm.js werden als Komponenten unter ihren Lizenzen genutzt (Apache-2.0 und MIT): {0} ist nicht mit ihren Projekten verbunden.
+777	App names and icons belong to their respective owners.	Los nombres y los iconos de las apps pertenecen a sus respectivos propietarios.	Namen und Symbole der Apps gehören ihren jeweiligen Eigentümern.
+778	=	=	=
+779	The donation links are not set up yet.	Los enlaces para donaciones aún no están configurados.	Die Spendenlinks sind noch nicht eingerichtet.
+780	{0} is free and will stay free	{0} es gratuito y lo seguirá siendo	{0} ist kostenlos und bleibt es
+781	No ads, no subscription, no data sent to anyone.	Sin publicidad, sin suscripción, sin datos enviados a nadie.	Keine Werbung, kein Abo, keine Daten an irgendwen.
+782	If your NAS is useful to you and you want to help development (time, tests on real hardware, new disks for testing), you can make a free donation. Even a coffee helps. Thank you!	Si tu NAS te resulta útil y quieres ayudar al desarrollo (tiempo, pruebas en hardware real, discos nuevos para las pruebas), puedes hacer una donación libre. Hasta un café ayuda. ¡Gracias!	Wenn dir dein NAS nützt und du die Entwicklung unterstützen willst (Zeit, Tests auf echter Hardware, neue Festplatten zum Testen), kannst du frei spenden. Auch ein Kaffee hilft. Danke!
+783	Donations are optional and don't unlock features: the whole NAS works the same for everyone.	Las donaciones son opcionales y no desbloquean funciones: todo el NAS funciona igual para todos.	Spenden sind freiwillig und schalten keine Funktionen frei: das ganze NAS funktioniert für alle gleich.
+784	Other ways to help	Otras formas de ayudar	Andere Wege zu helfen
+785	Report the problems you find and how to reproduce them	Informa de los problemas que encuentres y de cómo reproducirlos	Melde gefundene Probleme und wie man sie nachstellt
+786	Tell friends and social media about the project	Cuenta el proyecto a tus amigos y en las redes sociales	Erzähl Freunden und in sozialen Netzwerken vom Projekt
+787	Translate the interface or improve the texts	Traduce la interfaz o mejora los textos	Übersetze die Oberfläche oder verbessere die Texte
+788	Shared	Compartida	Geteilt
+789	Welcome	Bienvenido	Willkommen
+790	Name and time zone	Nombre y zona horaria	Name und Zeitzone
+791	Security	Seguridad	Sicherheit
+792	Done	Hecho	Fertig
+793	Skip the setup	Omitir el asistente	Einrichtung überspringen
+794	Back	Atrás	Zurück
+795	Next	Siguiente	Weiter
+796	Step {0} of {1}	Paso {0} de {1}	Schritt {0} von {1}
+797	Start using the NAS	Empezar a usar el NAS	NAS verwenden
+798	Welcome to	Bienvenido a	Willkommen bei
+799	! In a few steps you choose the NAS name, prepare the data disks and a shared folder. You can skip and redo everything later from	! En pocos pasos eliges el nombre del NAS, preparas los discos de datos y una carpeta compartida. Puedes omitirlo y rehacerlo todo después desde	! In wenigen Schritten wählst du den Namen des NAS und richtest die Datenfestplatten und einen freigegebenen Ordner ein. Du kannst überspringen und alles später erneut machen unter

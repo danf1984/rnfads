@@ -1,0 +1,139 @@
+/* Tema "KDE Breeze" dell'interfaccia (Impostazioni > Generale > Aspetto). Vale solo con <html data-look="breeze">:
+   il tema originale (style.css) resta com'è. Colori in stile Breeze di KDE Plasma, chiaro e scuro; niente sfumature,
+   ombre o trasparenze; angoli poco arrotondati; barra laterale a gruppi con la ricerca e barra di stato in basso. */
+
+:root[data-look="breeze"] {
+  --accent: #3daee9;
+  --accent-2: #3daee9;
+  --accent-ink: #0b2a3d;
+  --accent-soft: color-mix(in srgb, #3daee9 16%, transparent);
+  --brand: #3daee9;
+  --page: #eff0f1;
+  --panel: #fcfcfc;
+  --panel-solid: #fcfcfc;
+  --side: #e3e5e7;
+  --sunken: #eff0f1;
+  --line: #c4c8cc;
+  --line-2: #dfe2e5;
+  --ink: #232629;
+  --ink-2: #4d5257;
+  --ink-3: #6b7378;
+  --ok: #27ae60;
+  --warn: #e67e00;
+  --bad: #da4453;
+  --radius: 6px;
+  --shadow: none;
+}
+:root[data-look="breeze"][data-theme="dark"] {
+  --accent-ink: #0b2a3d;
+  --accent-soft: color-mix(in srgb, #3daee9 24%, transparent);
+  --page: #202326;
+  --panel: #141618;
+  --panel-solid: #1b1e20;
+  --side: #292c30;
+  --sunken: #2a2e32;
+  --line: #3a3f44;
+  --line-2: #2f3337;
+  --ink: #fcfcfc;
+  --ink-2: #c6ccd1;
+  --ink-3: #8f979e;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-look="breeze"]:not([data-theme="light"]) {
+    --accent-soft: color-mix(in srgb, #3daee9 24%, transparent);
+    --page: #202326; --panel: #141618; --panel-solid: #1b1e20; --side: #292c30; --sunken: #2a2e32;
+    --line: #3a3f44; --line-2: #2f3337; --ink: #fcfcfc; --ink-2: #c6ccd1; --ink-3: #8f979e;
+  }
+}
+
+/* --- struttura: niente sfumature sullo sfondo, barra laterale piena --- */
+:root[data-look="breeze"] body { background: var(--page); font-size: 13.5px; }
+:root[data-look="breeze"] .app { grid-template-columns: 220px 1fr; }
+:root[data-look="breeze"] .side { background: var(--side); backdrop-filter: none; border-right: 1px solid var(--line); padding: 0 0 8px; gap: 0; }
+:root[data-look="breeze"] .brand { padding: 10px 12px; border-bottom: 1px solid var(--line); margin: 0; min-height: 54px; }
+:root[data-look="breeze"] .brand .word { font-size: 16px; font-weight: 600; letter-spacing: 0; }
+:root[data-look="breeze"] .grad-t { background: none; color: var(--ink); -webkit-background-clip: initial; background-clip: initial; }
+:root[data-look="breeze"] .side .bsearch { margin: 8px 8px 4px; height: 30px; display: flex; align-items: center; gap: 6px; padding: 0 8px;
+  border: 1px solid var(--line); border-radius: 4px; background: var(--panel-solid); color: var(--ink-3); font-size: 12.5px; cursor: text; }
+:root[data-look="breeze"] .side .bsearch kbd { margin-left: auto; font: 10.5px var(--mono); padding: 1px 4px; border: 1px solid var(--line); border-radius: 3px; }
+:root[data-look="breeze"] .nav { padding: 0 6px; }
+:root[data-look="breeze"] .nav .ngroup { font-size: 11px; color: var(--ink-3); padding: 10px 8px 3px; }
+:root[data-look="breeze"] .nav .sep { display: none; }
+:root[data-look="breeze"] .nav a { height: 30px; padding: 0 8px; border-radius: 4px; gap: 8px; font-weight: 400; font-size: 13px; color: var(--ink); }
+:root[data-look="breeze"] .nav a .ni { width: 18px; height: 18px; background: none; border-radius: 0; color: var(--c); }
+:root[data-look="breeze"] .nav a .ni svg.i { width: 17px; height: 17px; }
+:root[data-look="breeze"] .nav a:hover { background: color-mix(in srgb, #3daee9 14%, transparent); }
+:root[data-look="breeze"] .nav a.on { background: #3daee9; color: #0b2a3d; font-weight: 500; }
+:root[data-look="breeze"] .nav a.on .ni { background: none; color: #0b2a3d; box-shadow: none; }
+:root[data-look="breeze"] .side .donate { margin: 8px 8px 0; border-radius: 4px; }
+:root[data-look="breeze"] .side .foot { margin: 6px 8px 0; border-radius: 4px; background: transparent; border: 1px solid var(--line); }
+:root[data-look="breeze"] .main { padding: 0 0 34px; display: flex; flex-direction: column; }
+:root[data-look="breeze"] .main > *:not(.top):not(.bstatus) { margin-left: 16px; margin-right: 16px; }
+:root[data-look="breeze"] .top { min-height: 54px; margin: 0 0 14px; padding: 8px 16px; border-bottom: 1px solid var(--line); background: var(--page);
+  position: sticky; top: 0; z-index: 5; }
+:root[data-look="breeze"] .top h1 { font-size: 16px; font-weight: 600; letter-spacing: 0; }
+:root[data-look="breeze"] .top .sub { font-size: 12px; }
+:root[data-look="breeze"] .top .search { display: none; }
+:root[data-look="breeze"] .bstatus { position: fixed; left: 220px; right: 0; bottom: 0; height: 26px; display: flex; align-items: center; gap: 14px;
+  padding: 0 16px; font-size: 11.5px; color: var(--ink-3); background: var(--side); border-top: 1px solid var(--line); z-index: 6; }
+:root[data-look="breeze"] .bstatus svg.i { width: 13px; height: 13px; vertical-align: -2px; }
+:root:not([data-look="breeze"]) .bstatus, :root:not([data-look="breeze"]) .side .bsearch { display: none; }
+
+/* --- elementi --- */
+:root[data-look="breeze"] .main a:not([class]) { color: #2980b9; }
+:root[data-look="breeze"][data-theme="dark"] .main a:not([class]) { color: #3daee9; }
+@media (prefers-color-scheme: dark) { :root[data-look="breeze"]:not([data-theme="light"]) .main a:not([class]) { color: #3daee9; } }
+:root[data-look="breeze"] .card { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; box-shadow: none; backdrop-filter: none; padding: 14px; }
+:root[data-look="breeze"] .card h3 { font-size: 13.5px; font-weight: 600; margin: -14px -14px 12px; padding: 9px 14px; border-bottom: 1px solid var(--line-2); }
+:root[data-look="breeze"] .card h3 > svg.i:first-child { color: var(--accent); }
+:root[data-look="breeze"] .grid { gap: 12px; }
+:root[data-look="breeze"] .btn { height: 30px; padding: 0 12px; border-radius: 4px; border: 1px solid var(--line); background: var(--panel-solid); font-weight: 400; box-shadow: none; }
+:root[data-look="breeze"] .btn:hover { border-color: #3daee9; }
+:root[data-look="breeze"] .btn.primary { background: #3daee9; border-color: #3daee9; color: #0b2a3d; box-shadow: none; }
+:root[data-look="breeze"] .btn.primary:hover { background: #56b9ed; }
+:root[data-look="breeze"] .btn.sm { height: 26px; border-radius: 4px; }
+:root[data-look="breeze"] .btn.ghost { background: transparent; border-color: transparent; }
+:root[data-look="breeze"] .btn.ghost:hover { border-color: var(--line); }
+:root[data-look="breeze"] .btn.danger.solid { background: #da4453; color: #fff; border-color: #da4453; }
+:root[data-look="breeze"] .iconbtn { width: 30px; height: 30px; border-radius: 4px; background: var(--panel-solid); }
+:root[data-look="breeze"] .iconbtn:hover { border-color: #3daee9; }
+:root[data-look="breeze"] #usermenu { background: #3daee9 !important; color: #0b2a3d !important; border-radius: 4px !important; }
+:root[data-look="breeze"] .input { height: 30px; border-radius: 4px; border: 1px solid var(--line); background: var(--panel-solid); }
+:root[data-look="breeze"] .input:focus { border-color: #3daee9; box-shadow: 0 0 0 1px #3daee9; }
+:root[data-look="breeze"] .seg { border-radius: 4px; padding: 2px; background: var(--sunken); }
+:root[data-look="breeze"] .seg button { height: 26px; border-radius: 3px; font-weight: 400; }
+:root[data-look="breeze"] .seg button.on { background: #3daee9; color: #0b2a3d; box-shadow: none; }
+:root[data-look="breeze"] .toggle { width: 36px; height: 20px; background: var(--line); }
+:root[data-look="breeze"] .toggle::after { width: 14px; height: 14px; }
+:root[data-look="breeze"] .toggle.on { background: #3daee9; }
+:root[data-look="breeze"] .toggle.on::after { left: 19px; }
+:root[data-look="breeze"] .chip { height: 28px; border-radius: 4px; }
+:root[data-look="breeze"] .chip.on { background: #3daee9; color: #0b2a3d; border-color: #3daee9; }
+:root[data-look="breeze"] .badge { border-radius: 3px; height: 20px; font-weight: 500; }
+:root[data-look="breeze"] .badge.acc { background: var(--accent-soft); color: #1d6fa5; }
+:root[data-look="breeze"][data-theme="dark"] .badge.acc { color: #8fd1f4; }
+:root[data-look="breeze"] .bar > i { background: #3daee9; }
+:root[data-look="breeze"] .list .item { padding: 9px 0; border-top: 1px solid var(--line-2); }
+:root[data-look="breeze"] .list .item .t { font-weight: 500; }
+:root[data-look="breeze"] .appicon { border-radius: 6px; box-shadow: none; }
+:root[data-look="breeze"] .appicon.lg { border-radius: 8px; }
+:root[data-look="breeze"] .appicon.sm { border-radius: 5px; }
+:root[data-look="breeze"] .stat::before, :root[data-look="breeze"] .stat::after { display: none; }
+:root[data-look="breeze"] .stat .v { font-size: 22px; font-weight: 600; letter-spacing: 0; }
+:root[data-look="breeze"] .stat .k svg.i { background: none; padding: 0; width: 18px; height: 18px; }
+:root[data-look="breeze"] .alert { border-radius: 4px; }
+:root[data-look="breeze"] .scrim { background: rgba(0, 0, 0, .35); backdrop-filter: none; }
+:root[data-look="breeze"] .modal { border-radius: 6px; box-shadow: 0 8px 24px rgba(0, 0, 0, .25); }
+:root[data-look="breeze"] .modal .mh { padding: 12px 16px; background: var(--page); }
+:root[data-look="breeze"] .modal .mh h2 { font-size: 15px; font-weight: 600; }
+:root[data-look="breeze"] .modal .mb { padding: 14px 16px; }
+:root[data-look="breeze"] .modal .mf { padding: 10px 16px; background: var(--page); }
+:root[data-look="breeze"] .popmenu { border-radius: 4px; }
+:root[data-look="breeze"] .tabbar { border-radius: 6px; backdrop-filter: none; background: var(--panel-solid); }
+
+@media (max-width: 720px) {
+  :root[data-look="breeze"] .app { grid-template-columns: 1fr; }
+  :root[data-look="breeze"] .bstatus { display: none; }
+  :root[data-look="breeze"] .main { padding-bottom: 90px; }
+  :root[data-look="breeze"] .main > *:not(.top):not(.bstatus) { margin-left: 10px; margin-right: 10px; }
+}

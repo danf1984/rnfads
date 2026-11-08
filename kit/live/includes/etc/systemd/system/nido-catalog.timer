@@ -1,0 +1,12 @@
+[Unit]
+Description=Aggiornamento del catalogo delle app (all'avvio e poi a intervalli)
+
+[Timer]
+# Qualche minuto dopo l'avvio (con la rete pronta) e poi ogni 6 ore. La frequenza si cambia da
+# Impostazioni → App store (file /etc/systemd/system/nido-catalog.timer.d/10-frequenza.conf).
+OnBootSec=3min
+OnUnitActiveSec=6h
+RandomizedDelaySec=5min
+
+[Install]
+WantedBy=timers.target

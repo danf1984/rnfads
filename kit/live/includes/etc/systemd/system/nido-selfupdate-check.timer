@@ -1,0 +1,11 @@
+[Unit]
+Description=Controllo notturno degli aggiornamenti online del sistema
+
+[Timer]
+OnCalendar=*-*-* 04:15:00
+RandomizedDelaySec=45min
+Persistent=true
+OnBootSec=15min
+
+[Install]
+WantedBy=timers.target

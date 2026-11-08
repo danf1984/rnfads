@@ -1,0 +1,200 @@
+200	Current password	Contraseña actual	Aktuelles Passwort
+201	Repeat the new password	Repite la nueva contraseña	Neues Passwort wiederholen
+202	active	activa	aktiv
+203	partly	en parte	teilweise
+204	restarting	reiniciando	startet neu
+205	Reading the state of the apps…	Leyendo el estado de las apps…	Lese den Status der Apps…
+206	Reading disk space…	Leyendo el espacio de los discos…	Lese den Speicherplatz…
+207	Your apps {0}	Tus apps {0}	Deine Apps {0}
+208	{0} active	{0} activas	{0} aktiv
+209	The app engine (Docker) is not responding.	El motor de las apps (Docker) no responde.	Die App-Engine (Docker) antwortet nicht.
+210	not available	no disponible	nicht verfügbar
+211	Something went wrong	Algo no ha funcionado	Etwas hat nicht funktioniert
+212	The NAS is not responding	El NAS no responde	Das NAS antwortet nicht
+213	The most reliable for Linux. Ideal for data and apps.	El más fiable para Linux. Ideal para datos y apps.	Das zuverlässigste für Linux. Ideal für Daten und Apps.
+214	Recommended	Recomendado	Empfohlen
+215	Snapshots, compression and error checking.	Instantáneas, compresión y control de errores.	Snapshots, Komprimierung und Fehlerprüfung.
+216	For important data	Para datos importantes	Für wichtige Daten
+217	Readable by Windows, Mac, TVs and consoles.	Legible desde Windows, Mac, TV y consolas.	Lesbar unter Windows, Mac, TV und Konsolen.
+218	For USB	Para USB	Für USB
+219	Windows format, for disks to swap with a PC.	Formato de Windows, para discos que se intercambian con un PC.	Windows-Format, für Festplatten, die mit einem PC getauscht werden.
+220	For Windows	Para Windows	Für Windows
+221	Compatible with everything, but files up to 4 GB.	Compatible con todo, pero archivos de 4 GB como máximo.	Mit allem kompatibel, aber Dateien höchstens 4 GB.
+222	Old devices	Dispositivos antiguos	Alte Geräte
+223	Fast with very large files (video).	Rápido con archivos muy grandes (vídeo).	Schnell bei sehr großen Dateien (Video).
+224	Advanced	Avanzado	Erweitert
+225	Never	Nunca	Nie
+226	Don't change	No cambiar	Nicht ändern
+227	Performance	Rendimiento	Leistung
+228	Balanced	Equilibrado	Ausgewogen
+229	Power saving	Ahorro	Energiesparen
+230	{0} minutes	{0} minutos	{0} Minuten
+231	{0} h {1} min	{0} h {1} min	{0} h {1} min
+232	Good	Bueno	Gut
+233	Keep an eye on it	Vigílalo	Im Auge behalten
+234	Failing	Averiado	Defekt
+235	idle	en reposo	im Ruhezustand
+236	In standby	En espera	Im Standby
+237	Test	Prueba	Test
+238	Health unknown	Salud desconocida	Zustand unbekannt
+239	test disk	disco de prueba	Testfestplatte
+240	warning	atención	Achtung
+241	failing	averiado	defekt
+242	{0} disks	{0} discos	{0} Festplatten
+243	{0} to mount	{0} por montar	{0} einzuhängen
+244	{0} in standby	{0} en espera	{0} im Standby
+245	{0} to check	{0} por revisar	{0} zu prüfen
+246	Empty disk: it must be formatted before use	Disco vacío: hay que formatearlo antes de usarlo	Leere Festplatte: vor der Nutzung formatieren
+247	{0} {1} not mounted	{0} {1} sin montar	{0} {1} nicht eingehängt
+248	Format	Formatear	Formatieren
+249	Not mounted	Sin montar	Nicht eingehängt
+250	· not formatted	· sin formatear	· nicht formatiert
+251	Mount	Montar	Einhängen
+252	not needed	no hace falta	nicht nötig
+253	in standby	en espera	im Standby
+254	unknown state	estado desconocido	Status unbekannt
+255	Custom…	Personalizado…	Benutzerdefiniert…
+256	· {0} spin-ups today	· {0} encendidos hoy	· {0} Anläufe heute
+257	Disks	Discos	Festplatten
+258	A disk reports a failure.	Un disco indica una avería.	Eine Festplatte meldet einen Defekt.
+259	Copy important data to another disk right away and replace it.	Copia enseguida los datos importantes a otro disco y sustitúyelo.	Kopiere wichtige Daten sofort auf eine andere Festplatte und tausche sie aus.
+260	Data stays where it is: mounting doesn't delete anything. If you want a different format use "Format".	Los datos se quedan donde están: montar no borra nada. Si quieres otro formato usa "Formatear".	Die Daten bleiben, wo sie sind: Einhängen löscht nichts. Für ein anderes Format nutze „Formatieren“.
+261	All disks are mounted.	Todos los discos están montados.	Alle Festplatten sind eingehängt.
+262	Connect a disk and it will appear here.	Conecta un disco y aparecerá aquí.	Schließe eine Festplatte an, dann erscheint sie hier.
+263	service not running	servicio no activo	Dienst nicht aktiv
+264	Disks to mount {0}	Discos por montar {0}	Einzuhängende Festplatten {0}
+265	Disk standby	Espera de los discos	Standby der Festplatten
+266	Weekly schedule {0}	Programa semanal {0}	Wochenplan {0}
+267	A disk in standby wakes up by itself when needed (a few seconds' wait). Tap a disk for more options.	Un disco en espera se enciende solo cuando hace falta (unos segundos de espera). Toca un disco para ver más opciones.	Eine Festplatte im Standby läuft bei Bedarf von selbst an (einige Sekunden Wartezeit). Tippe auf eine Festplatte für weitere Optionen.
+268	App storage	Espacio de las apps	Speicher der Apps
+269	calculating…	calculando…	berechne…
+270	Images and data of the installed apps.	Imágenes y datos de las apps instaladas.	Images und Daten der installierten Apps.
+271	Where the apps live	Dónde están las apps	Wo die Apps liegen
+272	checking…	comprobando…	prüfe…
+273	after	después de	nach
+274	disabled	desactivado	deaktiviert
+275	: standby {0}	: espera {0}	: Standby {0}
+276	=	=	=
+277	=	=	=
+278	· not mounted	· sin montar	· nicht eingehängt
+279	empty	vacía	leer
+280	no partitions	ninguna partición	keine Partition
+281	system, Docker and apps	sistema, Docker y apps	System, Docker und Apps
+282	{0} used	{0} usados	{0} belegt
+283	{0} · {1} used ·	{0} · {1} usados ·	{0} · {1} belegt ·
+284	Empty disk, to be formatted	Disco vacío, por formatear	Leere Festplatte, zu formatieren
+285	Health	Salud	Zustand
+286	Good	Buena	Gut
+287	Temp.	Temp.	Temp.
+288	Hours	Horas	Stunden
+289	Bad sectors	Sectores dañados	Defekte Sektoren
+290	Format	Formato	Format
+291	Used	Usado	Belegt
+292	Standby	Espera	Standby
+293	SMART test running: {0}%	Prueba SMART en curso: {0}%	SMART-Test läuft: {0}%
+294	Disk health (SMART)	Salud del disco (SMART)	Festplattenzustand (SMART)
+295	Open "{0}" in Files	Abrir "{0}" en Archivos	„{0}“ in Dateien öffnen
+296	Unmount "{0}"	Desmontar "{0}"	„{0}“ aushängen
+297	Mount "{0}"	Montar "{0}"	„{0}“ einhängen
+298	Spin down now	Apagar ahora	Jetzt abschalten
+299	Format only "{0}"	Formatear solo "{0}"	Nur „{0}“ formatieren
+300	Format the whole disk	Formatear todo el disco	Ganze Festplatte formatieren
+301	The system disk can't be changed from here	El disco del sistema no se modifica desde aquí	Die Systemfestplatte lässt sich hier nicht ändern
+302	Unmount the disk	Desmontar el disco	Festplatte aushängen
+303	will no longer be visible in	ya no será visible en	ist nicht mehr sichtbar in
+304	and won't be mounted at startup anymore. The data stays on the disk.	y ya no se montará al arrancar. Los datos se quedan en el disco.	und wird beim Start nicht mehr eingehängt. Die Daten bleiben auf der Festplatte.
+305	Apps and shares that use it won't find it anymore.	Las apps y carpetas compartidas que lo usan ya no lo encontrarán.	Apps und Freigaben, die sie nutzen, finden sie nicht mehr.
+306	Unmount	Desmontar	Aushängen
+307	Disk unmounted: you can now disconnect it	Disco desmontado: ya puedes desconectarlo	Festplatte ausgehängt: du kannst sie jetzt trennen
+308	Format "{0}"	Formatear "{0}"	„{0}“ formatieren
+309	of the partition	de la partición	der Partition
+310	of the disk	del disco	der Festplatte
+311	A single partition will be created on the whole disk.	Se creará una sola partición en todo el disco.	Es wird eine einzige Partition über die ganze Festplatte angelegt.
+312	Test disk	Disco de prueba	Testfestplatte
+313	Data	Datos	Daten
+314	All data {0} will be erased	Se borrarán todos los datos {0}	Alle Daten {0} werden gelöscht
+315	Disk name	Nombre del disco	Name der Festplatte
+316	After formatting	Después de formatear	Nach dem Formatieren
+317	Mount and keep mounted at every startup	Montar y mantener montado en cada arranque	Einhängen und bei jedem Start eingehängt lassen
+318	To confirm type	Para confirmar escribe	Zur Bestätigung eingeben
+319	Preparing…	Preparando…	Vorbereiten…
+320	Quick format · usually under a minute	Formateo rápido · normalmente menos de un minuto	Schnellformatierung · meist unter einer Minute
+321	It will be mounted in /media/{0} · max {1} characters	Se montará en /media/{0} · máximo {1} caracteres	Wird unter /media/{0} eingehängt · höchstens {1} Zeichen
+322	Formatting…	Formateando…	Formatiere…
+323	Disk ready in {0}	Disco listo en {0}	Festplatte bereit in {0}
+324	Formatting failed	Formateo fallido	Formatieren fehlgeschlagen
+325	Disk	Disco	Festplatte
+326	If Windows closed the disk badly (sudden shutdown or "fast startup"), {0} fixes it by itself before mounting, without touching your files.	Si Windows cerró mal el disco (apagado brusco o "inicio rápido"), {0} lo arregla solo antes de montarlo, sin tocar tus archivos.	Wenn Windows die Festplatte nicht sauber geschlossen hat (harter Shutdown oder „Schnellstart“), repariert {0} sie vor dem Einhängen selbst, ohne deine Dateien anzutasten.
+327	Name on the NAS	Nombre en el NAS	Name im NAS
+328	So you see it in the file manager and in the apps	Así lo ves en el gestor de archivos y en las apps	So siehst du sie im Dateimanager und in den Apps
+329	How to use it	Cómo usarlo	Verwendung
+330	Read and write	Lectura y escritura	Lesen und Schreiben
+331	You can add, edit and delete files.	Puedes añadir, modificar y borrar archivos.	Du kannst Dateien hinzufügen, ändern und löschen.
+332	Read only	Solo lectura	Nur Lesen
+333	Safe for disks coming from another PC: no changes possible.	Seguro para discos que vienen de otro PC: no se puede modificar nada.	Sicher für Festplatten von einem anderen PC: keine Änderungen möglich.
+334	Mount at every startup	Montar en cada arranque	Bei jedem Start einhängen
+335	The disk stays connected even after a restart	El disco sigue conectado también después de reiniciar	Die Festplatte bleibt auch nach einem Neustart verbunden
+336	Share on the network	Compartir en la red	Im Netzwerk freigeben
+337	Visible from Windows and Mac for all NAS users	Visible desde Windows y Mac para todos los usuarios del NAS	Sichtbar unter Windows und Mac für alle NAS-Benutzer
+338	No data will be deleted	No se borrará ningún dato	Es werden keine Daten gelöscht
+339	Mounted in {0}	Montado en {0}	Eingehängt unter {0}
+340	every day	todos los días	jeden Tag
+341	Mon–Fri	lun–vie	Mo–Fr
+342	Sat and Sun	sáb y dom	Sa und So
+343	Days and times when the disks go into standby or always stay on	Días y horas en que los discos entran en espera o siempre están encendidos	Tage und Zeiten, zu denen die Festplatten in Standby gehen oder immer an bleiben
+344	Now always on	Ahora siempre encendidos	Jetzt immer an
+345	Now in a standby window	Ahora en franja de espera	Jetzt im Standby-Zeitfenster
+346	on	encendidos	an
+347	Always on	Siempre encendidos	Immer an
+348	from	de	von
+349	to	a	bis
+350	Weekly standby schedule	Programa semanal de espera	Wochenplan für den Standby
+351	Same for all disks that follow it (the system disk always stays on)	Igual para todos los discos que lo siguen (el disco del sistema siempre está encendido)	Gleich für alle Festplatten, die ihm folgen (die Systemfestplatte bleibt immer an)
+352	Use the schedule	Usar el programa	Plan verwenden
+353	Outside the windows, each disk's own time applies	Fuera de las franjas vale el tiempo elegido para cada disco	Außerhalb der Zeitfenster gilt die Zeit jeder Festplatte
+354	Add a window	Añadir una franja	Zeitfenster hinzufügen
+355	In standby windows, spin down after	En las franjas de espera, apagar después de	In Standby-Zeitfenstern abschalten nach
+356	minutes of inactivity	minutos sin actividad	Minuten ohne Aktivität
+357	If a disk is used during a standby window it wakes up, then goes back to standby after these minutes.	Si un disco se usa en una franja de espera se enciende y vuelve a la espera tras estos minutos.	Wird eine Festplatte im Standby-Zeitfenster benutzt, läuft sie an und geht nach diesen Minuten wieder in Standby.
+358	: disks spin down even if their time is "Never".	: los discos se apagan aunque su tiempo sea "Nunca".	: Festplatten werden abgeschaltet, auch wenn ihre Zeit „Nie“ ist.
+359	No windows.	Ninguna franja.	Keine Zeitfenster.
+360	Schedule saved	Programa guardado	Plan gespeichert
+361	Standby of "{0}"	Espera de "{0}"	Standby von „{0}“
+362	On	Activo	Aktiv
+363	In the schedule's windows it spins down or stays on as set there	En las franjas del programa se apaga o sigue encendido como se haya fijado allí	In den Zeitfenstern des Plans wird sie abgeschaltet oder bleibt an, wie dort festgelegt
+364	The schedule is currently off (Disks → Weekly schedule)	El programa ahora está apagado (Discos → Programa semanal)	Der Plan ist derzeit aus (Festplatten → Wochenplan)
+365	Last attempt failed: {0}. Some USB enclosures don't accept standby.	Último intento fallido: {0}. Algunas cajas USB no aceptan la espera.	Letzter Versuch fehlgeschlagen: {0}. Manche USB-Gehäuse unterstützen keinen Standby.
+366	This is an SSD: standby is of little use.	Es un SSD: la espera sirve de poco.	Das ist eine SSD: Standby bringt wenig.
+367	Spin down the disk after	Apagar el disco después de	Festplatte abschalten nach
+368	Minutes of inactivity	Minutos sin actividad	Minuten ohne Aktivität
+369	Status	Estado	Status
+370	Spin-ups today	Encendidos hoy	Anläufe heute
+371	Last activity	Última actividad	Letzte Aktivität
+372	Never during backups	Nunca durante las copias de seguridad	Nie während Sicherungen
+373	From	De	Von
+374	stays on (same time for all disks)	sigue encendido (horario igual para todos los discos)	bleibt an (gleiche Zeit für alle Festplatten)
+375	Follows the weekly schedule	Sigue el programa semanal	Folgt dem Wochenplan
+376	Disk power saving (APM)	Ahorro de energía del disco (APM)	Energiesparen der Festplatte (APM)
+377	The disk slows down by itself when it's not busy	El disco se ralentiza solo cuando trabaja poco	Die Festplatte drosselt sich selbst bei wenig Arbeit
+378	Times that are too short (under 10 minutes) make the disk spin up and down often and wear it out sooner. For HDDs we recommend 20–30 minutes.	Tiempos demasiado cortos (menos de 10 minutos) hacen que el disco se encienda y apague a menudo y se desgaste antes. Para los HDD recomendamos 20–30 minutos.	Zu kurze Zeiten (unter 10 Minuten) lassen die Festplatte oft an- und auslaufen und verschleißen sie schneller. Für HDDs empfehlen wir 20–30 Minuten.
+379	Standby saved	Espera guardada	Standby gespeichert
+380	Health of "{0}"	Salud de "{0}"	Zustand von „{0}“
+381	SMART test: the disk keeps working during the test	Prueba SMART: el disco sigue funcionando durante la prueba	SMART-Test: die Festplatte arbeitet während des Tests weiter
+382	Short test	Prueba corta	Kurzer Test
+383	Full test	Prueba completa	Vollständiger Test
+384	The disk is in standby: to avoid waking it, the SMART data wasn't read. Try again when it's active.	El disco está en espera: para no despertarlo no se han leído los datos SMART. Inténtalo de nuevo cuando esté activo.	Die Festplatte ist im Standby: um sie nicht zu wecken, wurden die SMART-Daten nicht gelesen. Versuche es erneut, wenn sie aktiv ist.
+385	Failing (SMART)	Averiado (SMART)	Defekt (SMART)
+386	Passed	Superada	Bestanden
+387	Remaining life	Vida restante	Restlebensdauer
+388	Temperature	Temperatura	Temperatur
+389	Power-on hours	Horas de trabajo	Betriebsstunden
+390	Power cycles	Encendidos	Einschaltvorgänge
+391	Bad sectors	Sectores defectuosos	Defekte Sektoren
+392	Serial number	Número de serie	Seriennummer
+393	Connection	Conexión	Anschluss
+394	There are damaged sectors or sectors waiting to be replaced. The disk can keep working, but make a backup and keep an eye on it: if the number grows it must be replaced.	Hay sectores dañados o pendientes de sustituir. El disco puede seguir funcionando, pero haz una copia de seguridad y vigílalo: si el número crece hay que cambiarlo.	Es gibt beschädigte oder auf Ersatz wartende Sektoren. Die Festplatte kann weiterlaufen, aber erstelle eine Sicherung und behalte sie im Auge: steigt die Zahl, muss sie getauscht werden.
+395	Latest tests	Últimas pruebas	Letzte Tests
+396	Type	Tipo	Typ
+397	Result	Resultado	Ergebnis
+398	At hour	A las horas	Bei Stunde
+399	Attributes	Atributos	Attribute

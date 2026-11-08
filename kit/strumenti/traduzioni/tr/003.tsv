@@ -1,0 +1,200 @@
+400	Value	Valor	Wert
+401	Worst	Peor	Schlechtester
+402	Threshold	Umbral	Schwelle
+403	Raw	Bruto	Rohwert
+404	Images	Imágenes	Images
+405	Containers	Contenedores	Container
+406	=	=	=
+407	Volumes	Volúmenes	Volumes
+408	=	=	=
+409	Build cache	Caché de compilación	Build-Cache
+410	{0} used of {1}	{0} usados de {1}	{0} von {1} belegt
+411	Remove unused images	Quitar las imágenes no usadas	Ungenutzte Images entfernen
+412	Installed apps are not touched.	Las apps instaladas no se tocan.	Installierte Apps bleiben unberührt.
+413	Freed {0}	Liberados {0}	{0} freigegeben
+414	{0} in total	{0} en total	{0} insgesamt
+415	Docker {0} · AppData {1}	Docker {0} · AppData {1}	Docker {0} · AppData {1}
+416	Last attempt failed ({0}): {1}. The apps stayed where they were.	Último intento fallido ({0}): {1}. Las apps se han quedado donde estaban.	Letzter Versuch fehlgeschlagen ({0}): {1}. Die Apps sind geblieben, wo sie waren.
+417	Moving…	Moviendo…	Verschiebe…
+418	the apps are stopped until it finishes	las apps están detenidas hasta que termine	die Apps sind angehalten, bis es fertig ist
+419	Free up space on the system disk	Liberar espacio en el disco del sistema	Platz auf der Systemfestplatte freigeben
+420	On disk {0}	En el disco {0}	Auf Festplatte {0}
+421	The paths haven't changed (/var/lib/docker and /DATA/AppData): compose files, shares and backups stay the same.	Las rutas no han cambiado (/var/lib/docker y /DATA/AppData): compose, carpetas compartidas y copias siguen igual.	Die Pfade sind gleich geblieben (/var/lib/docker und /DATA/AppData): Compose, Freigaben und Sicherungen bleiben unverändert.
+422	Move back to the system disk	Devolver al disco del sistema	Zurück auf die Systemfestplatte
+423	Free up space	Liberar espacio	Platz freigeben
+424	The old copies of Docker and AppData on the system disk will be deleted. The apps keep running from the new disk, but moving them back will require copying them again.	Se borrarán las copias antiguas de Docker y AppData del disco del sistema. Las apps siguen funcionando desde el disco nuevo, pero para devolverlas habrá que copiarlas otra vez.	Die alten Kopien von Docker und AppData auf der Systemfestplatte werden gelöscht. Die Apps laufen weiter von der neuen Festplatte, aber zum Zurückholen müssen sie erneut kopiert werden.
+425	Delete the old copies	Borrar las copias antiguas	Alte Kopien löschen
+426	Space freed	Espacio liberado	Platz freigegeben
+427	To move them you need a data disk mounted "at every startup" with ext4, XFS or Btrfs.	Para moverlas hace falta un disco de datos montado "en cada arranque" con ext4, XFS o Btrfs.	Zum Verschieben brauchst du eine Datenfestplatte, die „bei jedem Start“ eingehängt wird, mit ext4, XFS oder Btrfs.
+428	On the system disk	En el disco del sistema	Auf der Systemfestplatte
+429	Move to another disk…	Mover a otro disco…	Auf andere Festplatte verschieben…
+430	Move the apps back to the system disk	Devolver las apps al disco del sistema	Apps zurück auf die Systemfestplatte
+431	Move the apps to another disk	Mover las apps a otro disco	Apps auf andere Festplatte verschieben
+432	Docker and AppData · {0}	Docker y AppData · {0}	Docker und AppData · {0}
+433	Docker and the app data are copied back to the system disk and the apps restart from there. The copy on	Docker y los datos de las apps se copian de nuevo al disco del sistema y las apps arrancan desde allí. La copia en	Docker und die App-Daten werden zurück auf die Systemfestplatte kopiert und die Apps starten von dort. Die Kopie auf
+434	stays: you can delete it from the file manager.	se queda: podrás borrarla desde el gestor de archivos.	bleibt: du kannst sie im Dateimanager löschen.
+435	Destination disk	Disco de destino	Zielfestplatte
+436	The chosen disk will always stay on while the apps are running (no standby). If the disk is missing at startup, the apps won't start until you reconnect it.	El disco elegido estará siempre encendido mientras las apps estén activas (sin espera). Si al arrancar falta el disco, las apps no se inician hasta que lo vuelvas a conectar.	Die gewählte Festplatte bleibt immer an, solange die Apps laufen (kein Standby). Fehlt sie beim Start, starten die Apps erst, wenn du sie wieder anschließt.
+437	Move back	Devolver	Zurückholen
+438	Move	Mover	Verschieben
+439	During the copy	Durante la copia	Während des Kopierens
+440	the apps are stopped	las apps están detenidas	sind die Apps angehalten
+441	Moving the apps back to the system disk…	Devolviendo las apps al disco del sistema…	Hole die Apps zurück auf die Systemfestplatte…
+442	Moving the apps…	Moviendo las apps…	Verschiebe die Apps…
+443	Files	Archivos	Dateien
+444	The file manager is reserved for administrators.	El gestor de archivos está reservado a los administradores.	Der Dateimanager ist Administratoren vorbehalten.
+445	Select a file to see its details	Selecciona un archivo para ver sus detalles	Wähle eine Datei, um die Details zu sehen
+446	{0} free	{0} libres	{0} frei
+447	Connect a PC or a NAS…	Conectar un PC o un NAS…	PC oder NAS verbinden…
+448	empty	vacío	leer
+449	Favourites	Favoritos	Favoriten
+450	Network	Red	Netzwerk
+451	Other	Otro	Sonstiges
+452	Recycle bin	Papelera	Papierkorb
+453	Shared links	Enlaces compartidos	Geteilte Links
+454	Open	Abrir	Öffnen
+455	Remove from favourites	Quitar de favoritos	Aus Favoriten entfernen
+456	Only folders can go in favourites	En favoritos solo van carpetas	In die Favoriten kommen nur Ordner
+457	Added to favourites	Añadida a favoritos	Zu Favoriten hinzugefügt
+458	Removed from favourites	Quitada de favoritos	Aus Favoriten entfernt
+459	Sort by name	Ordenar por nombre	Nach Name sortieren
+460	Sort by date	Ordenar por fecha	Nach Datum sortieren
+461	Sort by size	Ordenar por tamaño	Nach Größe sortieren
+462	Sort by type	Ordenar por tipo	Nach Typ sortieren
+463	{0} Recycle bin	{0} Papelera	{0} Papierkorb
+464	Empty recycle bin	Vaciar papelera	Papierkorb leeren
+465	Empty the recycle bin	Vaciar la papelera	Papierkorb leeren
+466	All items in the recycle bin will be deleted forever.	Todos los elementos de la papelera se borrarán para siempre.	Alle Elemente im Papierkorb werden endgültig gelöscht.
+467	Empty	Vaciar	Leeren
+468	Recycle bin emptied	Papelera vaciada	Papierkorb geleert
+469	Search "{0}" in {1}	Búsqueda "{0}" en {1}	Suche „{0}“ in {1}
+470	Upload	Subir	Hochladen
+471	Upload files	Subir archivos	Dateien hochladen
+472	Upload a folder	Subir una carpeta	Ordner hochladen
+473	New text file	Nuevo archivo de texto	Neue Textdatei
+474	Select all	Seleccionar todo	Alles auswählen
+475	Hide hidden files	Ocultar los archivos ocultos	Versteckte Dateien ausblenden
+476	Show hidden files	Mostrar los archivos ocultos	Versteckte Dateien anzeigen
+477	Refresh	Actualizar	Aktualisieren
+478	Connect a network folder	Conectar una carpeta de red	Netzwerkordner verbinden
+479	Searching…	Buscando…	Suche…
+480	item	elemento	Element
+481	items	elementos	Elemente
+482	No results	Ningún resultado	Keine Ergebnisse
+483	Empty folder	Carpeta vacía	Leerer Ordner
+484	Drag files here to upload them, or use right-click	Arrastra aquí los archivos para subirlos, o usa el botón derecho	Dateien zum Hochladen hierher ziehen oder Rechtsklick verwenden
+485	Size	Tamaño	Größe
+486	Modified	Modificado	Geändert
+487	{0} items	{0} elementos	{0} Elemente
+488	=	=	=
+489	Enter	Intro	Eingabe
+490	Download	Descargar	Herunterladen
+491	Cut	Cortar	Ausschneiden
+492	Paste into folder	Pegar en la carpeta	In den Ordner einfügen
+493	Copy to…	Copiar a…	Kopieren nach…
+494	Move to…	Mover a…	Verschieben nach…
+495	Rename	Renombrar	Umbenennen
+496	Compress…	Comprimir…	Komprimieren…
+497	Extract here	Extraer aquí	Hier entpacken
+498	Calculate size	Calcular el tamaño	Größe berechnen
+499	Add to favourites	Añadir a favoritos	Zu Favoriten hinzufügen
+500	Permissions…	Permisos…	Berechtigungen…
+501	Share with a link	Compartir con un enlace	Per Link teilen
+502	Del	Supr	Entf
+503	Paste {0}	Pegar {0}	{0} einfügen
+504	Paste	Pegar	Einfügen
+505	New folder	Nueva carpeta	Neuer Ordner
+506	List view	Vista de lista	Listenansicht
+507	Grid view	Vista de cuadrícula	Rasteransicht
+508	Remove this folder from favourites	Quitar esta carpeta de favoritos	Diesen Ordner aus den Favoriten entfernen
+509	Add this folder to favourites	Añadir esta carpeta a favoritos	Diesen Ordner zu den Favoriten hinzufügen
+510	{0} selected	{0} seleccionados	{0} ausgewählt
+511	{0} free of {1}	{0} libres de {1}	{0} von {1} frei
+512	{0} {1}: open the destination folder and paste (Ctrl+V)	{0} {1}: abre la carpeta de destino y pega (Ctrl+V)	{0} {1}: Zielordner öffnen und einfügen (Strg+V)
+513	to move	por mover	zum Verschieben
+514	to copy	por copiar	zum Kopieren
+515	Paste here	Pegar aquí	Hier einfügen
+516	Names already present	Nombres ya existentes	Namen bereits vorhanden
+517	Do this for all	Hacer lo mismo con todos	Für alle so machen
+518	Skip	Omitir	Überspringen
+519	Keep both	Conservar ambos	Beide behalten
+520	Replace	Sustituir	Ersetzen
+521	Conflict {0} of {1}	Conflicto {0} de {1}	Konflikt {0} von {1}
+522	a folder	una carpeta	ein Ordner
+523	a file	un archivo	eine Datei
+524	To upload	Por subir	Hochzuladen
+525	From	De	Von
+526	"Replace" merges the two folders: files with the same name are replaced.	"Sustituir" une las dos carpetas: los archivos con el mismo nombre se sustituyen.	„Ersetzen“ führt beide Ordner zusammen: Dateien mit gleichem Namen werden ersetzt.
+527	In the destination there's already {0} with the name	En el destino ya existe {0} con el nombre	Im Ziel gibt es bereits {0} namens
+528	Already present	Ya existente	Bereits vorhanden
+529	Merge	Unir	Zusammenführen
+530	{0} items selected{1}	{0} elementos seleccionados{1}	{0} Elemente ausgewählt{1}
+531	=	=	=
+532	Path	Ruta	Pfad
+533	Image	Imagen	Bild
+534	Video	Vídeo	Video
+535	Audio	Audio	Audio
+536	PDF document	Documento PDF	PDF-Dokument
+537	Text	Texto	Text
+538	Archive	Archivo comprimido	Archiv
+539	Document	Documento	Dokument
+540	Spreadsheet	Hoja de cálculo	Tabelle
+541	Presentation	Presentación	Präsentation
+542	· {0} files	· {0} archivos	· {0} Dateien
+543	Dimensions	Dimensiones	Abmessungen
+544	Taken	Tomada	Aufgenommen
+545	Camera	Cámara	Kamera
+546	Permissions	Permisos	Berechtigungen
+547	folder	carpeta	Ordner
+548	folders	carpetas	Ordner
+549	at least	al menos	mindestens
+550	Loading…	Cargando…	Lade…
+551	Archive {0}	Archivo {0}	Archiv {0}
+552	Preview not available for this file type	Vista previa no disponible para este tipo de archivo	Vorschau für diesen Dateityp nicht verfügbar
+553	… (file truncated in the preview)	… (archivo truncado en la vista previa)	… (Datei in der Vorschau gekürzt)
+554	Read only	Solo lectura	Nur Lesen
+555	Wrap	Ajustar líneas	Umbruch
+556	=	=	=
+557	Line {0}, column {1}	Línea {0}, columna {1}	Zeile {0}, Spalte {1}
+558	● Unsaved changes	● Cambios sin guardar	● Ungespeicherte Änderungen
+559	The file has changed	El archivo ha cambiado	Die Datei hat sich geändert
+560	Overwrite	Sobrescribir	Überschreiben
+561	There are unsaved changes. Close without saving?	Hay cambios sin guardar. ¿Cerrar sin guardar?	Es gibt ungespeicherte Änderungen. Ohne Speichern schließen?
+562	Create	Crear	Erstellen
+563	New name	Nuevo nombre	Neuer Name
+564	Delete forever	Eliminar para siempre	Endgültig löschen
+565	will be deleted	se borrará	wird gelöscht
+566	will be deleted	se borrarán	werden gelöscht
+567	{0} {1} without going through the recycle bin.	{0} {1} sin pasar por la papelera.	{0} {1}, ohne den Papierkorb.
+568	Move to recycle bin	Mover a la papelera	In den Papierkorb
+569	will be moved	se moverá	wird verschoben
+570	will be moved	se moverán	werden verschoben
+571	{0} {1} to the recycle bin. You can recover them from "Recycle bin".	{0} {1} a la papelera. Podrás recuperarlos desde "Papelera".	{0} {1} in den Papierkorb. Du kannst sie unter „Papierkorb“ wiederherstellen.
+572	Deleted	Eliminado	Gelöscht
+573	Moved to the recycle bin	Movido a la papelera	In den Papierkorb verschoben
+574	Compress	Comprimir	Komprimieren
+575	Archive name	Nombre del archivo	Name des Archivs
+576	None	Ninguno	Keine
+577	Owner	Propietario	Eigentümer
+578	the user chosen above	el usuario elegido arriba	der oben gewählte Benutzer
+579	Group	Grupo	Gruppe
+580	the users in the group	los usuarios del grupo	die Benutzer der Gruppe
+581	Everyone else	Todos los demás	Alle anderen
+582	including apps and share guests	también las apps y los invitados de las carpetas compartidas	auch Apps und Gäste der Freigaben
+583	Also apply to all the contents of the folders	Aplicar también a todo el contenido de las carpetas	Auch auf den gesamten Inhalt der Ordner anwenden
+584	Now:	Ahora:	Jetzt:
+585	Apply	Aplicar	Anwenden
+586	Permissions updated	Permisos actualizados	Berechtigungen aktualisiert
+587	: done ({0} skipped)	: hecho ({0} omitidos)	: erledigt ({0} übersprungen)
+588	: done	: hecho	: erledigt
+589	{0} running	{0} en curso	{0} läuft
+590	Operations finished	Operaciones terminadas	Vorgänge abgeschlossen
+591	Expand	Ampliar	Erweitern
+592	Collapse	Reducir	Verkleinern
+593	They continue even if you close the page.	Continúan aunque cierres la página.	Sie laufen weiter, auch wenn du die Seite schließt.
+594	Cancel operation	Cancelar la operación	Vorgang abbrechen
+595	The operation stops: files already copied stay, the half-copied one is removed.	La operación se detiene: los archivos ya copiados se quedan, el que estaba a medias se quita.	Der Vorgang stoppt: bereits kopierte Dateien bleiben, die halb kopierte wird entfernt.
+596	Open a folder first	Abre primero una carpeta	Öffne zuerst einen Ordner
+597	Error	Error	Fehler
+598	Connection lost	Conexión interrumpida	Verbindung unterbrochen
+599	Cancelled	Cancelado	Abgebrochen

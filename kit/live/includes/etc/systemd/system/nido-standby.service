@@ -1,0 +1,14 @@
+[Unit]
+Description=Standby dei dischi del NAS
+After=local-fs.target
+
+[Service]
+Environment=PYTHONPATH=/usr/lib/nido/panel
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 -m nidopanel.cli standby-daemon
+Restart=always
+RestartSec=10
+Nice=10
+
+[Install]
+WantedBy=multi-user.target

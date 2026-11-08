@@ -1,0 +1,13 @@
+[Unit]
+Description=Configurazione al primo avvio
+After=local-fs.target
+Before=nido-ui.service
+ConditionPathExists=!/var/lib/nido/firstboot.done
+
+[Service]
+Type=oneshot
+ExecStart=/usr/lib/nido/firstboot.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

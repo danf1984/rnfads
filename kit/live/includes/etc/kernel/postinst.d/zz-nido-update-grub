@@ -1,0 +1,10 @@
+#!/bin/sh
+# Aggiorna il menu di GRUB quando si installa o rimuove un kernel.
+# (GRUB è installato con i pacchetti *-bin, che non portano questo hook.)
+set -e
+[ -e /etc/kernel/postinst.d/zz-update-grub ] && exit 0
+[ -d /run/live/medium ] && exit 0
+if [ -e /boot/grub/grub.cfg ] && command -v update-grub >/dev/null 2>&1; then
+  update-grub
+fi
+exit 0

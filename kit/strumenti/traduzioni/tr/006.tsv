@@ -1,0 +1,200 @@
+1000	Uninstalling {0}…	Desinstalando {0}…	Deinstalliere {0}…
+1001	{0} uninstalled	{0} desinstalada	{0} deinstalliert
+1002	Base system	Sistema base	Basissystem
+1003	{0} · {1}.local	{0} · {1}.local	{0} · {1}.local
+1004	Addresses	Direcciones	Adressen
+1005	On since	Encendido desde	An seit
+1006	Processors	Procesadores	Prozessoren
+1007	{0} · load {1}	{0} · carga {1}	{0} · Last {1}
+1008	Memory	Memoria	Arbeitsspeicher
+1009	no sensors	ningún sensor	keine Sensoren
+1010	A restart is needed	Hace falta reiniciar	Neustart erforderlich
+1011	to complete the latest updates.	para completar las últimas actualizaciones.	um die letzten Updates abzuschließen.
+1012	Your NAS	Tu NAS	Dein NAS
+1013	Go to Disks	Ir a Discos	Zu den Festplatten
+1014	Power	Encendido	Ein/Aus
+1015	Shut down	Apagar	Ausschalten
+1016	Apps stop and restart by themselves. During the restart the NAS doesn't respond for a few minutes.	Las apps se detienen y vuelven a arrancar solas. Durante el reinicio el NAS no responde durante unos minutos.	Apps stoppen und starten von selbst neu. Während des Neustarts antwortet das NAS einige Minuten nicht.
+1017	Setup wizard	Asistente	Einrichtungsassistent
+1018	NAS name, time zone, disks, shared folder and security, step by step.	Nombre del NAS, zona horaria, discos, carpeta compartida y seguridad, paso a paso.	Name des NAS, Zeitzone, Festplatten, freigegebener Ordner und Sicherheit, Schritt für Schritt.
+1019	Open the setup wizard	Abrir el asistente	Einrichtungsassistent öffnen
+1020	Last scheduled shutdown skipped ({0}): {1}	Último apagado programado omitido ({0}): {1}	Letztes geplantes Ausschalten übersprungen ({0}): {1}
+1021	after {0} min of waiting	tras {0} min de espera	nach {0} Min. Wartezeit
+1022	· power-on NOT set	· encendido NO configurado	· Einschalten NICHT eingestellt
+1023	Last scheduled shutdown {0}{1}	Último apagado programado {0}{1}	Letztes geplantes Ausschalten {0}{1}
+1024	Next shutdown:	Próximo apagado:	Nächstes Ausschalten:
+1025	On the chosen days, at the set time	Los días elegidos, a la hora indicada	An den gewählten Tagen zur angegebenen Uhrzeit
+1026	Next power-on:	Próximo encendido:	Nächstes Einschalten:
+1027	With the PC's alarm (RTC), after every shutdown	Con el despertador del PC (RTC), tras cada apagado	Mit dem Wecker des PCs (RTC), nach jedem Ausschalten
+1028	This PC has no usable alarm (RTC): scheduled power-on won't work. Shutdown will.	Este PC no tiene un despertador (RTC) utilizable: el encendido programado no funcionará. El apagado sí.	Dieser PC hat keinen nutzbaren Wecker (RTC): geplantes Einschalten funktioniert nicht, Ausschalten schon.
+1029	Scheduled shutdown and power-on	Apagado y encendido programados	Geplantes Aus- und Einschalten
+1030	Shut down the NAS	Apagar el NAS	NAS ausschalten
+1031	Turn the NAS back on	Volver a encender el NAS	NAS wieder einschalten
+1032	Wait for backups and updates	Esperar a copias y actualizaciones	Auf Sicherungen und Updates warten
+1033	If they're running, wait at most these minutes, then skip the shutdown	Si están en curso espera como máximo estos minutos, luego omite el apagado	Laufen sie, höchstens so viele Minuten warten, dann das Ausschalten überspringen
+1034	Notify before shutting down	Avisar antes de apagar	Vor dem Ausschalten benachrichtigen
+1035	With the channels in Settings → Notifications	Con los canales de Ajustes → Notificaciones	Über die Kanäle in Einstellungen → Benachrichtigungen
+1036	Test the PC's alarm	Probar el despertador del PC	Wecker des PCs testen
+1037	Power-on works only if the PC allows it (in the BIOS/UEFI the option is often called "Wake on RTC" or "Power on by RTC") and stays plugged in.	El encendido funciona solo si el PC lo permite (en la BIOS/UEFI la opción se suele llamar "Wake on RTC" o "Power on by RTC") y sigue conectado a la corriente.	Das Einschalten funktioniert nur, wenn der PC es erlaubt (im BIOS/UEFI heißt die Option oft „Wake on RTC“ oder „Power on by RTC“) und am Strom bleibt.
+1038	Restart the NAS?	¿Reiniciar el NAS?	NAS neu starten?
+1039	Shut down the NAS?	¿Apagar el NAS?	NAS ausschalten?
+1040	The NAS will be unreachable for a few minutes, then the page reloads by itself.	El NAS no estará disponible durante unos minutos, luego la página se recarga sola.	Das NAS ist einige Minuten nicht erreichbar, dann lädt die Seite von selbst neu.
+1041	To turn it back on you'll need to press the power button.	Para volver a encenderlo tendrás que pulsar el botón de encendido.	Zum Einschalten musst du den Netzschalter drücken.
+1042	It turns back on by itself {0}.	Se vuelve a encender solo {0}.	Es schaltet sich von selbst wieder ein {0}.
+1043	Scheduled power-on not set: {0}.	Encendido programado no configurado: {0}.	Geplantes Einschalten nicht eingestellt: {0}.
+1044	Restarting…	Reiniciando…	Starte neu…
+1045	Shutting down…	Apagando…	Fahre herunter…
+1046	The page reloads by itself when the NAS is ready again.	La página se recarga sola cuando el NAS está listo otra vez.	Die Seite lädt von selbst neu, wenn das NAS wieder bereit ist.
+1047	You can close this page.	Puedes cerrar esta página.	Du kannst diese Seite schließen.
+1048	=	=	=
+1049	Phone notifications (ntfy)	Notificaciones en el teléfono (ntfy)	Benachrichtigungen aufs Handy (ntfy)
+1050	Free ntfy app for Android and iPhone	App gratuita ntfy para Android e iPhone	Kostenlose ntfy-App für Android und iPhone
+1051	Topic	Tema (topic)	Thema (Topic)
+1052	a name that's hard to guess	un nombre difícil de adivinar	ein schwer zu erratender Name
+1053	Token (optional)	Token (opcional)	Token (optional)
+1054	Messages from your own bot	Mensajes de un bot tuyo	Nachrichten von deinem Bot
+1055	Bot token	Token del bot	Bot-Token
+1056	Chat ID	Chat ID	Chat-ID
+1057	e.g. 123456789	p. ej. 123456789	z. B. 123456789
+1058	With an SMTP server (e.g. Gmail with an app password)	Con un servidor SMTP (p. ej. Gmail con contraseña de aplicación)	Mit einem SMTP-Server (z. B. Gmail mit App-Passwort)
+1059	SMTP server	Servidor SMTP	SMTP-Server
+1060	=	=	=
+1061	Port	Puerto	Port
+1062	Sender	Remitente	Absender
+1063	Recipient	Destinatario	Empfänger
+1064	Webhook (Home Assistant)	Webhook (Home Assistant)	Webhook (Home Assistant)
+1065	A JSON with title, message, level and event	Un JSON con title, message, level y event	Ein JSON mit title, message, level und event
+1066	None	Ninguna	Keine
+1067	When to notify	Cuándo avisar	Wann benachrichtigen
+1068	Space threshold	Umbral de espacio	Speicherplatz-Schwelle
+1069	Notify when a disk is fuller than	Avisar cuando un disco esté lleno por encima del	Benachrichtigen, wenn eine Festplatte voller ist als
+1070	Disk temperature threshold	Umbral de temperatura de los discos	Temperaturschwelle der Festplatten
+1071	The same alert isn't repeated within 24 hours.	El mismo aviso no se repite antes de 24 horas.	Derselbe Hinweis wird frühestens nach 24 Stunden wiederholt.
+1072	Notifications saved	Notificaciones guardadas	Benachrichtigungen gespeichert
+1073	Sending failed	Envío fallido	Senden fehlgeschlagen
+1074	Test message sent	Mensaje de prueba enviado	Testnachricht gesendet
+1075	System	Sistema	System
+1076	Looking for updates…	Buscando actualizaciones…	Suche nach Updates…
+1077	{0} updates available	{0} actualizaciones disponibles	{0} Updates verfügbar
+1078	The system is up to date	El sistema está actualizado	Das System ist aktuell
+1079	{0} security	{0} de seguridad	{0} Sicherheit
+1080	last check:	última comprobación:	letzte Prüfung:
+1081	never checked	nunca comprobado	nie geprüft
+1082	restart needed	hace falta reiniciar	Neustart nötig
+1083	+ {0} more packages	+ otros {0} paquetes	+ {0} weitere Pakete
+1084	to use the new kernel or the new libraries. Apps restart by themselves.	para usar el nuevo kernel o las nuevas bibliotecas. Las apps vuelven a arrancar solas.	um den neuen Kernel oder neue Bibliotheken zu nutzen. Apps starten von selbst neu.
+1085	Restart now	Reiniciar ahora	Jetzt neu starten
+1086	Nothing to update. Press "Check for updates" to check now.	Nada que actualizar. Pulsa "Buscar actualizaciones" para comprobar ahora.	Nichts zu aktualisieren. Drücke „Nach Updates suchen“, um jetzt zu prüfen.
+1087	System snapshot before and after	Instantánea del sistema antes y después	System-Snapshot vorher und nachher
+1088	Snapshots not available (system disk is not Btrfs)	Instantáneas no disponibles (el disco del sistema no es Btrfs)	Snapshots nicht verfügbar (Systemfestplatte ist nicht Btrfs)
+1089	{0} · {1} · {2} min {3} s	{0} · {1} · {2} min {3} s	{0} · {1} · {2} Min. {3} s
+1090	Create snapshot	Crear instantánea	Snapshot erstellen
+1091	important	importante	wichtig
+1092	No snapshots.	Ninguna instantánea.	Keine Snapshots.
+1093	Snapshots work when the system disk is Btrfs (standard installation). The test system isn't.	Las instantáneas funcionan cuando el disco del sistema es Btrfs (instalación estándar). El sistema de prueba no lo es.	Snapshots funktionieren, wenn die Systemfestplatte Btrfs ist (Standardinstallation). Das Testsystem ist es nicht.
+1094	Check for updates	Buscar actualizaciones	Nach Updates suchen
+1095	Update now	Actualizar ahora	Jetzt aktualisieren
+1096	What will be updated	Qué se actualizará	Was aktualisiert wird
+1097	Update safety	Seguridad de la actualización	Sicherheit der Aktualisierung
+1098	Apps stay on during the update	Las apps siguen encendidas durante la actualización	Apps bleiben während der Aktualisierung an
+1099	If something goes wrong: back to the previous snapshot	Si algo sale mal: se vuelve a la instantánea anterior	Wenn etwas schiefgeht: zurück zum vorherigen Snapshot
+1100	Automatic	Automático	Automatisch
+1101	Notifies you	Te avisa con una notificación	Benachrichtigt dich
+1102	Install security ones	Instalar las de seguridad	Sicherheitsupdates installieren
+1103	By themselves, at night	Solas, de noche	Selbstständig, nachts
+1104	Restart if needed	Reiniciar si hace falta	Bei Bedarf neu starten
+1105	Only after an update that requires it	Solo tras una actualización que lo requiera	Nur nach einem Update, das es erfordert
+1106	System snapshots	Instantáneas del sistema	System-Snapshots
+1107	A snapshot rolls back only the system: your files, the apps and their data don't change.	Una instantánea solo devuelve atrás el sistema: tus archivos, las apps y sus datos no cambian.	Ein Snapshot setzt nur das System zurück: deine Dateien, die Apps und ihre Daten bleiben gleich.
+1108	No updates made from here yet.	Todavía ninguna actualización hecha desde aquí.	Noch keine Updates von hier aus.
+1109	Update now?	¿Actualizar ahora?	Jetzt aktualisieren?
+1110	, with a system snapshot before and after	, con una instantánea del sistema antes y después	, mit System-Snapshot vorher und nachher
+1111	{0} packages will be installed{1}. You can keep using the NAS while it updates.	Se instalarán {0} paquetes{1}. Puedes seguir usando el NAS mientras se actualiza.	Es werden {0} Pakete installiert{1}. Du kannst das NAS während der Aktualisierung weiter nutzen.
+1112	New snapshot	Nueva instantánea	Neuer Snapshot
+1113	Description	Descripción	Beschreibung
+1114	Before the changes	Antes de los cambios	Vor den Änderungen
+1115	Snapshot created	Instantánea creada	Snapshot erstellt
+1116	Restore the snapshot?	¿Restaurar la instantánea?	Snapshot wiederherstellen?
+1117	System restored: restart the NAS	Sistema restaurado: reinicia el NAS	System wiederhergestellt: starte das NAS neu
+1118	Delete the snapshot?	¿Eliminar la instantánea?	Snapshot löschen?
+1119	Snapshot deleted	Instantánea eliminada	Snapshot gelöscht
+1120	API key	Clave API	API-Schlüssel
+1121	Regenerate	Regenerar	Neu erzeugen
+1122	Goes in the header	Va en la cabecera	Gehört in den Header
+1123	Sensors for Home Assistant	Sensores para Home Assistant	Sensoren für Home Assistant
+1124	Copy the package	Copiar el package	Package kopieren
+1125	Copy the secret	Copiar el secret	Secret kopieren
+1126	A new package in	Un package nuevo en	Ein neues Package in
+1127	and the key in	y la clave en	und den Schlüssel in
+1128	, then restart Home Assistant.	, luego reinicia Home Assistant.	, dann Home Assistant neu starten.
+1129	GET {0}	GET {0}	GET {0}
+1130	Replies in JSON with name, CPU, memory, temperature, updates, disk and backup status.	Responde en JSON con nombre, CPU, memoria, temperatura, actualizaciones, estado de los discos y de las copias.	Antwortet in JSON mit Name, CPU, Speicher, Temperatur, Updates, Festplatten- und Sicherungsstatus.
+1131	Alerts to Home Assistant	Avisos hacia Home Assistant	Hinweise an Home Assistant
+1132	In	En	Unter
+1133	enable the webhook: the NAS sends a JSON with	activa el webhook: el NAS envía un JSON con	aktiviere den Webhook: das NAS sendet ein JSON mit
+1134	Regenerate the key?	¿Regenerar la clave?	Schlüssel neu erzeugen?
+1135	Whoever uses the current key (e.g. Home Assistant) will stop working until you put in the new one.	Quien use la clave actual (p. ej. Home Assistant) dejará de funcionar hasta que pongas la nueva.	Wer den aktuellen Schlüssel nutzt (z. B. Home Assistant), funktioniert nicht mehr, bis du den neuen einträgst.
+1136	New key created	Nueva clave creada	Neuer Schlüssel erstellt
+1137	Protected connection active	Conexión protegida activa	Geschützte Verbindung aktiv
+1138	You're using the unprotected connection. Open	Estás usando la conexión no protegida. Abre	Du nutzt die ungeschützte Verbindung. Öffne
+1139	after installing the certificate.	después de instalar el certificado.	nach der Installation des Zertifikats.
+1140	Home certificate (recommended)	Certificado de casa (recomendado)	Heimzertifikat (empfohlen)
+1141	{0} creates its own authority for the local network. You install the certificate once on each device and the browser stops showing warnings.	{0} crea su propia autoridad para la red local. Instalas el certificado una vez en cada dispositivo y el navegador ya no muestra avisos.	{0} erstellt eine eigene Zertifizierungsstelle für das lokale Netzwerk. Du installierst das Zertifikat einmal auf jedem Gerät, und der Browser zeigt keine Warnungen mehr.
+1142	Let's Encrypt	Let's Encrypt	Let's Encrypt
+1143	Public certificate recognised everywhere, to access from outside the home with your own domain (e.g. nas.mydomain.com). It renews itself. Ports 80 and 443 must be open on the router towards the NAS.	Certificado público reconocido en todas partes, para entrar desde fuera de casa con un dominio tuyo (p. ej. nas.midominio.es). Se renueva solo. Hacen falta los puertos 80 y 443 abiertos en el router hacia el NAS.	Öffentliches, überall anerkanntes Zertifikat für den Zugriff von außen mit deiner eigenen Domain (z. B. nas.meinedomain.de). Erneuert sich selbst. Die Ports 80 und 443 müssen am Router zum NAS geöffnet sein.
+1144	Upload your certificate	Sube tu certificado	Eigenes Zertifikat hochladen
+1145	If you already have one (.crt and .key files in PEM format).	Si ya tienes uno (archivos .crt y .key en formato PEM).	Wenn du schon eines hast (.crt- und .key-Dateien im PEM-Format).
+1146	None (HTTP only)	Ninguno (solo HTTP)	Keines (nur HTTP)
+1147	Not recommended: passwords and files travel unencrypted on the network.	No recomendado: contraseñas y archivos viajan sin cifrar por la red.	Nicht empfohlen: Passwörter und Dateien gehen unverschlüsselt durchs Netzwerk.
+1148	Uploaded:	Subido:	Hochgeladen:
+1149	· {0} · until {1}	· {0} · hasta el {1}	· {0} · bis {1}
+1150	App addresses:	Direcciones de las apps:	Adressen der Apps:
+1151	Installing the home certificate	Instalar el certificado de casa	Heimzertifikat installieren
+1152	: open the downloaded file › Install certificate › Local machine › "Trusted root certification authorities".	: abre el archivo descargado › Instalar certificado › Equipo local › "Entidades de certificación raíz de confianza".	: heruntergeladene Datei öffnen › Zertifikat installieren › Lokaler Computer › „Vertrauenswürdige Stammzertifizierungsstellen“.
+1153	: open the file (Keychain Access), then double-click the certificate › Trust › "Always trust".	: abre el archivo (Acceso a Llaveros), luego doble clic en el certificado › Confiar › "Confiar siempre".	: Datei öffnen (Schlüsselbundverwaltung), dann Doppelklick auf das Zertifikat › Vertrauen › „Immer vertrauen“.
+1154	iPhone and iPad	iPhone y iPad	iPhone und iPad
+1155	: open the file with Safari, install the profile from Settings, then General › About › Certificate Trust Settings › turn it on.	: abre el archivo con Safari, instala el perfil desde Ajustes, luego General › Información › Ajustes de confianza de certificados › actívalo.	: Datei mit Safari öffnen, Profil in den Einstellungen installieren, dann Allgemein › Info › Zertifikatsvertrauenseinstellungen › aktivieren.
+1156	: Settings › Security › Encryption & credentials › Install a certificate › CA certificate.	: Ajustes › Seguridad › Cifrado y credenciales › Instalar un certificado › Certificado de CA.	: Einstellungen › Sicherheit › Verschlüsselung & Anmeldedaten › Zertifikat installieren › CA-Zertifikat.
+1157	{0} · SHA-256 {1}	{0} · SHA-256 {1}	{0} · SHA-256 {1}
+1158	Download certificate	Descargar certificado	Zertifikat herunterladen
+1159	Renew the NAS certificate	Renovar el certificado del NAS	NAS-Zertifikat erneuern
+1160	Certificate type	Tipo de certificado	Zertifikatstyp
+1161	Domain	Dominio	Domain
+1162	Email for Let's Encrypt notices	Email para los avisos de Let's Encrypt	E-Mail für Let's-Encrypt-Hinweise
+1163	Certificate (.crt / .pem)	Certificado (.crt / .pem)	Zertifikat (.crt / .pem)
+1164	Private key (.key)	Clave privada (.key)	Privater Schlüssel (.key)
+1165	Always open in HTTPS	Abrir siempre en HTTPS	Immer per HTTPS öffnen
+1166	HTTPS for the apps too	HTTPS también para las apps	HTTPS auch für die Apps
+1167	jellyfin.{0}, immich.{1}… without port numbers	jellyfin.{0}, immich.{1}… sin números de puerto	jellyfin.{0}, immich.{1}… ohne Portnummern
+1168	Changes apply immediately: Caddy reloads without interrupting the apps.	Los cambios se aplican enseguida: Caddy se recarga sin interrumpir las apps.	Änderungen gelten sofort: Caddy lädt neu, ohne die Apps zu unterbrechen.
+1169	Save and apply	Guardar y aplicar	Speichern und anwenden
+1170	HTTPS updated	HTTPS actualizado	HTTPS aktualisiert
+1171	Saved, but Caddy didn't restart:	Guardado, pero Caddy no ha vuelto a arrancar:	Gespeichert, aber Caddy ist nicht neu gestartet:
+1172	Choose both files	Elige ambos archivos	Beide Dateien wählen
+1173	Certificate uploaded: now press "Save and apply"	Certificado subido: ahora pulsa "Guardar y aplicar"	Zertifikat hochgeladen: jetzt „Speichern und anwenden“ drücken
+1174	NAS certificate renewed	Certificado del NAS renovado	NAS-Zertifikat erneuert
+1175	LTS · 5 years of support	LTS · 5 años de soporte	LTS · 5 Jahre Support
+1176	non-LTS · 9 months of support	no LTS · 9 meses de soporte	kein LTS · 9 Monate Support
+1177	Upgrade to Ubuntu {0} in progress	Paso a Ubuntu {0} en curso	Upgrade auf Ubuntu {0} läuft
+1178	you can close the page: it continues on the NAS	puedes cerrar la página: continúa en el NAS	du kannst die Seite schließen: es läuft auf dem NAS weiter
+1179	all good	todo bien	alles in Ordnung
+1180	there are problems	hay problemas	es gibt Probleme
+1181	Checks after the upgrade: {0}	Comprobaciones tras el paso: {0}	Prüfungen nach dem Upgrade: {0}
+1182	Checked	Comprobado	Geprüft
+1183	Not checked yet	Aún no comprobado	Noch nicht geprüft
+1184	Ubuntu {0} is available	Está disponible Ubuntu {0}	Ubuntu {0} ist verfügbar
+1185	Upgrade to Ubuntu {0}…	Pasar a Ubuntu {0}…	Auf Ubuntu {0} upgraden…
+1186	There are no newer versions: you're on the latest.	No hay versiones más nuevas: estás en la última.	Es gibt keine neueren Versionen: du hast die neueste.
+1187	Upgrade completed: restart to finish.	Paso completado: reinicia para terminar.	Upgrade abgeschlossen: zum Abschließen neu starten.
+1188	After the restart the NAS checks by itself that everything works.	Tras el reinicio el NAS comprueba solo que todo funcione.	Nach dem Neustart prüft das NAS selbst, ob alles funktioniert.
+1189	Upgrade failed{0}. The log is below.	Paso fallido{0}. El registro está aquí abajo.	Upgrade fehlgeschlagen{0}. Das Protokoll steht unten.
+1190	The system has been rolled back to the snapshot from before the upgrade: restart the NAS if you haven't already.	El sistema se ha devuelto a la instantánea anterior al paso: reinicia el NAS si aún no lo has hecho.	Das System wurde auf den Snapshot vor dem Upgrade zurückgesetzt: starte das NAS neu, falls noch nicht geschehen.
+1191	A restart is needed. Your files and the app data don't change.	Hace falta reiniciar. Tus archivos y los datos de las apps no cambian.	Ein Neustart ist nötig. Deine Dateien und die App-Daten bleiben gleich.
+1192	Log of the last upgrade	Registro del último paso	Protokoll des letzten Upgrades
+1193	Ubuntu version	Versión de Ubuntu	Ubuntu-Version
+1194	Go back to the previous version	Volver a la versión anterior	Zur vorherigen Version zurück
+1195	Go back	Volver atrás	Zurück
+1196	System rolled back to the snapshot: restart the NAS	Sistema devuelto a la instantánea: reinicia el NAS	System auf den Snapshot zurückgesetzt: starte das NAS neu
+1197	Upgrade to Ubuntu {0}	Pasar a Ubuntu {0}	Auf Ubuntu {0} upgraden
+1198	LTS version · 5 years of support	Versión LTS · 5 años de soporte	LTS-Version · 5 Jahre Support
+1199	NON-LTS version · 9 months of support	Versión NO LTS · 9 meses de soporte	KEINE LTS-Version · 9 Monate Support

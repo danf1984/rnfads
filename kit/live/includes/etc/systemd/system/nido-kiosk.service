@@ -1,0 +1,25 @@
+[Unit]
+Description=Schermo del NAS (interfaccia sul monitor collegato)
+After=systemd-user-sessions.service nido-ui.service plymouth-quit-wait.service
+Wants=nido-ui.service
+Conflicts=getty@tty1.service
+# Se non riesce a partire, torna il login di testo
+OnFailure=getty@tty1.service
+StartLimitIntervalSec=120
+StartLimitBurst=4
+
+[Service]
+User=nido-kiosk
+PAMName=login
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+TTYVTDisallocate=yes
+StandardInput=tty-fail
+StandardOutput=journal
+StandardError=journal
+UtmpIdentifier=tty1
+UtmpMode=user
+ExecStart=/usr/lib/nido/kiosk-start.sh
+Restart=on-failure
+RestartSec=5

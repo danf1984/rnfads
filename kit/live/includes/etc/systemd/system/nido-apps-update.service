@@ -1,0 +1,11 @@
+[Unit]
+Description=Controllo e aggiornamento notturno delle app (solo correzioni)
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=PYTHONPATH=/usr/lib/nido/panel
+ExecStart=/usr/bin/python3 -m nidopanel.cli apps-autoupdate
+StandardOutput=append:/var/log/nido/apps-update.log
+StandardError=append:/var/log/nido/apps-update.log

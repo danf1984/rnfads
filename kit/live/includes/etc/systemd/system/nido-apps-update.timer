@@ -1,0 +1,10 @@
+[Unit]
+Description=Aggiornamento notturno delle app
+# L'orario si cambia dall'interfaccia (Le mie app): scrive nido-apps-update.timer.d/orario.conf
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+RandomizedDelaySec=10min
+
+[Install]
+WantedBy=timers.target

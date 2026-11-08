@@ -1,0 +1,9 @@
+[Unit]
+Description=Controllo periodico per gli avvisi
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=15min
+
+[Install]
+WantedBy=timers.target

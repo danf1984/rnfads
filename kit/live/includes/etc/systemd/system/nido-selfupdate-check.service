@@ -1,0 +1,11 @@
+[Unit]
+Description=Controllo (e, se scelto, installazione) degli aggiornamenti online del sistema
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=PYTHONPATH=/usr/lib/nido/panel
+ExecStart=/usr/bin/python3 -m nidopanel.cli selfupdate-check
+StandardOutput=append:/var/log/nido/selfupdate-check.log
+StandardError=append:/var/log/nido/selfupdate-check.log

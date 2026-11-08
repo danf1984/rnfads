@@ -1,0 +1,7 @@
+Le cartelle in /DATA stanno sul disco dove hai installato il NAS. Se la cartella non c'è ancora, viene creata.	Folders in /DATA are on the disk where you installed the NAS. If the folder doesn't exist yet, it is created.	Las carpetas en /DATA están en el disco donde instalaste el NAS. Si la carpeta todavía no existe, se crea.	Ordner in /DATA liegen auf dem Laufwerk, auf dem du das NAS installiert hast. Gibt es den Ordner noch nicht, wird er erstellt.
+Non riesco a creare la cartella {0}: {1}	I can't create the folder {0}: {1}	No puedo crear la carpeta {0}: {1}	Der Ordner {0} kann nicht erstellt werden: {1}
+Rete nascosta…	Hidden network…	Red oculta…	Verstecktes Netz…
+Rete Wi-Fi nascosta	Hidden Wi-Fi network	Red Wi-Fi oculta	Verstecktes WLAN-Netz
+Rete che non compare nella ricerca	A network that doesn't show up in the search	Red que no aparece en la búsqueda	Ein Netz, das bei der Suche nicht erscheint
+Nome della rete (SSID)	Network name (SSID)	Nombre de la red (SSID)	Netzname (SSID)
+Vuota per una rete aperta	Empty for an open network	Vacía para una red abierta	Leer für ein offenes Netz

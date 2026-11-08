@@ -1,0 +1,21 @@
+[Unit]
+Description=Servizio cloud %i come cartella (/media/cloud/%i, rclone)
+Wants=network-online.target
+After=network-online.target
+# Prima di Docker: così le app vedono la cartella
+Before=docker.service
+
+[Service]
+Type=notify
+EnvironmentFile=/etc/nido/cloud/%i.env
+ExecStartPre=/bin/mkdir -p /media/cloud/%i
+ExecStart=/usr/bin/rclone mount %i: /media/cloud/%i --config ${RCLONE_CONFIG} --allow-other --uid ${NIDO_UID} --gid ${NIDO_GID} --umask 002 --vfs-cache-mode writes --vfs-write-back 2s --cache-dir /var/cache/rclone --dir-cache-time 5m --log-level NOTICE
+# Prima lascia finire i caricamenti in corso (scritture dalla cache al cloud), poi smonta
+ExecStop=/bin/sh -c 'sleep 4; /bin/fusermount3 -u /media/cloud/%i || /bin/fusermount3 -uz /media/cloud/%i'
+TimeoutStopSec=300
+Restart=on-failure
+RestartSec=30
+TimeoutStartSec=120
+
+[Install]
+WantedBy=multi-user.target

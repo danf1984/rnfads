@@ -1,0 +1,17 @@
+# Pacchetti facoltativi: se uno non esiste la build lo salta e va avanti.
+
+# Visibilità nella rete di Windows
+wsdd
+wsdd-server
+# Archivi cloud (backup)
+rclone
+# Firmware e microcodice per l'hardware reale (schede di rete, controller dischi, CPU)
+linux-firmware
+intel-microcode
+amd64-microcode
+# Font aggiuntivi per l'interfaccia
+fonts-ibm-plex
+fonts-open-sans
+fonts-roboto-unhinted
+# Cestino delle condivisioni Samba (il DLNA si installa come app Docker, es. minidlna)
+samba-vfs-modules

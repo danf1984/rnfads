@@ -1,0 +1,3 @@
+// Snapshot Btrfs del sistema prima e dopo ogni operazione di apt
+DPkg::Pre-Invoke { "if [ -x /usr/lib/nido/snapshot-apt.sh ]; then /usr/lib/nido/snapshot-apt.sh pre; fi"; };
+DPkg::Post-Invoke { "if [ -x /usr/lib/nido/snapshot-apt.sh ]; then /usr/lib/nido/snapshot-apt.sh post; fi"; };

@@ -1,0 +1,14 @@
+[Unit]
+Description=Nomi .local delle app del NAS (HTTPS anche per le app)
+After=avahi-daemon.service network-online.target
+Wants=avahi-daemon.service
+
+[Service]
+Environment=PYTHONPATH=/usr/lib/nido/panel
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 -m nidopanel.cli mdns
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target

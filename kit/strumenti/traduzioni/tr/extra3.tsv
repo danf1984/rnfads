@@ -1,0 +1,60 @@
+Accesso remoto	Remote access	Acceso remoto	Fernzugriff
+Tailscale, ZeroTier e Runtipi sono marchi o progetti dei rispettivi proprietari, WireGuard è un marchio registrato di Jason A. Donenfeld: {0} non è affiliato a loro.	Tailscale, ZeroTier and Runtipi are trademarks or projects of their respective owners, WireGuard is a registered trademark of Jason A. Donenfeld: {0} is not affiliated with them.	Tailscale, ZeroTier y Runtipi son marcas o proyectos de sus respectivos propietarios, WireGuard es una marca registrada de Jason A. Donenfeld: {0} no está afiliado a ellos.	Tailscale, ZeroTier und Runtipi sind Marken bzw. Projekte ihrer jeweiligen Eigentümer, WireGuard ist eine eingetragene Marke von Jason A. Donenfeld: {0} ist nicht mit ihnen verbunden.
+Rete privata tra i tuoi dispositivi (PC, telefono, NAS) che funziona anche fuori casa, senza aprire porte sul router. Serve un account Tailscale gratuito.	Private network between your devices (PC, phone, NAS) that also works away from home, without opening ports on the router. A free Tailscale account is needed.	Red privada entre tus dispositivos (PC, teléfono, NAS) que funciona también fuera de casa, sin abrir puertos en el router. Hace falta una cuenta gratuita de Tailscale.	Privates Netzwerk zwischen deinen Geräten (PC, Handy, NAS), das auch unterwegs funktioniert, ohne Ports am Router zu öffnen. Ein kostenloses Tailscale-Konto ist nötig.
+Collegato alla rete {0}	Connected to the {0} network	Conectado a la red {0}	Verbunden mit dem Netzwerk {0}
+Collegato	Connected	Conectado	Verbunden
+{0} dispositivi online	{0} devices online	{0} dispositivos en línea	{0} Geräte online
+Dai tuoi dispositivi Tailscale raggiungi anche la rete	From your Tailscale devices you can also reach the network	Desde tus dispositivos Tailscale llegas también a la red	Von deinen Tailscale-Geräten erreichst du auch das Netzwerk
+(stampante, router…). Va approvato una volta nella console di Tailscale.	(printer, router…). It must be approved once in the Tailscale console.	(impresora, router…). Hay que aprobarlo una vez en la consola de Tailscale.	(Drucker, Router…). Muss einmal in der Tailscale-Konsole genehmigt werden.
+Rete di casa non trovata	Home network not found	Red de casa no encontrada	Heimnetz nicht gefunden
+Rendi raggiungibile la rete di casa	Make the home network reachable	Hacer accesible la red de casa	Heimnetz erreichbar machen
+Dagli altri dispositivi apri	From the other devices open	Desde los otros dispositivos abre	Öffne auf den anderen Geräten
+oppure	or	o	oder
+Apri il link qui sotto, accedi con il tuo account Tailscale e approva il NAS. Questa pagina si aggiorna da sola.	Open the link below, log in with your Tailscale account and approve the NAS. This page updates by itself.	Abre el enlace de abajo, entra con tu cuenta de Tailscale y aprueba el NAS. Esta página se actualiza sola.	Öffne den Link unten, melde dich mit deinem Tailscale-Konto an und bestätige das NAS. Diese Seite aktualisiert sich selbst.
+Il NAS non è collegato a nessuna rete Tailscale.	The NAS is not connected to any Tailscale network.	El NAS no está conectado a ninguna red Tailscale.	Das NAS ist mit keinem Tailscale-Netzwerk verbunden.
+Accedi a Tailscale	Log in to Tailscale	Entrar en Tailscale	Bei Tailscale anmelden
+Collega a Tailscale	Connect to Tailscale	Conectar a Tailscale	Mit Tailscale verbinden
+Rete virtuale tra i tuoi dispositivi: crei una rete gratuita su my.zerotier.com e ci fai entrare il NAS con il suo ID.	Virtual network between your devices: you create a free network on my.zerotier.com and let the NAS join it with its ID.	Red virtual entre tus dispositivos: creas una red gratuita en my.zerotier.com y haces entrar el NAS con su ID.	Virtuelles Netzwerk zwischen deinen Geräten: du erstellst ein kostenloses Netzwerk auf my.zerotier.com und lässt das NAS mit dessen ID beitreten.
+collegato	connected	conectado	verbunden
+da autorizzare	to be authorised	por autorizar	zu autorisieren
+in attesa	waiting	en espera	wartet
+rete non trovata	network not found	red no encontrada	Netzwerk nicht gefunden
+online	online	en línea	online
+non in linea	offline	sin conexión	offline
+Esci dalla rete	Leave the network	Salir de la red	Netzwerk verlassen
+Autorizza il NAS nella pagina della rete su my.zerotier.com (spunta "Auth").	Authorise the NAS on the network page at my.zerotier.com (tick "Auth").	Autoriza el NAS en la página de la red en my.zerotier.com (marca "Auth").	Autorisiere das NAS auf der Netzwerkseite bei my.zerotier.com (Häkchen bei „Auth“).
+Il NAS non è in nessuna rete ZeroTier.	The NAS is not in any ZeroTier network.	El NAS no está en ninguna red ZeroTier.	Das NAS ist in keinem ZeroTier-Netzwerk.
+Indirizzo del NAS:	NAS address:	Dirección del NAS:	Adresse des NAS:
+Entra nella rete	Join the network	Entrar en la red	Netzwerk beitreten
+ID della rete (16 caratteri)	Network ID (16 characters)	ID de la red (16 caracteres)	Netzwerk-ID (16 Zeichen)
+Registro dell'installazione	Installation log	Registro de la instalación	Installationsprotokoll
+Tailscale e ZeroTier non sono inclusi nel sistema: vengono installati dagli archivi ufficiali dei produttori quando premi "Installa", e i loro servizi online hanno le loro condizioni d'uso.	Tailscale and ZeroTier are not included in the system: they are installed from the manufacturers' official repositories when you press "Install", and their online services have their own terms of use.	Tailscale y ZeroTier no están incluidos en el sistema: se instalan desde los repositorios oficiales de los fabricantes cuando pulsas "Instalar", y sus servicios en línea tienen sus propias condiciones de uso.	Tailscale und ZeroTier sind nicht im System enthalten: sie werden aus den offiziellen Paketquellen der Hersteller installiert, wenn du „Installieren“ drückst, und ihre Online-Dienste haben eigene Nutzungsbedingungen.
+L'accesso SSH "solo dalla rete di casa" accetta anche gli indirizzi di Tailscale e delle reti private di ZeroTier.	SSH access "home network only" also accepts Tailscale addresses and ZeroTier private networks.	El acceso SSH "solo desde la red de casa" acepta también las direcciones de Tailscale y de las redes privadas de ZeroTier.	Der SSH-Zugang „nur aus dem Heimnetz“ akzeptiert auch Tailscale-Adressen und private ZeroTier-Netzwerke.
+Tailscale e ZeroTier sono marchi dei rispettivi proprietari: {0} non è affiliato a loro. WireGuard è un marchio registrato di Jason A. Donenfeld.	Tailscale and ZeroTier are trademarks of their respective owners: {0} is not affiliated with them. WireGuard is a registered trademark of Jason A. Donenfeld.	Tailscale y ZeroTier son marcas de sus respectivos propietarios: {0} no está afiliado a ellos. WireGuard es una marca registrada de Jason A. Donenfeld.	Tailscale und ZeroTier sind Marken ihrer jeweiligen Eigentümer: {0} ist nicht mit ihnen verbunden. WireGuard ist eine eingetragene Marke von Jason A. Donenfeld.
+Installazione avviata	Installation started	Instalación iniciada	Installation gestartet
+Disinstallare {0}?	Uninstall {0}?	¿Desinstalar {0}?	{0} deinstallieren?
+{0} disinstallato	{0} uninstalled	{0} desinstalado	{0} deinstalliert
+Il NAS esce dalla rete e non sarà più raggiungibile da fuori casa in questo modo.	The NAS leaves the network and will no longer be reachable from outside the home this way.	El NAS sale de la red y ya no será accesible desde fuera de casa de esta forma.	Das NAS verlässt das Netzwerk und ist auf diesem Weg von außen nicht mehr erreichbar.
+Tailscale scollegato	Tailscale disconnected	Tailscale desconectado	Tailscale getrennt
+Richiesta inviata: autorizza il NAS su my.zerotier.com	Request sent: authorise the NAS on my.zerotier.com	Solicitud enviada: autoriza el NAS en my.zerotier.com	Anfrage gesendet: autorisiere das NAS auf my.zerotier.com
+Uscito dalla rete	Left the network	Has salido de la red	Netzwerk verlassen
+Password e chiavi create da sole: {0} (le vedi in modalità avanzata).	Passwords and keys created automatically: {0} (you can see them in advanced mode).	Contraseñas y claves creadas automáticamente: {0} (las ves en el modo avanzado).	Automatisch erstellte Passwörter und Schlüssel: {0} (im erweiterten Modus sichtbar).
+Da compilare in modalità avanzata prima di installare: {0}.	To fill in, in advanced mode, before installing: {0}.	Para rellenar en modo avanzado antes de instalar: {0}.	Vor der Installation im erweiterten Modus ausfüllen: {0}.
+Servizio non supportato	Service not supported	Servicio no compatible	Dienst nicht unterstützt
+È già installato	It's already installed	Ya está instalado	Bereits installiert
+Disinstallazione non riuscita: {0}	Uninstall failed: {0}	Desinstalación fallida: {0}	Deinstallation fehlgeschlagen: {0}
+Tailscale non è installato	Tailscale is not installed	Tailscale no está instalado	Tailscale ist nicht installiert
+Scollegamento non riuscito: {0}	Disconnect failed: {0}	Desconexión fallida: {0}	Trennen fehlgeschlagen: {0}
+Non trovo la rete di casa del NAS	I can't find the NAS home network	No encuentro la red de casa del NAS	Heimnetz des NAS nicht gefunden
+Tailscale non ha accettato la modifica: {0}	Tailscale didn't accept the change: {0}	Tailscale no ha aceptado el cambio: {0}	Tailscale hat die Änderung nicht akzeptiert: {0}
+L'ID della rete ZeroTier ha 16 caratteri (cifre e lettere da a a f)	The ZeroTier network ID has 16 characters (digits and letters a to f)	El ID de la red ZeroTier tiene 16 caracteres (cifras y letras de la a a la f)	Die ZeroTier-Netzwerk-ID hat 16 Zeichen (Ziffern und Buchstaben a bis f)
+ZeroTier non è installato	ZeroTier is not installed	ZeroTier no está instalado	ZeroTier ist nicht installiert
+ZeroTier non ha accettato la rete: {0}	ZeroTier didn't accept the network: {0}	ZeroTier no ha aceptado la red: {0}	ZeroTier hat das Netzwerk nicht akzeptiert: {0}
+ID della rete non valido	Invalid network ID	ID de la red no válido	Ungültige Netzwerk-ID
+Uscita dalla rete non riuscita: {0}	Leaving the network failed: {0}	Salida de la red fallida: {0}	Verlassen des Netzwerks fehlgeschlagen: {0}
+Installo {0} dall'archivio ufficiale del produttore	Installing {0} from the manufacturer's official repository	Instalo {0} desde el repositorio oficial del fabricante	Installiere {0} aus der offiziellen Paketquelle des Herstellers
+L'archivio non ha ancora pacchetti per Ubuntu {0}: uso quelli per {1} (compatibili)	The repository has no packages for Ubuntu {0} yet: using those for {1} (compatible)	El repositorio aún no tiene paquetes para Ubuntu {0}: uso los de {1} (compatibles)	Die Paketquelle hat noch keine Pakete für Ubuntu {0}: nutze die für {1} (kompatibel)
+ERRORE: non riesco a scaricare la chiave dell'archivio: {0}	ERROR: I can't download the repository key: {0}	ERROR: no consigo descargar la clave del repositorio: {0}	FEHLER: Schlüssel der Paketquelle kann nicht geladen werden: {0}
+ERRORE: comando non riuscito (codice {0})	ERROR: command failed (code {0})	ERROR: comando fallido (código {0})	FEHLER: Befehl fehlgeschlagen (Code {0})
+{0} installato.	{0} installed.	{0} instalado.	{0} installiert.
+Installa {0}	Install {0}	Instalar {0}	{0} installieren

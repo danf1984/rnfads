@@ -1,0 +1,80 @@
+Schermo del NAS	NAS screen	Pantalla del NAS	NAS-Bildschirm
+NetworkManager non è disponibile su questo sistema.	NetworkManager is not available on this system.	NetworkManager no está disponible en este sistema.	NetworkManager ist auf diesem System nicht verfügbar.
+Conferma le impostazioni di rete	Confirm the network settings	Confirma los ajustes de red	Netzwerkeinstellungen bestätigen
+Se il NAS si raggiunge, premi Conferma. Altrimenti tornano da sole le impostazioni di prima.	If the NAS can be reached, press Confirm. Otherwise the previous settings come back by themselves.	Si se puede acceder al NAS, pulsa Confirmar. Si no, vuelven solos los ajustes anteriores.	Wenn das NAS erreichbar ist, drücke Bestätigen. Sonst werden die vorherigen Einstellungen automatisch wiederhergestellt.
+Tempo rimasto:	Time left:	Tiempo restante:	Verbleibende Zeit:
+Conferma	Confirm	Confirmar	Bestätigen
+Torna come prima	Go back to before	Volver a como estaba	Zurück zum vorherigen Stand
+Rete cablata	Wired network	Red cableada	Kabelnetzwerk
+collegata	connected	conectada	verbunden
+non collegata	not connected	no conectada	nicht verbunden
+Indirizzo attuale	Current address	Dirección actual	Aktuelle Adresse
+Gateway e DNS	Gateway and DNS	Puerta de enlace y DNS	Gateway und DNS
+Scheda	Adapter	Adaptador	Adapter
+Automatico (DHCP)	Automatic (DHCP)	Automática (DHCP)	Automatisch (DHCP)
+Indirizzo fisso	Fixed address	Dirección fija	Feste Adresse
+Indirizzo / prefisso	Address / prefix	Dirección / prefijo	Adresse / Präfix
+Gateway (router)	Gateway (router)	Puerta de enlace (router)	Gateway (Router)
+DNS (separati da virgola)	DNS (comma-separated)	DNS (separados por comas)	DNS (durch Komma getrennt)
+quelli del router	the router's	los del router	die des Routers
+Dopo la modifica hai 3 minuti per confermare, altrimenti torna tutto come prima.	After the change you have 3 minutes to confirm, otherwise everything goes back to how it was.	Tras el cambio tienes 3 minutos para confirmar; si no, todo vuelve a como estaba.	Nach der Änderung hast du 3 Minuten zum Bestätigen, sonst wird alles zurückgesetzt.
+Nessuna connessione attiva su questa scheda.	No active connection on this adapter.	Ninguna conexión activa en este adaptador.	Keine aktive Verbindung auf diesem Adapter.
+Cerca reti Wi-Fi	Search for Wi-Fi networks	Buscar redes Wi-Fi	WLAN-Netze suchen
+Dimentica questa rete	Forget this network	Olvidar esta red	Dieses Netz vergessen
+Nessuna scheda di rete trovata.	No network adapter found.	No se ha encontrado ningún adaptador de red.	Kein Netzwerkadapter gefunden.
+Con l'indirizzo fisso scegli un indirizzo fuori dall'intervallo DHCP del router (o prenotalo nel router).	With a fixed address, choose one outside the router's DHCP range (or reserve it in the router).	Con dirección fija, elige una fuera del rango DHCP del router (o resérvala en el router).	Wähle bei fester Adresse eine außerhalb des DHCP-Bereichs des Routers (oder reserviere sie im Router).
+Se cambi l'indirizzo, apri il NAS al nuovo indirizzo e conferma da questa pagina. Dallo schermo del NAS la pagina resta sempre raggiungibile.	If you change the address, open the NAS at the new address and confirm from this page. From the NAS screen this page is always reachable.	Si cambias la dirección, abre el NAS en la nueva dirección y confirma desde esta página. Desde la pantalla del NAS la página siempre está accesible.	Wenn du die Adresse änderst, öffne das NAS unter der neuen Adresse und bestätige auf dieser Seite. Auf dem NAS-Bildschirm ist die Seite immer erreichbar.
+Il nome del NAS in rete si cambia in Impostazioni → Generale.	The NAS network name is changed in Settings → General.	El nombre del NAS en la red se cambia en Ajustes → General.	Der Netzwerkname des NAS wird unter Einstellungen → Allgemein geändert.
+in uso	in use	en uso	in Benutzung
+Segnale {0}%	Signal {0}%	Señal {0}%	Signal {0} %
+protetta	secured	protegida	gesichert
+aperta	open	abierta	offen
+Nessuna rete trovata.	No networks found.	No se ha encontrado ninguna red.	Keine Netze gefunden.
+Password del Wi-Fi	Wi-Fi password	Contraseña del Wi-Fi	WLAN-Passwort
+Wi-Fi collegato	Wi-Fi connected	Wi-Fi conectado	WLAN verbunden
+Dimentica la rete Wi-Fi	Forget the Wi-Fi network	Olvidar la red Wi-Fi	WLAN-Netz vergessen
+Il NAS si scollega da questa rete Wi-Fi e ne dimentica la password.	The NAS disconnects from this Wi-Fi network and forgets its password.	El NAS se desconecta de esta red Wi-Fi y olvida su contraseña.	Das NAS trennt sich von diesem WLAN-Netz und vergisst das Passwort.
+Dimentica	Forget	Olvidar	Vergessen
+Rete dimenticata	Network forgotten	Red olvidada	Netz vergessen
+Applica le impostazioni di rete	Apply the network settings	Aplicar los ajustes de red	Netzwerkeinstellungen anwenden
+Il NAS passa all'indirizzo {0}. Se lo stai usando da un altro indirizzo la pagina smette di rispondere: apri http://{1} e conferma entro 3 minuti, altrimenti torna tutto come prima.	The NAS switches to address {0}. If you're using it from another address the page will stop responding: open http://{1} and confirm within 3 minutes, otherwise everything goes back to how it was.	El NAS pasa a la dirección {0}. Si lo estás usando desde otra dirección, la página dejará de responder: abre http://{1} y confirma en 3 minutos; si no, todo vuelve a como estaba.	Das NAS wechselt zur Adresse {0}. Wenn du es über eine andere Adresse nutzt, antwortet die Seite nicht mehr: Öffne http://{1} und bestätige innerhalb von 3 Minuten, sonst wird alles zurückgesetzt.
+Il NAS chiede l'indirizzo al router (DHCP). Potrebbe cambiare indirizzo: se la pagina smette di rispondere cercalo nel router o usa il nome .local, e conferma entro 3 minuti.	The NAS asks the router for an address (DHCP). Its address might change: if the page stops responding, find it in the router or use the .local name, and confirm within 3 minutes.	El NAS pide la dirección al router (DHCP). Puede cambiar de dirección: si la página deja de responder, búscalo en el router o usa el nombre .local, y confirma en 3 minutos.	Das NAS fragt den Router nach einer Adresse (DHCP). Die Adresse kann sich ändern: Wenn die Seite nicht mehr antwortet, suche es im Router oder nutze den .local-Namen und bestätige innerhalb von 3 Minuten.
+Impostazioni applicate: conferma entro 3 minuti	Settings applied: confirm within 3 minutes	Ajustes aplicados: confirma en 3 minutos	Einstellungen angewendet: Bestätige innerhalb von 3 Minuten
+Impostazioni di rete confermate	Network settings confirmed	Ajustes de red confirmados	Netzwerkeinstellungen bestätigt
+Impostazioni di prima rimesse	Previous settings restored	Ajustes anteriores restaurados	Vorherige Einstellungen wiederhergestellt
+Mostra questa interfaccia sul monitor collegato al NAS, da usare con tastiera e mouse del NAS: utile se la rete non funziona o per configurare il NAS senza un altro dispositivo. Servono alcuni componenti (circa 100 MB, dagli archivi di Ubuntu).	Shows this interface on the monitor connected to the NAS, to use with the NAS's keyboard and mouse: useful if the network isn't working or to set up the NAS without another device. Some components are needed (about 100 MB, from the Ubuntu archives).	Muestra esta interfaz en el monitor conectado al NAS, para usarla con el teclado y el ratón del NAS: útil si la red no funciona o para configurar el NAS sin otro dispositivo. Hacen falta algunos componentes (unos 100 MB, de los archivos de Ubuntu).	Zeigt diese Oberfläche auf dem am NAS angeschlossenen Monitor, zur Bedienung mit Tastatur und Maus des NAS: nützlich, wenn das Netzwerk nicht funktioniert, oder um das NAS ohne anderes Gerät einzurichten. Dafür sind einige Komponenten nötig (etwa 100 MB, aus den Ubuntu-Archiven).
+L'installazione non è riuscita: controlla la connessione a internet e riprova.	The installation failed: check the internet connection and try again.	La instalación ha fallado: revisa la conexión a internet y vuelve a intentarlo.	Die Installation ist fehlgeschlagen: Prüfe die Internetverbindung und versuche es erneut.
+Installa i componenti	Install the components	Instalar los componentes	Komponenten installieren
+Mostra l'interfaccia sul monitor del NAS	Show the interface on the NAS monitor	Mostrar la interfaz en el monitor del NAS	Oberfläche auf dem NAS-Monitor anzeigen
+Attivo adesso sul monitor	Active on the monitor now	Activa ahora en el monitor	Jetzt auf dem Monitor aktiv
+Attivo: parte all'accensione	On: starts at power-on	Activada: arranca al encender	An: startet beim Einschalten
+Attivo, ma senza scheda video con driver resta la console di testo	On, but without a graphics card with a driver the text console stays	Activada, pero sin tarjeta gráfica con controlador se queda la consola de texto	An, aber ohne Grafikkarte mit Treiber bleibt die Textkonsole
+Spento: sul monitor c'è la console di testo	Off: the monitor shows the text console	Desactivada: en el monitor está la consola de texto	Aus: Auf dem Monitor ist die Textkonsole
+Scheda video	Graphics card	Tarjeta gráfica	Grafikkarte
+Trovata	Found	Encontrada	Gefunden
+Nessuna scheda video con driver (es. VMSVGA di VirtualBox: scegli VBoxSVGA)	No graphics card with a driver (e.g. VirtualBox VMSVGA: choose VBoxSVGA)	Ninguna tarjeta gráfica con controlador (p. ej. VMSVGA de VirtualBox: elige VBoxSVGA)	Keine Grafikkarte mit Treiber (z. B. VMSVGA in VirtualBox: wähle VBoxSVGA)
+manca	missing	falta	fehlt
+Sul monitor compare la stessa interfaccia del browser: si entra con un account dell'interfaccia. Da lì hai tutto, compresi Rete, Terminale e il pulsante di spegnimento.	The monitor shows the same interface as the browser: you log in with an interface account. From there you have everything, including Network, Terminal and the power button.	En el monitor aparece la misma interfaz que en el navegador: se entra con una cuenta de la interfaz. Desde ahí tienes todo, incluidos Red, Terminal y el botón de apagado.	Auf dem Monitor erscheint dieselbe Oberfläche wie im Browser: Du meldest dich mit einem Konto der Oberfläche an. Von dort hast du alles, auch Netzwerk, Terminal und den Ein/Aus-Knopf.
+Si aprono solo le pagine del NAS: niente siti esterni.	Only NAS pages open: no external sites.	Solo se abren páginas del NAS: nada de sitios externos.	Es öffnen sich nur Seiten des NAS: keine externen Websites.
+Ctrl+Alt+F2 apre sempre una console di testo (login con l'utente del sistema); Ctrl+Alt+F1 torna allo schermo.	Ctrl+Alt+F2 always opens a text console (log in with the system user); Ctrl+Alt+F1 goes back to the screen.	Ctrl+Alt+F2 abre siempre una consola de texto (acceso con el usuario del sistema); Ctrl+Alt+F1 vuelve a la pantalla.	Strg+Alt+F2 öffnet immer eine Textkonsole (Anmeldung mit dem Systembenutzer); Strg+Alt+F1 kehrt zum Bildschirm zurück.
+Componenti: cage (MIT) e WebKitGTK (LGPL), dagli archivi di Ubuntu.	Components: cage (MIT) and WebKitGTK (LGPL), from the Ubuntu archives.	Componentes: cage (MIT) y WebKitGTK (LGPL), de los archivos de Ubuntu.	Komponenten: cage (MIT) und WebKitGTK (LGPL), aus den Ubuntu-Archiven.
+Schermo del NAS attivato	NAS screen turned on	Pantalla del NAS activada	NAS-Bildschirm eingeschaltet
+Schermo del NAS spento	NAS screen turned off	Pantalla del NAS desactivada	NAS-Bildschirm ausgeschaltet
+Dagli altri dispositivi:	From other devices:	Desde otros dispositivos:	Von anderen Geräten:
+Nessun indirizzo di rete: controlla il cavo o le impostazioni di rete	No network address: check the cable or the network settings	Ninguna dirección de red: revisa el cable o los ajustes de red	Keine Netzwerkadresse: Prüfe das Kabel oder die Netzwerkeinstellungen
+Scheda di rete non trovata o senza connessione	Network adapter not found or without a connection	Adaptador de red no encontrado o sin conexión	Netzwerkadapter nicht gefunden oder ohne Verbindung
+C'è già una modifica da confermare: confermala o annullala prima	There is already a change to confirm: confirm or undo it first	Ya hay un cambio por confirmar: confírmalo o deshazlo antes	Es gibt bereits eine Änderung zu bestätigen: Bestätige oder verwirf sie zuerst
+{0} non valido: {1}	Invalid {0}: {1}	{0} no válido: {1}	Ungültige(r) {0}: {1}
+Il gateway non è nella stessa rete dell'indirizzo	The gateway is not in the same network as the address	La puerta de enlace no está en la misma red que la dirección	Das Gateway liegt nicht im selben Netz wie die Adresse
+Scegli automatico o fisso	Choose automatic or fixed	Elige automática o fija	Wähle automatisch oder fest
+NetworkManager ha rifiutato le impostazioni: {0}	NetworkManager rejected the settings: {0}	NetworkManager ha rechazado los ajustes: {0}	NetworkManager hat die Einstellungen abgelehnt: {0}
+Ricerca delle reti Wi-Fi non riuscita: {0}	Wi-Fi network search failed: {0}	La búsqueda de redes Wi-Fi ha fallado: {0}	WLAN-Suche fehlgeschlagen: {0}
+Nome della rete Wi-Fi non valido	Invalid Wi-Fi network name	Nombre de red Wi-Fi no válido	Ungültiger WLAN-Name
+La password del Wi-Fi deve avere da 8 a 63 caratteri	The Wi-Fi password must have 8 to 63 characters	La contraseña del Wi-Fi debe tener de 8 a 63 caracteres	Das WLAN-Passwort muss 8 bis 63 Zeichen haben
+Questo NAS non ha una scheda Wi-Fi	This NAS has no Wi-Fi adapter	Este NAS no tiene adaptador Wi-Fi	Dieses NAS hat keinen WLAN-Adapter
+Password del Wi-Fi sbagliata	Wrong Wi-Fi password	Contraseña del Wi-Fi incorrecta	Falsches WLAN-Passwort
+Collegamento al Wi-Fi non riuscito: {0}	Connecting to Wi-Fi failed: {0}	La conexión al Wi-Fi ha fallado: {0}	WLAN-Verbindung fehlgeschlagen: {0}
+Connessione non valida	Invalid connection	Conexión no válida	Ungültige Verbindung
+Installazione già in corso	Installation already in progress	Instalación ya en curso	Installation läuft bereits
+Prima installa i componenti dello schermo	Install the screen components first	Instala primero los componentes de la pantalla	Installiere zuerst die Bildschirm-Komponenten
+Attivato, ma questo NAS non ha una scheda video con driver: lo schermo resta la console di testo (nelle VM VirtualBox scegli la scheda video VBoxSVGA)	Turned on, but this NAS has no graphics card with a driver: the screen stays a text console (in VirtualBox VMs choose the VBoxSVGA graphics card)	Activada, pero este NAS no tiene tarjeta gráfica con controlador: la pantalla sigue siendo la consola de texto (en las VM de VirtualBox elige la tarjeta gráfica VBoxSVGA)	Eingeschaltet, aber dieses NAS hat keine Grafikkarte mit Treiber: Der Bildschirm bleibt eine Textkonsole (wähle in VirtualBox-VMs die Grafikkarte VBoxSVGA)

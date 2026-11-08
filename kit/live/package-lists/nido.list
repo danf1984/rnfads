@@ -1,0 +1,118 @@
+# Pacchetti obbligatori: se uno manca la build si ferma.
+
+# --- Base -----------------------------------------------------------------------
+linux-image-generic
+systemd-sysv
+systemd-resolved
+systemd-timesyncd
+dbus
+sudo
+locales
+tzdata
+keyboard-configuration
+console-setup
+kbd
+bash-completion
+less
+nano
+htop
+curl
+wget
+ca-certificates
+jq
+unzip
+rsync
+perl
+procps
+psmisc
+pciutils
+usbutils
+lsb-release
+
+# --- Avvio dalla chiavetta (live) -----------------------------------------------------
+live-boot
+live-boot-initramfs-tools
+
+# --- Schermo del NAS (interfaccia sul monitor collegato: cage + WebKitGTK) ------------
+cage
+python3-gi
+gir1.2-gtk-4.0
+gir1.2-webkit-6.0
+fonts-dejavu-core
+libgl1-mesa-dri
+
+# --- Rete -----------------------------------------------------------------------
+network-manager
+openssh-server
+avahi-daemon
+libnss-mdns
+iproute2
+iputils-ping
+net-tools
+
+# --- File system e dischi ----------------------------------------------------
+btrfs-progs
+e2fsprogs
+ntfs-3g
+exfatprogs
+dosfstools
+parted
+gdisk
+smartmontools
+hdparm
+xfsprogs
+mergerfs
+cifs-utils
+samba
+snapper
+
+# --- Docker -------------------------------------------------------------------------
+docker.io
+containerd
+runc
+iptables
+
+# --- Installer e avvio (BIOS, UEFI e Secure Boot) --------------------------------------
+whiptail
+squashfs-tools
+grub-pc-bin
+grub-efi-amd64-bin
+grub-efi-amd64-signed
+shim-signed
+grub2-common
+grub-common
+efibootmgr
+initramfs-tools
+mtools
+
+# --- Aggiornamenti automatici di sicurezza -------------------------------------
+unattended-upgrades
+# Passaggio alla versione nuova di Ubuntu dall'interfaccia (fase 1C)
+ubuntu-release-upgrader-core
+
+# --- Servizio dell'interfaccia --------------------------------------------------
+python3
+python3-cryptography
+restic
+nfs-kernel-server
+
+# --- Font per l'interfaccia ---------------------------------------------------
+fontconfig
+fonts-inter
+
+# Interfaccia web (sostituisce CasaOS): compose, YAML, cartelle di rete
+python3-yaml
+docker-compose-v2
+smbclient
+avahi-utils
+nfs-common
+davfs2
+
+# HTTPS davanti all'interfaccia (fase 1B)
+caddy
+
+# File manager (fase 1C): miniature delle foto e dei video, archivi 7z/rar
+python3-pil
+ffmpegthumbnailer
+7zip
+zip

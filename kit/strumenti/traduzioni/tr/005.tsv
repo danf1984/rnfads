@@ -1,0 +1,200 @@
+800	Settings → General	Ajustes → General	Einstellungen → Allgemein
+801	NAS name on the network	Nombre del NAS en la red	Name des NAS im Netzwerk
+802	Lowercase letters, numbers and hyphens. You open it from	Minúsculas, números y guiones. Lo abres desde	Kleinbuchstaben, Zahlen und Bindestriche. Du öffnest es über
+803	Time zone	Zona horaria	Zeitzone
+804	Data disks found (the system disk is not touched):	Discos de datos encontrados (el disco del sistema no se toca):	Gefundene Datenfestplatten (die Systemfestplatte bleibt unberührt):
+805	Open Disks	Abrir Discos	Festplatten öffnen
+806	Mount or format the disks, then come back here from Settings → General → Setup wizard.	Monta o formatea los discos y luego vuelve aquí desde Ajustes → General → Asistente.	Hänge die Festplatten ein oder formatiere sie, dann komm über Einstellungen → Allgemein → Einrichtungsassistent zurück.
+807	I found no disks besides the system one. You can use the NAS like this (data goes to /DATA) and add disks whenever you like from	No he encontrado discos aparte del del sistema. Puedes usar el NAS así (los datos van a /DATA) y añadir discos cuando quieras desde	Außer der Systemfestplatte wurden keine Festplatten gefunden. Du kannst das NAS so nutzen (Daten landen in /DATA) und Festplatten jederzeit hinzufügen über
+808	Shares that already exist: {0}	Carpetas compartidas que ya existen: {0}	Bereits vorhandene Freigaben: {0}
+809	Create the "Condivisa" folder	Crear la carpeta "Condivisa"	Ordner „Condivisa“ anlegen
+810	In /DATA/Condivisa, visible on the network from Windows, Mac and phones to all users (read and write), with the network recycle bin.	En /DATA/Condivisa, visible en la red desde Windows, Mac y teléfonos para todos los usuarios (lectura y escritura), con la papelera de red.	In /DATA/Condivisa, im Netzwerk unter Windows, Mac und auf Handys für alle Benutzer sichtbar (Lesen und Schreiben), mit Netzwerk-Papierkorb.
+811	Users to access it are created in	Los usuarios para entrar se crean en	Benutzer für den Zugriff legst du an unter
+812	Install security updates automatically	Instalar solo las actualizaciones de seguridad	Sicherheitsupdates automatisch installieren
+813	At night, with a system snapshot.	De noche, con una instantánea del sistema.	Nachts, mit einem System-Snapshot.
+814	For the protected connection download the	Para la conexión protegida descarga el	Für die geschützte Verbindung lade das
+815	home certificate	certificado de casa	Heimzertifikat
+816	Settings → Secure access	Ajustes → Acceso seguro	Einstellungen → Sicherer Zugang
+817	and install it on your devices.	e instálalo en tus dispositivos.	herunter und installiere es auf deinen Geräten.
+818	All set. From here you can install apps from the	Todo listo. Desde aquí puedes instalar apps desde la	Alles bereit. Von hier aus kannst du Apps installieren aus dem
+819	, upload files to	, subir archivos a	, Dateien hochladen in
+820	and set up the	y configurar las	und einrichten:
+821	Setup skipped: you'll find it in Settings → General	Asistente omitido: lo encuentras en Ajustes → General	Einrichtung übersprungen: du findest sie unter Einstellungen → Allgemein
+822	Name changed: the NAS is now {0}.local (if the address doesn't respond right away, wait a few seconds)	Nombre cambiado: el NAS ahora es {0}.local (si la dirección no responde enseguida, espera unos segundos)	Name geändert: das NAS heißt jetzt {0}.local (antwortet die Adresse nicht sofort, warte ein paar Sekunden)
+823	Enjoy your NAS!	¡Disfruta de tu NAS!	Viel Spaß mit deinem NAS!
+824	All	Todas	Alle
+825	Explore	Explorar	Entdecken
+826	My apps	Mis apps	Meine Apps
+827	Catalogue updated: {0} apps	Catálogo actualizado: {0} apps	Katalog aktualisiert: {0} Apps
+828	Optional source: tap to enable it	Fuente opcional: toca para activarla	Optionale Quelle: tippen zum Aktivieren
+829	Source off: tap to enable it again	Fuente apagada: toca para reactivarla	Quelle aus: tippen zum erneuten Aktivieren
+830	to enable	por activar	zu aktivieren
+831	Search for an image on Docker Hub…	Busca una imagen en Docker Hub…	Image auf Docker Hub suchen…
+832	Search among {0} apps…	Busca entre {0} apps…	In {0} Apps suchen…
+833	=	=	=
+834	=	=	=
+835	Downloading the catalogues from the sources{0}…	Descargando los catálogos de las fuentes{0}…	Lade die Kataloge von den Quellen{0}…
+836	All sources	Todas las fuentes	Alle Quellen
+837	Docker Hub	Docker Hub	Docker Hub
+838	Refresh of all sources started	Actualización de todas las fuentes iniciada	Aktualisierung aller Quellen gestartet
+839	Source {0} enabled: downloading the catalogue.	Fuente {0} activada: descargando el catálogo.	Quelle {0} aktiviert: lade den Katalog.
+840	Details	Detalles	Details
+841	· catalogue of	· catálogo del	· Katalog vom
+842	{0} active sources · {3} apps	{0} fuentes activas · {3} apps	{0} aktive Quellen · {3} Apps
+843	{0} results for "{1}"	{0} resultados para "{1}"	{0} Ergebnisse für „{1}“
+844	All apps	Todas las apps	Alle Apps
+845	No apps found in the catalogue.	Ninguna app encontrada en el catálogo.	Keine Apps im Katalog gefunden.
+846	The catalogue is empty: check the internet connection.	El catálogo está vacío: comprueba la conexión a internet.	Der Katalog ist leer: prüfe die Internetverbindung.
+847	Search "{0}" on Docker Hub	Buscar "{0}" en Docker Hub	„{0}“ auf Docker Hub suchen
+848	sources	fuentes	Quellen
+849	Install	Instalar	Installieren
+850	Show more ({0})	Mostrar más ({0})	Mehr anzeigen ({0})
+851	The same app is in several sources: choose which version to install.	La misma app está en varias fuentes: elige qué versión instalar.	Dieselbe App gibt es in mehreren Quellen: wähle, welche Version installiert wird.
+852	{0} containers	{0} contenedores	{0} Container
+853	Version	Versión	Version
+854	Available in	Disponible en	Verfügbar in
+855	Docker Hub search: "{0}"	Búsqueda en Docker Hub: "{0}"	Docker-Hub-Suche: „{0}“
+856	Search for an image on Docker Hub	Busca una imagen en Docker Hub	Image auf Docker Hub suchen
+857	Results from Docker Hub	Resultados de Docker Hub	Ergebnisse von Docker Hub
+858	Type the name of an app or an image (e.g.	Escribe el nombre de una app o de una imagen (p. ej.	Gib den Namen einer App oder eines Images ein (z. B.
+859	) and press Enter.	) y pulsa Intro.	) und drücke Eingabe.
+860	How it works	Cómo funciona	So funktioniert es
+861	For a Docker Hub image the NAS reads the declared ports, folders and variables from the registry and offers you a ready configuration, which you can change before installing.	Para una imagen de Docker Hub el NAS lee del registro los puertos, carpetas y variables declarados y te propone una configuración lista, que puedes cambiar antes de instalar.	Bei einem Docker-Hub-Image liest das NAS die angegebenen Ports, Ordner und Variablen aus der Registry und schlägt eine fertige Konfiguration vor, die du vor der Installation ändern kannst.
+862	You can also type a full image, even from other registries (e.g.	También puedes escribir una imagen completa, incluso de otros registros (p. ej.	Du kannst auch ein vollständiges Image angeben, auch aus anderen Registries (z. B.
+863	) and press Install.	) y pulsar Instalar.	) und Installieren drücken.
+864	Docker Hub limits the number of searches: results are kept in memory for an hour.	Docker Hub limita el número de búsquedas: los resultados se guardan en memoria durante una hora.	Docker Hub begrenzt die Anzahl der Suchen: Ergebnisse bleiben eine Stunde im Speicher.
+865	Searching Docker Hub…	Buscando en Docker Hub…	Suche auf Docker Hub…
+866	Install {0}	Instalar {0}	{0} installieren
+867	{0} images	{0} imágenes	{0} Images
+868	bn	mil mill.	Mrd.
+869	k	mil	Tsd.
+870	Official image	Imagen oficial	Offizielles Image
+871	No description	Sin descripción	Keine Beschreibung
+872	Image typed by you	Imagen escrita por ti	Von dir eingegebenes Image
+873	No images found.	Ninguna imagen encontrada.	Keine Images gefunden.
+874	Already in the stores	Ya en las tiendas	Bereits in den Stores
+875	The store version is better: ports, folders and icon are already set.	Mejor la versión de la tienda: puertos, carpetas e icono ya están configurados.	Besser die Store-Version: Ports, Ordner und Symbol sind schon eingestellt.
+876	An administrator account is required	Hace falta una cuenta de administrador	Ein Administratorkonto ist erforderlich
+877	{0} · edit the installation: data in AppData stays	{0} · modificar la instalación: los datos en AppData se quedan	{0} · Installation bearbeiten: die Daten in AppData bleiben
+878	{0} · from Docker Hub	{0} · de Docker Hub	{0} · von Docker Hub
+879	Save and restart	Guardar y reiniciar	Speichern und neu starten
+880	Simple	Sencilla	Einfach
+881	Advanced	Avanzada	Erweitert
+882	Start with limits: {0}{1}{2} (can be changed)	Inicio con límites: {0}{1}{2} (modificables)	Start mit Grenzen: {0}{1}{2} (änderbar)
+883	No CPU and RAM limits	Sin límites de CPU y RAM	Ohne CPU- und RAM-Grenzen
+884	is also in the store, with ports, folders and icon already set.	también está en la tienda, con puertos, carpetas e icono ya configurados.	gibt es auch im Store, mit bereits eingestellten Ports, Ordnern und Symbol.
+885	Install that one	Instalar esa	Diese installieren
+886	App name	Nombre de la app	Name der App
+887	Technical name:	Nombre técnico:	Technischer Name:
+888	If you change it, I check that it's free	Si la cambias, compruebo que esté libre	Wenn du ihn änderst, prüfe ich, ob er frei ist
+889	Free port found automatically	Puerto libre encontrado automáticamente	Freier Port automatisch gefunden
+890	This app has no web interface	Esta app no tiene interfaz web	Diese App hat keine Weboberfläche
+891	Folders	Carpetas	Ordner
+892	=	=	=
+893	=	=	=
+894	Choose folder	Elegir carpeta	Ordner wählen
+895	File access as	Acceso a los archivos como	Dateizugriff als
+896	PUID/PGID set automatically	PUID/PGID configurados automáticamente	PUID/PGID automatisch gesetzt
+897	NAS user	Usuario del NAS	NAS-Benutzer
+898	Same as the NAS	El mismo del NAS	Wie das NAS
+899	Start with the NAS	Iniciar con el NAS	Mit dem NAS starten
+900	Update automatically	Actualizar automáticamente	Automatisch aktualisieren
+901	anonymous volume	volumen anónimo	anonymes Volume
+902	Web interface port	Puerto de la interfaz web	Port der Weboberfläche
+903	=	=	=
+904	=	=	=
+905	NAS folder	Carpeta del NAS	NAS-Ordner
+906	Folder in the	Carpeta en la	Ordner in der
+907	This container asks for {0}{1}{2}. Install it only if you trust the source.	Este contenedor pide {0}{1}{2}. Instálalo solo si confías en la fuente.	Dieser Container verlangt {0}{1}{2}. Installiere ihn nur, wenn du der Quelle vertraust.
+908	Limits	Límites	Grenzen
+909	=	=	=
+910	no limit	sin límite	keine Grenze
+911	=	=	=
+912	=	=	=
+913	app. The variables	app. Las variables	App. Die Variablen
+914	=	=	=
+915	are set by the NAS.	las configura el NAS.	setzt das NAS.
+916	=	=	=
+917	Installing	Instalación de	Installation von
+918	Starting…	Iniciando…	Starte…
+919	=	=	=
+920	=	=	=
+921	operation continues on the NAS.	operación continúa en el NAS.	Vorgang läuft auf dem NAS weiter.
+922	=	=	=
+923	Failed	Fallido	Fehlgeschlagen
+924	Choose a folder	Elige una carpeta	Wähle einen Ordner
+925	New	Nueva	Neu
+926	Choose	Elegir	Wählen
+927	NAS folders	Carpetas del NAS	NAS-Ordner
+928	Up	Arriba	Nach oben
+929	No subfolders	Ninguna subcarpeta	Keine Unterordner
+930	Choose a folder inside /DATA, /media or /mnt	Elige una carpeta dentro de /DATA, /media o /mnt	Wähle einen Ordner in /DATA, /media oder /mnt
+931	Open a folder first	Entra primero en una carpeta	Öffne zuerst einen Ordner
+932	Add an app source	Añadir una fuente de apps	App-Quelle hinzufügen
+933	Zip of apps in compose format (like Big Bear)	Zip de apps en formato compose (como Big Bear)	Zip mit Apps im Compose-Format (wie Big Bear)
+934	Name (optional)	Nombre (opcional)	Name (optional)
+935	Apps from sources you add are not checked: install only from stores you trust.	Las apps de las fuentes que añades tú no están controladas: instala solo de tiendas de confianza.	Apps aus selbst hinzugefügten Quellen werden nicht geprüft: installiere nur aus Stores, denen du vertraust.
+936	Add	Añadir	Hinzufügen
+937	Source added: downloading the catalogue	Fuente añadida: descargando el catálogo	Quelle hinzugefügt: lade den Katalog
+938	Wait	Espera	Warten
+939	new build	nueva build	neuer Build
+940	new version	nueva versión	neue Version
+941	Same version ({0}), updated content	Misma versión ({0}), contenido actualizado	Gleiche Version ({0}), aktualisierter Inhalt
+942	Back to {0}	Vuelta a la {0}	Zurück zu {0}
+943	Update failed	Actualización fallida	Aktualisierung fehlgeschlagen
+944	Up to date	Actualizada	Aktuell
+945	external	externa	extern
+946	unhealthy	con problemas	nicht gesund
+947	Installed apps	Apps instaladas	Installierte Apps
+948	Update all	Actualizar todas	Alle aktualisieren
+949	Automatic update	Actualización automática	Automatische Aktualisierung
+950	Update by itself	Actualizar sola	Selbst aktualisieren
+951	Only fix versions (e.g. 1.2.3 → 1.2.4)	Solo versiones de corrección (p. ej. 1.2.3 → 1.2.4)	Nur Fehlerbehebungen (z. B. 1.2.3 → 1.2.4)
+952	At night, when nobody uses the NAS	De noche, cuando nadie usa el NAS	Nachts, wenn niemand das NAS nutzt
+953	If the app doesn't restart	Si la app no vuelve a arrancar	Wenn die App nicht wieder startet
+954	Go back to the previous version	Volver a la versión anterior	Zur vorherigen Version zurück
+955	Before every update	Antes de cada actualización	Vor jeder Aktualisierung
+956	Copy of the app configuration	Copia de la configuración de la app	Kopie der App-Konfiguration
+957	Previous version kept aside	Versión anterior guardada aparte	Vorherige Version wird aufbewahrt
+958	Check that the app responds after starting	Comprobación de que la app responde tras arrancar	Prüfung, ob die App nach dem Start antwortet
+959	Setting saved	Ajuste guardado	Einstellung gespeichert
+960	Checking…	Comprobando…	Prüfe…
+961	Check complete	Comprobación terminada	Prüfung abgeschlossen
+962	Updating {0} apps	Actualización de {0} apps	Aktualisierung von {0} Apps
+963	{0} updates	{0} actualizaciones	{0} Aktualisierungen
+964	Last check: {0}	Última comprobación: {0}	Letzte Prüfung: {0}
+965	Versions not checked yet	Versiones aún no comprobadas	Versionen noch nicht geprüft
+966	No apps installed.	Ninguna app instalada.	Keine Apps installiert.
+967	Go to the App store	Ir a la Tienda de apps	Zum App-Store
+968	Other containers	Otros contenedores	Weitere Container
+969	Started outside the NAS: you can start and stop them and read their logs.	Iniciados fuera del NAS: puedes encenderlos, apagarlos y leer sus registros.	Außerhalb des NAS gestartet: du kannst sie starten, stoppen und ihre Protokolle lesen.
+970	Updating {0}	Actualización de {0}	Aktualisierung von {0}
+971	App started	App iniciada	App gestartet
+972	App stopped	App detenida	App gestoppt
+973	App restarted	App reiniciada	App neu gestartet
+974	Start	Iniciar	Starten
+975	stopped	detenida	gestoppt
+976	Stop	Detener	Stoppen
+977	Restart	Reiniciar	Neu starten
+978	Logs	Registros	Protokoll
+979	Edit installation	Modificar la instalación	Installation bearbeiten
+980	Settings and limits	Ajustes y límites	Einstellungen und Grenzen
+981	Show the compose	Mostrar el compose	Compose anzeigen
+982	Uninstall	Desinstalar	Deinstallieren
+983	There's already an operation running on this app	Ya hay una operación en curso en esta app	Für diese App läuft bereits ein Vorgang
+984	Logs of {0}	Registros de {0}	Protokoll von {0}
+985	Last 300 lines · updates by itself	Últimas 300 líneas · se actualiza sola	Letzte 300 Zeilen · aktualisiert sich selbst
+986	Follow	Seguir	Folgen
+987	Settings of {0}	Ajustes de {0}	Einstellungen von {0}
+988	Limits (for each container of the app)	Límites (para cada contenedor de la app)	Grenzen (für jeden Container der App)
+989	CPU (cores)	CPU (núcleos)	CPU (Kerne)
+990	E.g. 2 or 0.5	P. ej. 2 o 0.5	Z. B. 2 oder 0.5
+991	E.g. 512m or 2g	P. ej. 512m o 2g	Z. B. 512m oder 2g
+992	Update automatically (fixes only, at night)	Actualizar automáticamente (solo correcciones, de noche)	Automatisch aktualisieren (nur Fehlerbehebungen, nachts)
+993	Changing the limits restarts the app.	Cambiar los límites reinicia la app.	Eine Änderung der Grenzen startet die App neu.
+994	Settings saved	Ajustes guardados	Einstellungen gespeichert
+995	Compose of {0}	Compose de {0}	Compose von {0}
+996	Uninstall {0}	Desinstalar {0}	{0} deinstallieren
+997	The app is stopped and removed from the NAS.	La app se detiene y se quita del NAS.	Die App wird gestoppt und vom NAS entfernt.
+998	Also delete the app data (	Borrar también los datos de la app (	Auch die App-Daten löschen (
+999	Deleted data can't be recovered.	Los datos borrados no se pueden recuperar.	Gelöschte Daten lassen sich nicht wiederherstellen.
